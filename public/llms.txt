@@ -19,6 +19,16 @@ Cada servicio tiene página propia y una versión por municipio de Gran Canaria 
 
 Trabajo presencial en Gran Canaria. Páginas por municipio: Las Palmas de Gran Canaria (381.868 hab.), Telde (104.168), Santa Lucía de Tirajana (78.584), San Bartolomé de Tirajana (54.291), Arucas (39.232), Agüimes (33.800), Ingenio (32.905), Gáldar (25.108), Mogán (21.172), Santa Brígida (18.766), Santa María de Guía (14.311) y Teror (13.211). Cifras de población de Wikidata, 2025.
 
+## Precios
+
+Publicados en https://impulcan.com/#precios. Precios sin IGIC (Canarias aplica IGIC, no IVA).
+
+- **Auditoría de procesos — 190 €, pago único.** Media jornada en el negocio, inventario de tareas repetitivas con las horas que cuesta cada una, qué automatizar primero y coste/ahorro estimado. Si el informe concluye que no hace falta nada, lo dice.
+- **Puesta en marcha — desde 690 €, precio cerrado por escrito antes de empezar.** Ficha de Google y web rápida desde 690 €; una automatización montada desde 890 €; integración entre herramientas desde 890 €; un agente de IA desde 1.490 €. Incluye formación y todo queda en cuentas del cliente.
+- **Acompañamiento — desde 90 €/mes, opcional y sin permanencia.** Mantenimiento, ficha de Google y reseñas al día, ajustes pequeños e informe mensual.
+
+La primera visita para ver el negocio es gratuita y sin compromiso.
+
 ## Cómo trabajamos
 
 1. **Miramos tu negocio**: un café o una llamada de media hora para revisar qué hay montado y qué se está escapando. Gratis y sin compromiso.

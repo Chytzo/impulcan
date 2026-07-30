@@ -1,0 +1,57 @@
+{
+  "nota": "Precios en euros, sin IGIC. Canarias aplica IGIC, no IVA.",
+  "planes": [
+    {
+      "slug": "auditoria",
+      "nombre": "Auditoría",
+      "gancho": "Para saber qué automatizar antes de gastar en automatizar.",
+      "precio": "190",
+      "unidad": "pago único",
+      "referencia": "Media jornada contigo y un informe corto",
+      "incluye": [
+        "Media jornada en tu negocio viendo cómo trabajáis de verdad",
+        "Inventario de tareas repetitivas con las horas que cuesta cada una",
+        "Qué automatizar primero, qué después y qué no tocar",
+        "Coste estimado y ahorro de cada intervención",
+        "Reunión para explicártelo y decidir"
+      ],
+      "coletilla": "Si el informe concluye que no te hace falta nada, lo dice. Y te ahorras el resto.",
+      "destacado": false
+    },
+    {
+      "slug": "puesta-en-marcha",
+      "nombre": "Puesta en marcha",
+      "gancho": "El proyecto montado, funcionando y explicado.",
+      "precio": "690",
+      "unidad": "desde · precio cerrado",
+      "referencia": "Presupuesto fijo tras la visita, sin sorpresas",
+      "incluye": [
+        "Ficha de Google a punto y web rápida: desde 690 €",
+        "Una automatización montada y funcionando: desde 890 €",
+        "Integración entre tus herramientas actuales: desde 890 €",
+        "Un agente de IA atendiendo o procesando: desde 1.490 €",
+        "Formación para que lo maneje tu equipo",
+        "Todo en cuentas tuyas: si mañana te vas, se queda contigo"
+      ],
+      "coletilla": "El precio se cierra por escrito antes de empezar. Lo que sube el presupuesto: más locales, migrar datos o más integraciones.",
+      "destacado": true
+    },
+    {
+      "slug": "acompanamiento",
+      "nombre": "Acompañamiento",
+      "gancho": "Opcional. Para quien quiera que sigamos encima.",
+      "precio": "90",
+      "unidad": "al mes",
+      "referencia": "Sin permanencia, cancelas cuando quieras",
+      "incluye": [
+        "Mantenimiento de lo que montamos",
+        "Ficha de Google y reseñas al día",
+        "Ajustes y cambios pequeños incluidos",
+        "Informe mensual de una página, en lenguaje normal",
+        "Atención prioritaria por WhatsApp"
+      ],
+      "coletilla": "No hace falta contratarlo. Muchos clientes se quedan solo con la puesta en marcha y les va bien.",
+      "destacado": false
+    }
+  ]
+}

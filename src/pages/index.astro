@@ -5,6 +5,7 @@ import IconoServicio from '../components/IconoServicio.astro';
 import ChatDemo from '../components/ChatDemo.astro';
 import serviciosData from '../data/servicios.json';
 import municipios from '../data/municipios.json';
+import precios from '../data/precios.json';
 import calleTriana from '../assets/calle-triana.jpg';
 import heroComercio from '../assets/hero-comercio.jpg';
 import playaAlcaravaneras from '../assets/playa-alcaravaneras.jpg';
@@ -54,6 +55,14 @@ const jsonLd = [
       name: 'Zona Alcaravaneras',
       url: 'https://zonaalcaravaneras.com/',
     },
+    makesOffer: precios.planes.map((p) => ({
+      '@type': 'Offer',
+      name: p.nombre,
+      description: p.gancho,
+      price: p.precio,
+      priceCurrency: 'EUR',
+      url: 'https://impulcan.com/#precios',
+    })),
   },
   {
     '@context': 'https://schema.org',
@@ -186,6 +195,43 @@ const jsonLd = [
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="seccion tenue" id="precios">
+    <div class="contenedor">
+      <div class="titulo-seccion revelar">
+        <span class="etiqueta">Precios</span>
+        <h2>Lo que cuesta, dicho antes</h2>
+        <p>
+          Casi ninguna agencia publica precios. Nosotros sí, porque preferimos que sepas
+          si te encajamos antes de llamarnos.
+        </p>
+      </div>
+
+      <div class="precios">
+        {precios.planes.map((p) => (
+          <article class={`cristal plan revelar${p.destacado ? ' plan--destacado' : ''}`}>
+            {p.destacado && <span class="plan-sello">Lo más contratado</span>}
+            <h3>{p.nombre}</h3>
+            <p class="plan-gancho">{p.gancho}</p>
+            <p class="plan-cifra"><b>{p.precio}</b><span>€</span></p>
+            <p class="plan-unidad">{p.unidad}</p>
+            <p class="plan-ref">{p.referencia}</p>
+            <ul>
+              {p.incluye.map((i) => <li>{i}</li>)}
+            </ul>
+            <p class="plan-coletilla">{p.coletilla}</p>
+            <a class={p.destacado ? 'boton' : 'boton fantasma'} href={waCierre} rel="noopener">
+              {p.slug === 'auditoria' ? 'Quiero la auditoría' : 'Pedir presupuesto'}
+            </a>
+          </article>
+        ))}
+      </div>
+
+      <p class="nota-precios">
+        {precios.nota} La primera visita para ver tu negocio es gratuita y sin compromiso.
+      </p>
     </div>
   </section>
 

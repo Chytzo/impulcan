@@ -469,3 +469,238 @@ img { max-width: 100%; display: block; }
   border-top: 1px solid var(--borde); margin-top: 2.2rem; padding-top: 1.2rem;
   font-size: 0.79rem; color: var(--tinta-tenue);
 }
+
+/* ---------------- Clases que usan las páginas de servicios ---------------- */
+
+/* Sección con fondo ligeramente distinto, para alternar ritmo */
+.seccion.tenue {
+  background: rgba(255, 255, 255, 0.022);
+  border-top: 1px solid var(--borde);
+  border-bottom: 1px solid var(--borde);
+}
+
+/* Dos columnas que se apilan en móvil */
+.franja {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.6rem;
+  align-items: center;
+}
+@media (max-width: 860px) { .franja { grid-template-columns: 1fr; gap: 1.8rem; } }
+.franja p { color: var(--tinta-suave); }
+.franja-foto { border-radius: var(--radio); overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+.franja-foto img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+
+/* Cabecera con fotografía de fondo */
+.portada.con-foto { isolation: isolate; overflow: hidden; }
+.portada img.fondo,
+.portada .fondo-servicio {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+.portada.con-foto::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(
+    100deg,
+    rgba(6, 4, 20, 0.95) 0%,
+    rgba(6, 4, 20, 0.88) 45%,
+    rgba(6, 4, 20, 0.6) 75%,
+    rgba(6, 4, 20, 0.45) 100%
+  );
+}
+@media (max-width: 860px) {
+  .portada.con-foto::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(6, 4, 20, 0.9) 0%,
+      rgba(6, 4, 20, 0.84) 55%,
+      rgba(6, 4, 20, 0.96) 100%
+    );
+  }
+}
+
+/* Botón claro sobre fondo oscuro */
+.boton.claro {
+  background: #fff;
+  color: #0b0620;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.14);
+}
+.boton.claro:hover { box-shadow: 0 0 42px rgba(255, 255, 255, 0.22); }
+
+/* Migas de pan */
+.migas { font-size: 0.86rem; color: var(--tinta-tenue); margin-bottom: 1rem; }
+.migas a { color: var(--tinta-suave); text-decoration: none; }
+.migas a:hover { color: #fff; }
+
+/* Tarjeta con lista (qué hacemos / en detalle) */
+.tarjeta-lista {
+  background: rgba(13, 10, 32, 0.6);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 1.8rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.04);
+}
+.tarjeta-lista .icono {
+  width: 46px; height: 46px; border-radius: 13px;
+  display: grid; place-items: center; margin-bottom: 1rem;
+  background: rgba(6, 217, 239, 0.12); color: var(--cian);
+  border: 1px solid rgba(6, 217, 239, 0.22);
+}
+.tarjeta-lista ul { padding-left: 1.1rem; margin: 0; color: var(--tinta-suave); }
+.tarjeta-lista li { margin: 0.45rem 0; }
+.tarjeta-lista p { color: var(--tinta-suave); }
+
+/* Entregables */
+.entregables { list-style: none; padding: 0; }
+.entregables li {
+  background: rgba(13, 10, 32, 0.6);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 1.4rem 1.5rem;
+  font-size: 0.96rem;
+  color: var(--tinta-suave);
+}
+
+/* Preguntas frecuentes */
+.pregunta {
+  background: rgba(13, 10, 32, 0.6);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.7rem;
+}
+.pregunta summary { cursor: pointer; font-weight: 600; color: #fff; }
+.pregunta summary::marker { color: var(--magenta); }
+.pregunta p { margin: 0.7rem 0 0; color: var(--tinta-suave); }
+
+/* Rejilla de municipios */
+.rejilla-municipios {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; gap: 0.7rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
+}
+.rejilla-municipios a {
+  display: block;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-s);
+  padding: 0.85rem 1.05rem;
+  text-decoration: none; color: #fff;
+  transition: border-color 0.25s, background 0.25s;
+}
+.rejilla-municipios a:hover { border-color: rgba(6, 217, 239, 0.45); background: rgba(255, 255, 255, 0.07); }
+.rejilla-municipios strong { display: block; font-family: var(--display); font-size: 1.02rem; }
+.rejilla-municipios span { font-size: 0.82rem; color: var(--tinta-tenue); }
+
+/* Ficha de datos del municipio */
+.datos-muni {
+  background: rgba(13, 10, 32, 0.6);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 1.6rem 1.7rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+.datos-muni h3 { font-size: 1.08rem; }
+.datos-muni dl { margin: 0; }
+.datos-muni dt {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.09em;
+  color: var(--tinta-tenue); font-weight: 600; margin-top: 0.9rem;
+}
+.datos-muni dd { margin: 0.15rem 0; color: #fff; }
+.fuente { font-size: 0.78rem; color: var(--tinta-tenue); margin: 1.2rem 0 0; }
+
+/* Ángulo por zona */
+.angulo-texto { font-size: 1.05rem; color: var(--tinta-suave); }
+.angulo-ejemplo {
+  background: rgba(245, 16, 107, 0.09);
+  border: 1px solid rgba(245, 16, 107, 0.24);
+  border-radius: var(--radio);
+  padding: 1rem 1.2rem; font-size: 0.95rem; color: var(--tinta-suave);
+}
+.angulo-ejemplo strong { color: #fff; }
+.cercania { color: var(--tinta-suave); }
+.cercania strong { color: #fff; }
+
+/* Foto de sector */
+.foto-sector { margin: 0; }
+.foto-sector img {
+  width: 100%; aspect-ratio: 16/10; object-fit: cover;
+  border-radius: var(--radio);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--borde);
+}
+.foto-sector figcaption {
+  font-size: 0.72rem; color: var(--tinta-tenue); margin-top: 0.5rem; text-align: right;
+}
+
+/* Listado de municipios del índice de servicios */
+.lista-municipios { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.8rem; }
+.lista-municipios li {
+  background: rgba(13, 10, 32, 0.6);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 1.05rem 1.25rem;
+}
+.lista-municipios strong { font-family: var(--display); font-size: 1.08rem; }
+.lista-municipios > li > span { display: block; color: var(--tinta-tenue); font-size: 0.84rem; }
+.enlaces-muni { margin-top: 0.55rem; display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; }
+.enlaces-muni a { font-size: 0.86rem; }
+
+/* ---------------- Precios ---------------- */
+.precios {
+  display: grid; gap: 1.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  align-items: start;
+}
+.plan { padding: 2rem 1.8rem 2.1rem; position: relative; display: flex; flex-direction: column; }
+.plan--destacado {
+  border-color: rgba(245, 16, 107, 0.45);
+  box-shadow: 0 0 60px rgba(245, 16, 107, 0.16), 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+.plan-sello {
+  position: absolute; top: -0.8rem; left: 50%; transform: translateX(-50%);
+  background: var(--degradado-calido); color: #fff;
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 0.3rem 0.9rem; border-radius: 999px; white-space: nowrap;
+}
+.plan h3 { font-size: 1.3rem; margin-bottom: 0.35rem; }
+.plan-gancho { color: var(--tinta-suave); font-size: 0.94rem; margin: 0 0 1.3rem; }
+.plan-cifra { display: flex; align-items: baseline; gap: 0.4rem; }
+.plan-cifra b {
+  font-family: var(--display); font-size: 2.9rem; font-weight: 700; line-height: 1;
+  background: var(--degradado-calido);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.plan-cifra span { font-size: 1.15rem; color: var(--tinta-suave); }
+.plan-unidad { font-size: 0.86rem; color: var(--tinta-tenue); margin: 0.35rem 0 0.2rem; }
+.plan-ref { font-size: 0.84rem; color: var(--tinta-tenue); margin: 0 0 1.4rem; }
+.plan ul { list-style: none; padding: 0; margin: 0 0 1.4rem; flex: 1; }
+.plan li {
+  position: relative; padding-left: 1.5rem; margin: 0.55rem 0;
+  font-size: 0.93rem; color: var(--tinta-suave);
+}
+.plan li::before {
+  content: ""; position: absolute; left: 0; top: 0.5rem;
+  width: 7px; height: 7px; border-radius: 50%; background: var(--cian);
+  box-shadow: 0 0 8px rgba(6, 217, 239, 0.7);
+}
+.plan--destacado li::before { background: var(--magenta); box-shadow: 0 0 8px rgba(245, 16, 107, 0.7); }
+.plan-coletilla {
+  font-size: 0.85rem; color: var(--tinta-tenue);
+  border-top: 1px solid var(--borde); padding-top: 1rem; margin: 0 0 1.3rem;
+}
+.plan .boton { justify-content: center; width: 100%; }
+.nota-precios { font-size: 0.85rem; color: var(--tinta-tenue); margin-top: 1.6rem; text-align: center; }
