@@ -1,0 +1,40 @@
+---
+// Conversación de ejemplo: lo que hace un agente de Impulcan en un negocio real.
+// Las burbujas aparecen encadenadas, como en un chat de verdad.
+const mensajes = [
+  { de: 'cliente', texto: 'Buenas, ¿tienen hora libre mañana por la tarde?' },
+  { de: 'agente', texto: 'Sí. Mañana quedan las 16:30 y las 18:00. ¿Cuál te viene mejor?' },
+  { de: 'cliente', texto: 'La de las 18:00' },
+  { de: 'agente', texto: 'Hecho. Te he apuntado mañana a las 18:00 y te mando un recordatorio a mediodía. ¿Algo más?' },
+];
+---
+
+<div class="chat">
+  <div class="chat-cabecera">
+    <span class="chat-avatar">IA</span>
+    <span>
+      <span class="chat-quien">Agente de Impulcan</span>
+      <span class="chat-estado">Contestando a las 23:40</span>
+    </span>
+  </div>
+
+  <div class="chat-cuerpo">
+    {mensajes.map((m, i) => (
+      <div
+        class={`burbuja burbuja--${m.de}`}
+        style={`animation-delay:${0.5 + i * 0.85}s`}
+      >
+        {m.texto}
+      </div>
+    ))}
+  </div>
+
+  <div class="chat-pie">
+    <span class="chat-campo">Escribe un mensaje…</span>
+    <span class="chat-enviar">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 12 20 4l-3 8 3 8-16-8Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round" />
+      </svg>
+    </span>
+  </div>
+</div>

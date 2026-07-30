@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { contacto, enlaceWhatsapp } from '../config.js';
 import Logo from '../components/Logo.astro';
+import Telon from '../components/Telon.astro';
 
 const wa = enlaceWhatsapp('Hola, os escribo desde impulcan.com.');
 const { titulo, descripcion, canonical, imagen } = Astro.props;
@@ -16,9 +17,11 @@ const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{titulo}</title>
     <meta name="description" content={descripcion} />
-    <meta name="theme-color" content="#0b1b2b" />
+    <meta name="theme-color" content="#060414" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={urlCanonica} />
+    <link rel="preload" as="font" type="font/woff2" href="/fuentes/space-grotesk-700.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fuentes/inter-400.woff2" crossorigin />
     <meta property="og:title" content={titulo} />
     <meta property="og:description" content={descripcion} />
     <meta property="og:type" content="website" />
@@ -32,18 +35,24 @@ const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
         <meta name="twitter:image" content={urlImagen} />
       </>
     )}
+    <script is:inline>
+      // Marca que hay JS antes del primer pintado, para que el CSS pueda
+      // ocultar lo que después se revela al hacer scroll.
+      document.documentElement.classList.add('js');
+    </script>
     <slot name="head" />
   </head>
   <body>
+    <Telon />
+
     <header class="barra">
       <div class="contenedor">
-        <a class="marca" href="/">
-          <Logo tam={36} />
-        </a>
+        <a class="marca" href="/"><Logo tam={40} /></a>
         <nav>
           <a href="/servicios/">Servicios</a>
           <a href="/#como">Cómo trabajamos</a>
-          <a class="cta" href={wa} rel="noopener">WhatsApp</a>
+          <a href="/#zonas">Zonas</a>
+          <a class="cta" href={wa} rel="noopener">Hablemos</a>
         </nav>
       </div>
     </header>
@@ -58,9 +67,9 @@ const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
           <div>
             <h4>Impulcan</h4>
             <p style="margin-top:0">
-              Marketing y automatizaciones para negocios de {contacto.zona} y el resto
-              de Gran Canaria. Trabajamos con comercios, talleres, clínicas y pymes que
-              quieren que les encuentren y dejar de perder horas en tareas repetitivas.
+              Marketing y automatizaciones para negocios de {contacto.zona} y el resto de
+              Gran Canaria. Trabajamos con comercios, talleres, clínicas y pymes que quieren
+              que les encuentren y dejar de perder horas en tareas repetitivas.
             </p>
           </div>
           <div>
@@ -69,8 +78,9 @@ const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
               <li><a href={wa} rel="noopener">WhatsApp {contacto.whatsappVisible}</a></li>
               <li><a href={`mailto:${contacto.email}`}>{contacto.email}</a></li>
             </ul>
-            <h4 style="margin-top:1.4rem">Enlaces</h4>
+            <h4 style="margin-top:1.6rem">Enlaces</h4>
             <ul>
+              <li><a href="/servicios/">Servicios</a></li>
               <li><a href="https://zonaalcaravaneras.com" rel="noopener">Zona Alcaravaneras</a></li>
               <li><a href="/aviso-legal/">Aviso legal</a></li>
               <li><a href="/privacidad/">Privacidad</a></li>
@@ -79,11 +89,36 @@ const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
           </div>
         </div>
         <p class="legal">
-          Sitio sin cookies ni analítica de terceros. {contacto.zona}, Canarias.
-          Parte de las imágenes están generadas con IA;
-          <a href="/creditos/">ver créditos</a>.
+          Sitio sin cookies, sin analítica y sin recursos de terceros: hasta las tipografías
+          están alojadas aquí. {contacto.zona}, Canarias.
+          Parte de las imágenes están generadas con IA; <a href="/creditos/">ver créditos</a>.
         </p>
       </div>
     </footer>
+
+    <script>
+      // Aparición progresiva de las secciones al entrar en pantalla
+      const objetivos = document.querySelectorAll('.revelar');
+      if (objetivos.length) {
+        const observador = new IntersectionObserver(
+          (entradas) => {
+            for (const e of entradas) {
+              if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                observador.unobserve(e.target);
+              }
+            }
+          },
+          { rootMargin: '0px 0px -12% 0px' }
+        );
+        for (const o of objetivos) observador.observe(o);
+
+        // Red de seguridad: si algo impidiera que el observador dispare,
+        // a los dos segundos se muestra todo igualmente.
+        setTimeout(() => {
+          for (const o of objetivos) o.classList.add('visible');
+        }, 2000);
+      }
+    </script>
   </body>
 </html>

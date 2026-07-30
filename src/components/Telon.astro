@@ -1,0 +1,28 @@
+---
+// Fondo animado: manchas de color que flotan y partículas que suben.
+// Todo CSS, sin librerías ni canvas. Se desactiva solo si el sistema
+// del visitante pide menos movimiento.
+const particulas = Array.from({ length: 26 }, (_, i) => {
+  const colores = ['#ff712a', '#f5106b', '#a21ce8', '#1e6bff', '#06d9ef'];
+  return {
+    izq: Math.round((i * 37 + 11) % 100),
+    tam: 2 + ((i * 7) % 4),
+    dur: 16 + ((i * 5) % 20),
+    retardo: -((i * 3) % 24),
+    color: colores[i % colores.length],
+  };
+});
+---
+
+<div class="telon" aria-hidden="true">
+  <div class="mancha mancha--1"></div>
+  <div class="mancha mancha--2"></div>
+  <div class="mancha mancha--3"></div>
+  <div class="mancha mancha--4"></div>
+  {particulas.map((p) => (
+    <span
+      class="particula"
+      style={`left:${p.izq}%;width:${p.tam}px;height:${p.tam}px;background:${p.color};animation-duration:${p.dur}s;animation-delay:${p.retardo}s;box-shadow:0 0 8px ${p.color}`}
+    ></span>
+  ))}
+</div>

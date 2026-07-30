@@ -1,23 +1,23 @@
 ---
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
-import { contacto, enlaceWhatsapp } from '../config.js';
+import IconoServicio from '../components/IconoServicio.astro';
+import ChatDemo from '../components/ChatDemo.astro';
+import serviciosData from '../data/servicios.json';
+import municipios from '../data/municipios.json';
 import calleTriana from '../assets/calle-triana.jpg';
 import heroComercio from '../assets/hero-comercio.jpg';
-import cierreCiudad from '../assets/cierre-laspalmas.jpg';
-import IconoServicio from '../components/IconoServicio.astro';
-import serviciosData from '../data/servicios.json';
 import playaAlcaravaneras from '../assets/playa-alcaravaneras.jpg';
+import { contacto, enlaceWhatsapp } from '../config.js';
 
 const waHero = enlaceWhatsapp(
   'Hola, tengo un negocio y me gustaría que le echarais un vistazo. ¿Hablamos?'
 );
 const waCierre = enlaceWhatsapp('Hola, quiero la revisión gratuita de mi negocio.');
-
 const servicios = serviciosData;
 
-// Datos estructurados. Sin sociedad constituida todavía, describimos el negocio
-// como ProfessionalService con nombre comercial, no como Organization con CIF.
+// Sin sociedad constituida todavía: ProfessionalService con nombre comercial,
+// no Organization con CIF.
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -46,11 +46,7 @@ const jsonLd = [
       name: 'Servicios de Impulcan',
       itemListElement: servicios.map((s) => ({
         '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: s.nombre,
-          description: s.resumen,
-        },
+        itemOffered: { '@type': 'Service', name: s.nombre, description: s.resumen },
       })),
     },
     subjectOf: {
@@ -71,47 +67,45 @@ const jsonLd = [
 
 <Base
   titulo="Impulcan — Marketing y automatizaciones en Las Palmas de Gran Canaria"
-  descripcion="Ayudamos a negocios de Gran Canaria a que les encuentren en Google y a automatizar el trabajo repetitivo. Primera revisión gratuita, sin compromiso."
+  descripcion="Agentes de IA y automatizaciones para negocios de Gran Canaria. Que te encuentren en Google y que el trabajo repetitivo se haga solo. Primera revisión gratis."
   imagen={heroComercio.src}
 >
-  <script
-    slot="head"
-    type="application/ld+json"
-    set:html={JSON.stringify(jsonLd)}
-  />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <section class="portada con-foto">
-    <Image
-      class="fondo"
-      src={heroComercio}
-      alt="Interior de un comercio canario al atardecer, con una tablet sobre el mostrador"
-      widths={[900, 1500, 2100]}
-      sizes="100vw"
-      loading="eager"
-      fetchpriority="high"
-    />
+  <section class="portada">
     <div class="contenedor">
-      <span class="sello">Gran Canaria · Primera revisión gratis</span>
-      <h1>Que te encuentren. Y que el trabajo aburrido se haga solo.</h1>
-      <p class="entradilla">
-        Impulcan pone a punto la presencia digital de tu negocio y automatiza las tareas
-        que te comen la semana. Sin palabrería, sin permanencias y hablando claro.
-      </p>
-      <div class="acciones">
-        <a class="boton" href={waHero} rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2a10 10 0 0 0-8.6 15.05L2 22l5.1-1.33A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.03.79.81-2.95-.2-.31A8.2 8.2 0 1 1 12 20.2Zm4.5-6.13c-.25-.12-1.46-.72-1.69-.8-.22-.09-.39-.13-.55.12s-.63.8-.77.96-.28.19-.53.06a6.72 6.72 0 0 1-3.36-2.94c-.25-.43.25-.4.72-1.33a.45.45 0 0 0 0-.43c0-.12-.55-1.33-.76-1.82s-.4-.42-.55-.43h-.47a.9.9 0 0 0-.65.3 2.73 2.73 0 0 0-.85 2.04 4.77 4.77 0 0 0 1 2.52 10.9 10.9 0 0 0 4.18 3.7c1.55.67 2.16.73 2.94.61a2.5 2.5 0 0 0 1.65-1.17 2.05 2.05 0 0 0 .14-1.16c-.06-.11-.22-.17-.47-.29Z"/>
-          </svg>
-          Escríbenos por WhatsApp
-        </a>
-        <a class="boton fantasma" href="/servicios/">Ver qué hacemos</a>
+      <div class="portada-rejilla">
+        <div>
+          <p class="antetitulo">Gran Canaria <b>sin excusas</b></p>
+          <span class="sello">Primera revisión gratis · sin compromiso</span>
+          <h1>
+            Que te encuentren. Y que el trabajo aburrido{' '}
+            <span class="brillo">se haga solo</span>.
+          </h1>
+          <p class="entradilla">
+            Ponemos a punto la presencia digital de tu negocio y automatizamos las tareas
+            que te comen la semana. Sin palabrería, sin permanencias y hablando claro.
+          </p>
+          <div class="acciones">
+            <a class="boton" href={waHero} rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-8.6 15.05L2 22l5.1-1.33A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.03.79.81-2.95-.2-.31A8.2 8.2 0 1 1 12 20.2Zm4.5-6.13c-.25-.12-1.46-.72-1.69-.8-.22-.09-.39-.13-.55.12s-.63.8-.77.96-.28.19-.53.06a6.72 6.72 0 0 1-3.36-2.94c-.25-.43.25-.4.72-1.33a.45.45 0 0 0 0-.43c0-.12-.55-1.33-.76-1.82s-.4-.42-.55-.43h-.47a.9.9 0 0 0-.65.3 2.73 2.73 0 0 0-.85 2.04 4.77 4.77 0 0 0 1 2.52 10.9 10.9 0 0 0 4.18 3.7c1.55.67 2.16.73 2.94.61a2.5 2.5 0 0 0 1.65-1.17 2.05 2.05 0 0 0 .14-1.16c-.06-.11-.22-.17-.47-.29Z"/>
+              </svg>
+              Escríbenos por WhatsApp
+            </a>
+            <a class="boton fantasma" href="/servicios/">Ver qué hacemos</a>
+          </div>
+          <p class="pie-portada">Trabajando con negocios de Gran Canaria</p>
+        </div>
+
+        <ChatDemo />
       </div>
     </div>
   </section>
 
   <section class="seccion" id="servicios">
     <div class="contenedor">
-      <div class="titulo-seccion">
+      <div class="titulo-seccion revelar">
         <span class="etiqueta">Qué hacemos</span>
         <h2>Seis servicios, un mismo criterio</h2>
         <p>
@@ -122,60 +116,91 @@ const jsonLd = [
 
       <div class="rejilla-3">
         {servicios.map((s) => (
-          <article class="servicio">
+          <article class="cristal servicio revelar">
             <div class="icono"><IconoServicio icono={s.icono} /></div>
             <h3><a href={`/servicios/${s.slug}/`}>{s.nombre}</a></h3>
             <p>{s.resumen}</p>
-            <a href={`/servicios/${s.slug}/`}>Ver el servicio &rarr;</a>
+            <a class="mas" href={`/servicios/${s.slug}/`}>Ver el servicio &rarr;</a>
           </article>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="seccion">
+  <section class="seccion" id="zonas">
     <div class="contenedor">
-      <div class="franja">
-        <div class="franja-foto">
-          <Image
-            src={calleTriana}
-            alt="Gente paseando por la calle Triana, en Las Palmas de Gran Canaria"
-            widths={[520, 900, 1400]}
-            sizes="(max-width: 860px) 100vw, 46vw"
-            loading="lazy"
-          />
-        </div>
-        <div>
-          <span class="etiqueta">De aquí</span>
-          <h2>Conocemos el comercio de la isla</h2>
-          <p>
-            No trabajamos desde un despacho en la península con plantillas. Estamos en
-            Las Palmas, nos pasamos por tu local y entendemos cómo funciona un negocio
-            de barrio: temporadas, cruceros, guaguas, el cliente de toda la vida y el
-            que llega de vacaciones.
-          </p>
-          <p>
-            Por eso lo primero es ir a verte. Media hora contigo vale más que veinte
-            correos.
-          </p>
+      <div class="titulo-seccion revelar">
+        <span class="etiqueta">Dónde</span>
+        <h2>Toda la isla, a pie de local</h2>
+        <p>Vamos a verte antes de proponerte nada. Estos son los municipios con página propia.</p>
+      </div>
+      <div class="cinta-marco revelar">
+        <div class="cinta">
+          {[...municipios, ...municipios].map((m) => (
+            <span>{m.nombre} · {m.poblacion.toLocaleString('es-ES')} hab.</span>
+          ))}
         </div>
       </div>
     </div>
   </section>
 
-  <section class="seccion tenue" id="como">
+  <section class="seccion">
     <div class="contenedor">
-      <div class="titulo-seccion">
+      <div class="caso cristal revelar">
+        <div>
+          <span class="etiqueta">Lo que hacemos, hecho</span>
+          <h2 style="font-size:1.9rem">Zona Alcaravaneras</h2>
+          <p>
+            Montamos la guía digital del barrio: 327 comercios con ficha propia, plano
+            pulsable y datos estructurados para que Google entienda cada negocio.
+          </p>
+          <p>
+            Gratuita para los comercios, sin cobrar por aparecer y sin estar afiliada a
+            ninguna asociación ni partido. La hicimos porque el barrio no tenía nada
+            parecido — y porque es la mejor forma de enseñar lo que sabemos hacer.
+          </p>
+          <div class="acciones" style="margin-top:1.3rem">
+            <a class="boton fantasma" href="https://zonaalcaravaneras.com" rel="noopener">
+              Ver la guía
+            </a>
+          </div>
+        </div>
+        <div class="marco">
+          <Image
+            class="marco-fondo"
+            src={playaAlcaravaneras}
+            alt="Playa de Las Alcaravaneras"
+            widths={[560, 900]}
+            sizes="(max-width: 800px) 100vw, 42vw"
+            loading="lazy"
+          />
+          <div>
+            <strong>zonaalcaravaneras.com</strong>
+            <span>Guía de comercios del barrio</span>
+            <ul>
+              <li>327 fichas, una por comercio</li>
+              <li>Plano del barrio pulsable</li>
+              <li>Datos estructurados para Google</li>
+              <li>Sin cookies ni rastreo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="como">
+    <div class="contenedor">
+      <div class="titulo-seccion revelar">
         <span class="etiqueta">Cómo trabajamos</span>
         <h2>Tres pasos y sin sorpresas</h2>
       </div>
-
-      <div class="pasos">
+      <div class="pasos revelar">
         <div class="paso">
           <h3>Miramos tu negocio</h3>
           <p>
-            Un café o una llamada de media hora. Revisamos qué tienes montado y qué se
-            te está escapando. Gratis y sin compromiso.
+            Un café o una llamada de media hora. Revisamos qué tienes montado y qué se te
+            está escapando. Gratis y sin compromiso.
           </p>
         </div>
         <div class="paso">
@@ -198,49 +223,27 @@ const jsonLd = [
 
   <section class="seccion">
     <div class="contenedor">
-      <div class="titulo-seccion">
-        <span class="etiqueta">Lo que hacemos, hecho</span>
-        <h2>Zona Alcaravaneras</h2>
-      </div>
-
-      <div class="caso">
-        <div>
-          <p>
-            Montamos la guía digital del barrio de Las Alcaravaneras: una ficha por
-            comercio, con teléfono, horario y cómo llegar, preparada para que Google
-            entienda cada negocio y lo saque en las búsquedas de la zona.
-          </p>
-          <p>
-            Es gratuita para los comercios, no cobramos por aparecer y no está afiliada
-            a ninguna asociación ni a ningún partido. La hicimos porque el barrio no
-            tenía nada parecido — y porque es la mejor forma de enseñar lo que sabemos
-            hacer sin tener que contarlo.
-          </p>
-          <div class="acciones" style="margin-top:1.2rem">
-            <a class="boton claro" href="https://zonaalcaravaneras.com" rel="noopener">
-              Ver la guía
-            </a>
-          </div>
-        </div>
-        <div class="marco">
+      <div class="caso cristal revelar">
+        <div class="marco" style="min-height:280px">
           <Image
             class="marco-fondo"
-            src={playaAlcaravaneras}
-            alt="Playa de Las Alcaravaneras"
-            widths={[560, 900]}
-            sizes="(max-width: 760px) 100vw, 42vw"
+            src={calleTriana}
+            alt="Gente paseando por la calle Triana, en Las Palmas de Gran Canaria"
+            widths={[560, 900, 1300]}
+            sizes="(max-width: 800px) 100vw, 46vw"
             loading="lazy"
           />
-          <div class="marco-texto">
-            <strong>zonaalcaravaneras.com</strong>
-            <span>Guía de comercios del barrio</span>
-            <ul>
-              <li>Una página por comercio</li>
-              <li>Plano del barrio pulsable</li>
-              <li>Datos estructurados para Google</li>
-              <li>Sin cookies ni rastreo</li>
-            </ul>
-          </div>
+        </div>
+        <div>
+          <span class="etiqueta">De aquí</span>
+          <h2 style="font-size:1.9rem">Conocemos el comercio de la isla</h2>
+          <p>
+            No trabajamos desde un despacho en la península con plantillas. Estamos en Las
+            Palmas, nos pasamos por tu local y entendemos cómo funciona un negocio de
+            barrio: temporadas, cruceros, guaguas, el cliente de toda la vida y el que
+            llega de vacaciones.
+          </p>
+          <p>Por eso lo primero es ir a verte. Media hora contigo vale más que veinte correos.</p>
         </div>
       </div>
     </div>
@@ -248,28 +251,15 @@ const jsonLd = [
 
   <section class="seccion">
     <div class="contenedor">
-      <div class="cierre">
-        <Image
-          class="fondo"
-          src={cierreCiudad}
-          alt="Las Palmas de Gran Canaria al anochecer con las luces encendidas"
-          widths={[900, 1500]}
-          sizes="100vw"
-          loading="lazy"
-        />
-        <h2>Te decimos qué mejorar, gratis</h2>
+      <div class="cierre revelar">
+        <h2>Te decimos qué mejorar,{' '}<span class="brillo">gratis</span></h2>
         <p>
           Mándanos el nombre de tu negocio. Le echamos un vistazo a cómo se te ve en
-          internet y te contamos qué cambiaríamos. Sin coste y sin que tengas que
-          contratar nada.
+          internet y te contamos qué cambiaríamos. Sin coste y sin contratar nada.
         </p>
         <div class="acciones">
-          <a class="boton" href={waCierre} rel="noopener">
-            WhatsApp {contacto.whatsappVisible}
-          </a>
-          <a class="boton fantasma" href={`mailto:${contacto.email}`}>
-            {contacto.email}
-          </a>
+          <a class="boton" href={waCierre} rel="noopener">WhatsApp {contacto.whatsappVisible}</a>
+          <a class="boton fantasma" href={`mailto:${contacto.email}`}>{contacto.email}</a>
         </div>
       </div>
     </div>
