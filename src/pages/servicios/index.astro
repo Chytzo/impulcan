@@ -1,0 +1,115 @@
+---
+import Base from '../../layouts/Base.astro';
+import IconoServicio from '../../components/IconoServicio.astro';
+import servicios from '../../data/servicios.json';
+import municipios from '../../data/municipios.json';
+import { enlaceWhatsapp } from '../../config.js';
+
+const wa = enlaceWhatsapp('Hola, quiero información sobre vuestros servicios.');
+
+const migas = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Impulcan', item: 'https://impulcan.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Servicios' },
+  ],
+};
+---
+
+<Base
+  titulo="Servicios de marketing y automatización — Impulcan, Gran Canaria"
+  descripcion="Agentes de IA, automatización de procesos, presencia en Google, integraciones y captación de clientes para negocios de Gran Canaria. Primera revisión gratuita."
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(migas)} />
+
+  <section class="portada" style="padding:3.5rem 0 3rem">
+    <div class="contenedor">
+      <span class="sello">Gran Canaria</span>
+      <h1>Qué hacemos</h1>
+      <p class="entradilla">
+        Seis servicios, todos con el mismo criterio: empezar por lo que más tiempo o
+        dinero devuelve, dejarlo funcionando y explicártelo.
+      </p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="rejilla-3">
+        {servicios.map((s) => (
+          <article class="servicio">
+            <div class="icono"><IconoServicio icono={s.icono} /></div>
+            <h2 style="font-size:1.2rem">
+              <a href={`/servicios/${s.slug}/`}>{s.nombre}</a>
+            </h2>
+            <p>{s.resumen}</p>
+            <a href={`/servicios/${s.slug}/`}>Ver el servicio &rarr;</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion tenue">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="etiqueta">Dónde trabajamos</span>
+        <h2>Municipios de Gran Canaria</h2>
+        <p>
+          Trabajamos en toda la isla, con visita presencial. Cada servicio tiene su
+          página por municipio con el contexto de la zona.
+        </p>
+      </div>
+      <ul class="lista-municipios">
+        {municipios.map((m) => (
+          <li>
+            <strong>{m.nombre}</strong>
+            <span>{m.poblacion.toLocaleString('es-ES')} habitantes</span>
+            <span class="enlaces-muni">
+              {servicios.map((s) => (
+                <a href={`/servicios/${s.slug}/${m.slug}/`}>{s.nombre}</a>
+              ))}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <p class="fuente">
+        Población: Wikidata, cifras de 2025.
+      </p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="cierre">
+        <h2>No sabes por dónde empezar</h2>
+        <p>
+          Normal. Para eso está la auditoría de procesos: media jornada mirando cómo
+          trabajas y un informe con qué toca primero. Y la primera revisión es gratis.
+        </p>
+        <div class="acciones">
+          <a class="boton" href={wa} rel="noopener">Escríbenos por WhatsApp</a>
+          <a class="boton fantasma" href="/servicios/auditoria-de-procesos/">
+            Ver la auditoría
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .lista-municipios { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.7rem; }
+  .lista-municipios li {
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 0.9rem 1.1rem;
+  }
+  .lista-municipios strong { font-family: var(--serif); font-size: 1.05rem; }
+  .lista-municipios > li > span { display: block; color: var(--tinta-suave); font-size: 0.85rem; }
+  .enlaces-muni { margin-top: 0.45rem; display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; }
+  .enlaces-muni a { font-size: 0.85rem; }
+  .fuente { font-size: 0.8rem; color: var(--tinta-suave); margin-top: 1rem; }
+</style>

@@ -1,0 +1,30 @@
+---
+const { icono, tam = 21 } = Astro.props;
+---
+
+{icono === 'buscar' && (
+  <svg width={tam} height={tam} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.9"/>
+    <path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+  </svg>
+)}
+{icono === 'engranaje' && (
+  <svg width={tam} height={tam} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.9"/>
+    <path d="M12 2.8v2.4M12 18.8v2.4M21.2 12h-2.4M5.2 12H2.8M18.5 5.5l-1.7 1.7M7.2 16.8l-1.7 1.7M18.5 18.5l-1.7-1.7M7.2 7.2 5.5 5.5"
+      stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+  </svg>
+)}
+{icono === 'enlace' && (
+  <svg width={tam} height={tam} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1.3 1.3M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.7l1.3-1.3"
+      stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+)}
+{icono === 'diana' && (
+  <svg width={tam} height={tam} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <circle cx="12" cy="12" r="8.2" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="12" cy="12" r="3.4" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="12" cy="12" r="0.9" fill="currentColor"/>
+  </svg>
+)}

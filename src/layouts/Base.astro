@@ -1,0 +1,89 @@
+---
+import '../styles/global.css';
+import { contacto, enlaceWhatsapp } from '../config.js';
+import Logo from '../components/Logo.astro';
+
+const wa = enlaceWhatsapp('Hola, os escribo desde impulcan.com.');
+const { titulo, descripcion, canonical, imagen } = Astro.props;
+const urlCanonica = new URL(canonical ?? Astro.url.pathname, Astro.site);
+const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo}</title>
+    <meta name="description" content={descripcion} />
+    <meta name="theme-color" content="#0b1b2b" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={urlCanonica} />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descripcion} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:url" content={urlCanonica} />
+    <meta property="og:site_name" content="Impulcan" />
+    {urlImagen && (
+      <>
+        <meta property="og:image" content={urlImagen} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={urlImagen} />
+      </>
+    )}
+    <slot name="head" />
+  </head>
+  <body>
+    <header class="barra">
+      <div class="contenedor">
+        <a class="marca" href="/">
+          <Logo tam={36} />
+        </a>
+        <nav>
+          <a href="/servicios/">Servicios</a>
+          <a href="/#como">Cómo trabajamos</a>
+          <a class="cta" href={wa} rel="noopener">WhatsApp</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <div class="cols">
+          <div>
+            <h4>Impulcan</h4>
+            <p style="margin-top:0">
+              Marketing y automatizaciones para negocios de {contacto.zona} y el resto
+              de Gran Canaria. Trabajamos con comercios, talleres, clínicas y pymes que
+              quieren que les encuentren y dejar de perder horas en tareas repetitivas.
+            </p>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <ul>
+              <li><a href={wa} rel="noopener">WhatsApp {contacto.whatsappVisible}</a></li>
+              <li><a href={`mailto:${contacto.email}`}>{contacto.email}</a></li>
+            </ul>
+            <h4 style="margin-top:1.4rem">Enlaces</h4>
+            <ul>
+              <li><a href="https://zonaalcaravaneras.com" rel="noopener">Zona Alcaravaneras</a></li>
+              <li><a href="/aviso-legal/">Aviso legal</a></li>
+              <li><a href="/privacidad/">Privacidad</a></li>
+              <li><a href="/creditos/">Créditos de imágenes</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="legal">
+          Sitio sin cookies ni analítica de terceros. {contacto.zona}, Canarias.
+          Parte de las imágenes están generadas con IA;
+          <a href="/creditos/">ver créditos</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

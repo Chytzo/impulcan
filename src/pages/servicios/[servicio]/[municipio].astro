@@ -1,0 +1,295 @@
+---
+import Base from '../../../layouts/Base.astro';
+import IconoServicio from '../../../components/IconoServicio.astro';
+import FotoSector from '../../../components/FotoSector.astro';
+import servicios from '../../../data/servicios.json';
+import municipios from '../../../data/municipios.json';
+import angulos from '../../../data/angulos.json';
+import angulosMunicipio from '../../../data/angulos-municipio.json';
+import { contacto, enlaceWhatsapp } from '../../../config.js';
+
+export function getStaticPaths() {
+  return servicios.flatMap((servicio) =>
+    municipios.map((municipio) => ({
+      params: { servicio: servicio.slug, municipio: municipio.slug },
+      props: { servicio, municipio },
+    }))
+  );
+}
+
+const { servicio, municipio } = Astro.props;
+const url = `https://impulcan.com/servicios/${servicio.slug}/${municipio.slug}/`;
+const wa = enlaceWhatsapp(
+  `Hola, tengo un negocio en ${municipio.nombre} y me interesa ${servicio.nombre.toLowerCase()}.`
+);
+
+// Los municipios grandes tienen texto propio; el resto usa el de su sector económico.
+const angulo =
+  angulosMunicipio[municipio.slug]?.[servicio.slug] ?? angulos[servicio.slug][municipio.sector];
+const vecinos = municipios.filter((m) => m.slug !== municipio.slug).slice(0, 6);
+const otrosServicios = servicios.filter((s) => s.slug !== servicio.slug);
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `${servicio.nombre} en ${municipio.nombre}`,
+    description: `${servicio.resumen} Servicio para negocios de ${municipio.nombre}, Gran Canaria.`,
+    url,
+    serviceType: servicio.nombre,
+    inLanguage: 'es-ES',
+    provider: {
+      '@type': 'ProfessionalService',
+      name: 'Impulcan',
+      url: 'https://impulcan.com/',
+      telephone: `+${contacto.whatsapp}`,
+      email: contacto.email,
+    },
+    areaServed: {
+      '@type': 'City',
+      name: municipio.nombre,
+      containedInPlace: { '@type': 'AdministrativeArea', name: 'Gran Canaria' },
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Impulcan', item: 'https://impulcan.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Servicios', item: 'https://impulcan.com/servicios/' },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: servicio.nombre,
+        item: `https://impulcan.com/servicios/${servicio.slug}/`,
+      },
+      { '@type': 'ListItem', position: 4, name: municipio.nombre },
+    ],
+  },
+];
+---
+
+<Base
+  titulo={`${servicio.nombre} en ${municipio.nombre} — Impulcan`}
+  descripcion={`${servicio.nombre} para negocios de ${municipio.nombre} (${municipio.poblacion.toLocaleString('es-ES')} habitantes), Gran Canaria. ${servicio.resumen}`}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <section class="portada" style="padding:3.25rem 0 2.75rem">
+    <div class="contenedor">
+      <nav class="migas" aria-label="Ruta">
+        <a href="/">Inicio</a> · <a href="/servicios/">Servicios</a> ·
+        <a href={`/servicios/${servicio.slug}/`}>{servicio.nombre}</a> ·
+        <span>{municipio.nombre}</span>
+      </nav>
+      <span class="sello">{municipio.corto} · Gran Canaria</span>
+      <h1>{servicio.nombre} en {municipio.nombre}</h1>
+      <p class="entradilla">{servicio.resumen}</p>
+      <div class="acciones">
+        <a class="boton" href={wa} rel="noopener">Escríbenos por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="franja">
+        <div>
+          <span class="etiqueta">{municipio.nombre}</span>
+          <h2>El comercio de {municipio.corto}</h2>
+          <p>{municipio.tejido}</p>
+          <p class="cercania"><strong>Cómo llegamos:</strong> {municipio.cercania}</p>
+        </div>
+        <div class="datos-muni">
+          <h3>Datos del municipio</h3>
+          <dl>
+            <dt>Población</dt>
+            <dd>{municipio.poblacion.toLocaleString('es-ES')} habitantes ({municipio.anio})</dd>
+            <dt>Superficie</dt>
+            <dd>{municipio.km2.toLocaleString('es-ES')} km²</dd>
+            <dt>Densidad</dt>
+            <dd>{Math.round(municipio.poblacion / municipio.km2).toLocaleString('es-ES')} hab./km²</dd>
+            <dt>Perfil</dt>
+            <dd>{municipio.perfil}</dd>
+          </dl>
+          <p class="fuente">Fuente: Wikidata, cifras de {municipio.anio}.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="franja">
+        <div>
+          <span class="etiqueta">{servicio.nombre} aquí</span>
+          <h2>{angulo.titulo}</h2>
+          <p class="angulo-texto">{angulo.texto}</p>
+          <p class="angulo-ejemplo"><strong>Un ejemplo concreto:</strong> {angulo.ejemplo}</p>
+        </div>
+        <FotoSector sector={municipio.sector} />
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion tenue">
+    <div class="contenedor estrecho">
+      <div class="tarjeta-lista">
+        <div class="icono"><IconoServicio icono={servicio.icono} tam={24} /></div>
+        <h2 style="font-size:1.2rem">{servicio.nombre}, en detalle</h2>
+        <p>
+          Lo que incluye el servicio, los entregables y las dudas habituales están en la
+          página del servicio. Aquí nos hemos centrado en cómo aplica al tejido comercial
+          de {municipio.corto}.
+        </p>
+        <a class="boton claro" href={`/servicios/${servicio.slug}/`}>
+          Ver {servicio.nombre.toLowerCase()} en detalle
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor estrecho">
+      <div class="titulo-seccion">
+        <span class="etiqueta">Dudas habituales</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      <details class="pregunta">
+        <summary>¿Trabajáis presencialmente en {municipio.nombre}?</summary>
+        <p>
+          Sí. {municipio.cercania} La primera visita para ver el negocio es gratuita y sin
+          compromiso, esté donde esté dentro de Gran Canaria.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <section class="seccion tenue">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="etiqueta">Más</span>
+        <h2>Otros servicios en {municipio.corto}</h2>
+      </div>
+      <ul class="rejilla-municipios">
+        {otrosServicios.map((s) => (
+          <li>
+            <a href={`/servicios/${s.slug}/${municipio.slug}/`}>
+              <strong>{s.nombre}</strong>
+              <span>en {municipio.corto}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <div class="titulo-seccion" style="margin-top:2.25rem">
+        <h2 style="font-size:1.3rem">{servicio.nombre} en otros municipios</h2>
+      </div>
+      <ul class="rejilla-municipios">
+        {vecinos.map((m) => (
+          <li>
+            <a href={`/servicios/${servicio.slug}/${m.slug}/`}>
+              <strong>{m.nombre}</strong>
+              <span>{m.poblacion.toLocaleString('es-ES')} hab.</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="cierre">
+        <h2>Te decimos qué mejorar, gratis</h2>
+        <p>
+          Mándanos el nombre de tu negocio en {municipio.nombre}. Le echamos un vistazo
+          y te contamos qué cambiaríamos. Sin coste y sin contratar nada.
+        </p>
+        <div class="acciones">
+          <a class="boton" href={wa} rel="noopener">WhatsApp {contacto.whatsappVisible}</a>
+          <a class="boton fantasma" href={`mailto:${contacto.email}`}>{contacto.email}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .migas { font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 0.9rem; }
+  .migas a { color: rgba(255, 255, 255, 0.9); }
+
+  .cercania { color: var(--tinta); }
+
+  .angulo-texto { font-size: 1.05rem; }
+  .angulo-ejemplo {
+    background: var(--brasa-clara);
+    border: 1px solid #f3c9ba;
+    border-radius: var(--radio);
+    padding: 0.9rem 1.15rem;
+    font-size: 0.95rem;
+  }
+
+  .datos-muni {
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--sombra);
+  }
+  .datos-muni h3 { font-size: 1.05rem; }
+  .datos-muni dl { margin: 0; }
+  .datos-muni dt {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--tinta-suave);
+    font-weight: 600;
+    margin-top: 0.8rem;
+  }
+  .datos-muni dd { margin: 0.1rem 0 0; }
+  .fuente { font-size: 0.78rem; color: var(--tinta-suave); margin: 1.1rem 0 0; }
+
+  .tarjeta-lista {
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 1.5rem;
+    box-shadow: var(--sombra);
+  }
+  .tarjeta-lista .icono {
+    width: 44px; height: 44px; border-radius: 11px;
+    display: grid; place-items: center; margin-bottom: 0.9rem;
+    background: var(--brasa-clara); color: var(--brasa);
+  }
+  .tarjeta-lista ul { padding-left: 1.1rem; margin: 0; color: var(--tinta-suave); }
+  .tarjeta-lista li { margin: 0.4rem 0; }
+
+  .pregunta {
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 0.9rem 1.15rem;
+    margin-bottom: 0.6rem;
+  }
+  .pregunta summary { cursor: pointer; font-weight: 600; }
+  .pregunta p { margin: 0.6rem 0 0; color: var(--tinta-suave); }
+
+  .rejilla-municipios {
+    list-style: none; padding: 0; margin: 0;
+    display: grid; gap: 0.6rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  }
+  .rejilla-municipios a {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio-s);
+    padding: 0.7rem 0.95rem;
+    text-decoration: none;
+    color: var(--tinta);
+  }
+  .rejilla-municipios a:hover { border-color: var(--turquesa); }
+  .rejilla-municipios strong { display: block; font-family: var(--serif); font-size: 1rem; }
+  .rejilla-municipios span { font-size: 0.82rem; color: var(--tinta-suave); }
+</style>

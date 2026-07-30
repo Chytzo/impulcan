@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import { contacto } from '../config.js';
+---
+
+<Base
+  titulo="Privacidad — Impulcan"
+  descripcion="Política de privacidad y tratamiento de datos de impulcan.com."
+>
+  <div class="contenedor">
+    <div class="prosa">
+      <h1>Política de privacidad</h1>
+
+      <div class="aviso">
+        <strong>Pendiente de completar.</strong> Añade los datos del responsable del
+        tratamiento antes de publicar.
+      </div>
+
+      <h2>Responsable</h2>
+      <p>[nombre y NIF] — {contacto.email}</p>
+
+      <h2>Qué datos tratamos</h2>
+      <p>
+        Solo los que nos facilitas al escribirnos por WhatsApp o por correo: tu nombre,
+        el de tu negocio, tu teléfono o correo y lo que nos cuentes en el mensaje.
+      </p>
+      <p>
+        Este sitio <strong>no tiene formularios, ni cookies, ni analítica</strong>. No
+        recogemos nada mientras navegas.
+      </p>
+
+      <h2>Para qué</h2>
+      <p>
+        Para responderte y, si seguimos adelante, para preparar la propuesta y prestar
+        el servicio. Nada más. No te vamos a meter en ninguna lista de correo sin que
+        nos lo pidas.
+      </p>
+
+      <h2>Base jurídica</h2>
+      <p>
+        Tu consentimiento al escribirnos, y la ejecución del contrato si acabamos
+        trabajando juntos.
+      </p>
+
+      <h2>Conservación</h2>
+      <p>
+        Mientras dure la relación y, después, el tiempo que exija la normativa fiscal
+        y contable.
+      </p>
+
+      <h2>Cesiones</h2>
+      <p>
+        No vendemos ni cedemos tus datos. Las conversaciones por WhatsApp pasan por los
+        servidores de Meta, sujetas a sus propias condiciones; si prefieres evitarlo,
+        escríbenos por correo.
+      </p>
+
+      <h2>Tus derechos</h2>
+      <p>
+        Puedes pedir acceso, rectificación, supresión, oposición, limitación y
+        portabilidad escribiendo a <a href={`mailto:${contacto.email}`}>{contacto.email}</a>.
+        También puedes reclamar ante la Agencia Española de Protección de Datos
+        (www.aepd.es).
+      </p>
+    </div>
+  </div>
+</Base>

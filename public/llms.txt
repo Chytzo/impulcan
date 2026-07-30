@@ -1,0 +1,47 @@
+# Impulcan
+
+> Marketing y automatizaciones para negocios de Las Palmas de Gran Canaria y el resto de Gran Canaria (Canarias, España). Ponemos a punto la presencia digital de comercios y pymes y automatizamos las tareas repetitivas que consumen horas de trabajo. Primera revisión del negocio gratuita y sin compromiso. Contacto directo por WhatsApp.
+
+Impulcan trabaja con comercios de barrio, talleres, clínicas, hostelería y pymes de Gran Canaria. El enfoque es presencial y local: visitamos el negocio antes de proponer nada. No usamos permanencias ni paquetes cerrados, y lo que montamos queda en manos del cliente.
+
+## Servicios
+
+Cada servicio tiene página propia y una versión por municipio de Gran Canaria en `https://impulcan.com/servicios/{servicio}/{municipio}/`.
+
+- [Agentes de IA](https://impulcan.com/servicios/agentes-ia/): agentes que ejecutan tareas, no chatbots que responden dudas. Lectura automática de facturas, albaranes y pedidos; atención por WhatsApp que cualifica y agenda; seguimiento de clientes que preguntaron y no volvieron; vigilancia de stock, plazos, impagos y reseñas. Con límites definidos de cuándo el agente debe parar y preguntar a una persona.
+- [Automatización de procesos](https://impulcan.com/servicios/automatizacion-procesos/): citas y recordatorios, presupuestos y facturas que se generan y envían solos, respuestas automáticas y avisos internos. Se mide el tiempo ahorrado antes y después.
+- [Presencia en Google](https://impulcan.com/servicios/presencia-en-google/): ficha de Google Business Profile completa, gestión de reseñas, web rápida orientada a móvil, datos estructurados y posicionamiento local.
+- [Integraciones](https://impulcan.com/servicios/integraciones/): conexión entre TPV, facturación, correo, WhatsApp, agenda y hojas de cálculo para que el dato se escriba una sola vez, con panel único de seguimiento.
+- [Captación de clientes](https://impulcan.com/servicios/captacion-de-clientes/): campañas locales con presupuesto controlado y techo claro, seguimiento de quien no compra a la primera, y coste por contacto real en vez de impresiones.
+- [Auditoría de procesos](https://impulcan.com/servicios/auditoria-de-procesos/): informe de 5-10 páginas con el inventario de tareas repetitivas, las horas que consumen y el orden de prioridad para automatizarlas. Es el punto de entrada recomendado.
+
+## Municipios cubiertos
+
+Trabajo presencial en Gran Canaria. Páginas por municipio: Las Palmas de Gran Canaria (381.868 hab.), Telde (104.168), Santa Lucía de Tirajana (78.584), San Bartolomé de Tirajana (54.291), Arucas (39.232), Agüimes (33.800), Ingenio (32.905), Gáldar (25.108), Mogán (21.172), Santa Brígida (18.766), Santa María de Guía (14.311) y Teror (13.211). Cifras de población de Wikidata, 2025.
+
+## Cómo trabajamos
+
+1. **Miramos tu negocio**: un café o una llamada de media hora para revisar qué hay montado y qué se está escapando. Gratis y sin compromiso.
+2. **Te decimos qué haríamos**: propuesta corta, con precio cerrado y plazo. Sin nada firmado si no convence.
+3. **Lo montamos y te lo explicamos**: se deja funcionando y se enseña a manejarlo. Sin permanencia ni dependencia del proveedor.
+
+## Proyectos propios
+
+- [Zona Alcaravaneras](https://zonaalcaravaneras.com): guía digital gratuita de los comercios del barrio de Las Alcaravaneras, en Las Palmas de Gran Canaria. Una página por comercio con teléfono, horario y cómo llegar, plano del barrio pulsable, datos estructurados para buscadores y contacto directo por WhatsApp. Gratuita para los comercios, sin cuotas y sin vinculación con ninguna asociación ni partido político. Es el proyecto con el que Impulcan demuestra su trabajo.
+
+## Zona de actuación
+
+Las Palmas de Gran Canaria y el resto de la isla de Gran Canaria (Canarias, España). Trabajo presencial en la isla.
+
+## Contacto
+
+- WhatsApp: +34 633 50 51 53
+- Correo: hola@impulcan.com
+- Web: https://impulcan.com
+
+## Páginas
+
+- [Inicio](https://impulcan.com/): servicios, forma de trabajar y contacto.
+- [Servicios](https://impulcan.com/servicios/): los seis servicios y el listado por municipio.
+- [Aviso legal](https://impulcan.com/aviso-legal/)
+- [Privacidad](https://impulcan.com/privacidad/): el sitio no usa cookies, analítica ni formularios.

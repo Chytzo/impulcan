@@ -1,0 +1,200 @@
+[
+  {
+    "slug": "agentes-ia",
+    "nombre": "Agentes de IA",
+    "titular": "Agentes de IA que hacen el trabajo, no que dan conversación",
+    "resumen": "Un chatbot responde preguntas. Un agente hace tareas: lee, decide, escribe en tus sistemas y avisa cuando algo se sale de lo previsto.",
+    "icono": "diana",
+    "problema": "La mayoría de lo que se vende como «IA para empresas» es un chat que contesta dudas frecuentes. Está bien, pero no te quita trabajo de encima. El trabajo que te come las horas es otro: pasar datos de un sitio a otro, revisar documentos, contestar lo mismo veinte veces y perseguir a quien no responde.",
+    "que_hacemos": [
+      "Agentes que leen documentos —facturas, albaranes, presupuestos, pedidos por correo— y meten los datos donde tengan que ir, sin teclear",
+      "Agentes que atienden por WhatsApp: responden, cualifican, agendan en tu calendario y te pasan solo lo que necesita a una persona",
+      "Agentes de seguimiento: detectan al cliente que preguntó y no volvió, y le escriben cuando toca",
+      "Agentes de vigilancia: revisan stock, plazos, impagos o reseñas nuevas y te avisan antes de que sea un problema",
+      "Todo con reglas claras de cuándo tiene que parar y preguntarte a ti"
+    ],
+    "entregables": [
+      "El agente montado y funcionando sobre tus herramientas actuales",
+      "Documento con qué hace, qué no hace y dónde para",
+      "Registro de todo lo que ejecuta, para que puedas revisarlo",
+      "Formación para que tu equipo lo maneje sin depender de nosotros"
+    ],
+    "preguntas": [
+      {
+        "p": "¿Se va a inventar cosas?",
+        "r": "Un agente bien montado no improvisa: trabaja sobre tus datos, con límites definidos, y cuando no está seguro se detiene y te pregunta. Eso se decide en el diseño, y es la parte que más tiempo nos lleva."
+      },
+      {
+        "p": "¿Tengo que cambiar de programas?",
+        "r": "No. El agente se conecta a lo que ya usas. Si tu gestión está en una hoja de cálculo, trabajamos con esa hoja de cálculo."
+      },
+      {
+        "p": "¿Y los datos de mis clientes?",
+        "r": "Se define desde el principio qué datos toca el agente y dónde se quedan. Te lo dejamos por escrito, porque el responsable ante la AEPD eres tú."
+      }
+    ]
+  },
+  {
+    "slug": "automatizacion-procesos",
+    "nombre": "Automatización de procesos",
+    "titular": "Que el trabajo repetitivo se haga solo",
+    "resumen": "Citas, recordatorios, presupuestos, facturas y respuestas de siempre. Todo lo que haces a mano cada semana y no te paga nadie.",
+    "icono": "engranaje",
+    "problema": "En un negocio pequeño hay entre cinco y quince horas al mes que se van en tareas que no aportan nada: copiar datos, mandar el mismo correo, recordar citas por teléfono, montar la factura a mano. No se notan porque están repartidas, pero son un sueldo parcial tirado a la basura.",
+    "que_hacemos": [
+      "Citas y reservas con confirmación y recordatorio automáticos, sin llamadas de ida y vuelta",
+      "Presupuestos y facturas que se generan desde los datos que ya tienes y se envían solos",
+      "Respuestas automáticas a las preguntas de siempre, por correo y por WhatsApp",
+      "Avisos internos cuando pasa algo que requiere que alguien actúe",
+      "Informes periódicos que llegan hechos en vez de tener que montarlos"
+    ],
+    "entregables": [
+      "Los procesos automatizados y en marcha",
+      "Cuánto tiempo se ahorra al mes, medido antes y después",
+      "Manual corto de qué hacer si algo falla",
+      "Todo montado en cuentas tuyas: si mañana te vas, se queda contigo"
+    ],
+    "preguntas": [
+      {
+        "p": "¿Cuánto se tarda en montar algo así?",
+        "r": "Una automatización concreta suele estar funcionando en una o dos semanas. Empezamos siempre por la que más horas libera, no por la más llamativa."
+      },
+      {
+        "p": "¿Y si mi equipo no es de informática?",
+        "r": "Mejor. Se diseña para que no haya que aprender nada nuevo: la automatización trabaja detrás, la gente sigue con su rutina."
+      },
+      {
+        "p": "¿Qué pasa si el proceso cambia?",
+        "r": "Se ajusta. Por eso lo dejamos documentado y en tus cuentas, para que el cambio no dependa de que estemos disponibles."
+      }
+    ]
+  },
+  {
+    "slug": "presencia-en-google",
+    "nombre": "Presencia en Google",
+    "titular": "Que te encuentren cuando buscan lo que vendes",
+    "resumen": "Ficha de Google al día, web rápida y posicionamiento local. Si alguien busca tu servicio y aparece tu competencia, ese cliente ya no es tuyo.",
+    "icono": "buscar",
+    "problema": "La mayoría de los negocios locales tienen la ficha de Google a medias: horarios viejos, categoría equivocada, sin fotos, reseñas sin contestar. Y una web que tarda en cargar en el móvil, que es donde está el 80% de la gente que te busca desde la calle.",
+    "que_hacemos": [
+      "Ficha de Google Business Profile completa: categoría correcta, horarios reales, fotos, servicios y mensajes activados",
+      "Reseñas: cómo pedirlas sin incomodar y cómo responderlas, incluidas las malas",
+      "Web rápida y pensada para el móvil, con el teléfono siempre a un toque",
+      "Datos estructurados para que los buscadores entiendan qué eres y dónde estás",
+      "Posicionamiento local: aparecer en las búsquedas de tu zona, no competir por términos imposibles"
+    ],
+    "entregables": [
+      "Ficha de Google revisada y optimizada",
+      "Web publicada, medida y rápida de verdad",
+      "Informe mensual de qué buscó la gente y cuántos llamaron",
+      "Los accesos a todo, en cuentas a tu nombre"
+    ],
+    "preguntas": [
+      {
+        "p": "¿Cuánto tarda en notarse?",
+        "r": "La ficha de Google puede mover llamadas en la misma semana. El posicionamiento web es más lento: tres o cuatro meses para ver movimiento serio."
+      },
+      {
+        "p": "¿Merece la pena si ya tengo clientes fijos?",
+        "r": "Depende. Si vives del cliente de siempre y no quieres crecer, no. Si te preocupa el relevo generacional de tu clientela, sí."
+      },
+      {
+        "p": "¿Hace falta pagar anuncios?",
+        "r": "No para esto. Los anuncios son otra cosa y se deciden aparte, con presupuesto y medición."
+      }
+    ]
+  },
+  {
+    "slug": "integraciones",
+    "nombre": "Integraciones",
+    "titular": "Que tus herramientas hablen entre ellas",
+    "resumen": "No hace falta cambiar de programas. Hace falta que el TPV, la hoja de cálculo, el correo, WhatsApp y la agenda dejen de ser cinco islas.",
+    "icono": "enlace",
+    "problema": "El mismo dato acaba escrito tres veces: en el TPV, en la hoja de cálculo y en la agenda. Cada copia a mano es una oportunidad de error, y cuando quieres saber cómo va el negocio tienes que juntar piezas de cinco sitios distintos.",
+    "que_hacemos": [
+      "Conectar TPV, facturación, correo, WhatsApp, agenda y hojas de cálculo para que el dato se escriba una sola vez",
+      "Un único sitio donde ver cómo va el negocio, en vez de cinco pantallas",
+      "Avisos automáticos cuando ocurre algo que importa",
+      "Copias de seguridad de lo que no puedes permitirte perder",
+      "Limpieza de duplicados y datos incoherentes que ya arrastras"
+    ],
+    "entregables": [
+      "Las integraciones funcionando y documentadas",
+      "Esquema de qué dato va de dónde a dónde",
+      "Panel único de seguimiento",
+      "Plan de qué hacer si un servicio externo se cae"
+    ],
+    "preguntas": [
+      {
+        "p": "Mi programa de gestión es viejo, ¿se puede conectar?",
+        "r": "Casi siempre sí, aunque sea exportando ficheros de forma automática. Lo primero que hacemos es comprobarlo antes de prometer nada."
+      },
+      {
+        "p": "¿Esto no me ata a vosotros?",
+        "r": "Al contrario: se monta en cuentas tuyas y se documenta para que otro pueda cogerlo. No trabajamos con permanencias."
+      }
+    ]
+  },
+  {
+    "slug": "captacion-de-clientes",
+    "nombre": "Captación de clientes",
+    "titular": "Campañas medidas, no dinero tirado en anuncios que nadie mira",
+    "resumen": "Publicidad local con presupuesto controlado, seguimiento de quien pregunta y no compra, e informes en lenguaje normal.",
+    "icono": "diana",
+    "problema": "Mucho negocio local ha probado a poner anuncios, ha gastado unos cientos de euros y no sabe si sirvió de algo. Sin medición no hay campaña: hay gasto.",
+    "que_hacemos": [
+      "Campañas locales en Google y redes con presupuesto pequeño y techo claro",
+      "Seguimiento de quien pregunta y no compra a la primera, que es donde está la mayoría del dinero",
+      "Medición real: cuántas llamadas, cuántos mensajes, cuánto costó cada uno",
+      "Corte rápido de lo que no funciona en vez de dejarlo corriendo",
+      "Informes en lenguaje normal, sin métricas de vanidad"
+    ],
+    "entregables": [
+      "Campañas montadas y medidas",
+      "Coste por contacto real, no impresiones",
+      "Informe mensual de una página que se entiende",
+      "Las cuentas publicitarias a tu nombre"
+    ],
+    "preguntas": [
+      {
+        "p": "¿Con cuánto presupuesto se empieza?",
+        "r": "Con poco. Preferimos empezar bajo, medir, y subir solo lo que demuestre que devuelve. Gastar mucho al principio es la forma más rápida de quemar el dinero."
+      },
+      {
+        "p": "¿Garantizáis resultados?",
+        "r": "No. Nadie serio lo hace. Lo que garantizamos es que sabrás exactamente qué entró y qué costó, y que cortaremos lo que no funcione."
+      }
+    ]
+  },
+  {
+    "slug": "auditoria-de-procesos",
+    "nombre": "Auditoría de procesos",
+    "titular": "Cuántas horas al mes se te van en tareas que podría hacer una máquina",
+    "resumen": "Un informe corto y concreto: qué tareas repetitivas tienes, cuántas horas cuestan y cuáles se pueden automatizar. Es por donde conviene empezar.",
+    "icono": "engranaje",
+    "problema": "Antes de automatizar hay que saber qué automatizar. Casi todo el mundo se lanza a la herramienta de moda y acaba con una suscripción más y el mismo trabajo. La auditoría evita eso.",
+    "que_hacemos": [
+      "Media jornada contigo y con tu equipo viendo cómo trabajáis de verdad, no cómo debería ser",
+      "Inventario de tareas repetitivas, con las horas que consume cada una",
+      "Clasificación por lo que más devuelve: qué automatizar primero, qué después y qué no tocar",
+      "Coste estimado de cada intervención y qué ahorra",
+      "Qué se puede hacer sin nosotros, dicho claramente"
+    ],
+    "entregables": [
+      "Informe de entre cinco y diez páginas, en castellano llano",
+      "Tabla de tareas con horas al mes y potencial de automatización",
+      "Orden de prioridades con coste y ahorro estimado",
+      "Reunión para explicarlo y decidir"
+    ],
+    "preguntas": [
+      {
+        "p": "¿Y si el informe dice que no me hace falta nada?",
+        "r": "Entonces lo dice, y te ahorramos el gasto. Nos sirve igual: el informe honesto es el que hace que nos recomienden."
+      },
+      {
+        "p": "¿Es obligatorio contratar la implantación después?",
+        "r": "No. El informe es tuyo y puedes ejecutarlo con quien quieras, o tú mismo."
+      }
+    ]
+  }
+]

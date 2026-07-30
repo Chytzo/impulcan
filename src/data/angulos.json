@@ -1,0 +1,194 @@
+{
+  "agentes-ia": {
+    "capital": {
+      "titulo": "En la capital, el problema es el volumen",
+      "texto": "Un comercio de Triana o Mesa y López recibe consultas por WhatsApp, Instagram, teléfono y gente que entra por la puerta, todo a la vez y en horario de tienda. El agente no sustituye a nadie: filtra. Contesta lo repetido, cualifica al que va en serio y deja para la persona lo que de verdad requiere criterio. En una calle donde el cliente tiene veinte alternativas a cincuenta metros, tardar dos horas en contestar es perder la venta.",
+      "ejemplo": "Un agente que atiende los mensajes fuera de horario, dice si hay talla o cita libre y agenda solo, para que a la mañana siguiente el dueño no abra con cuarenta mensajes acumulados."
+    },
+    "industrial": {
+      "titulo": "En polígono, el papel es el cuello de botella",
+      "texto": "Un taller o una distribuidora mueve albaranes, pedidos por correo, hojas de entrada y facturas de proveedor. Todo eso se teclea a mano y es donde se cuelan los errores que luego cuestan dinero. Un agente que lee esos documentos y mete los datos en la gestión elimina la parte más tediosa del día sin cambiar cómo trabaja nadie.",
+      "ejemplo": "Un agente que recibe el pedido del cliente por correo, extrae referencias y cantidades, lo cruza con el stock y avisa solo si falta algo."
+    },
+    "eje": {
+      "titulo": "En Vecindario compites en la misma acera",
+      "texto": "Con tanta oferta concentrada en la Avenida de Canarias, la diferencia entre vender y no vender suele ser quién responde primero y quién hace seguimiento. Un agente que contesta al instante y luego recuerda al que preguntó y no volvió recupera ventas que hoy se pierden por silencio.",
+      "ejemplo": "Un agente que detecta al cliente que pidió precio hace diez días y no compró, y le escribe cuando entra la reposición o baja el precio."
+    },
+    "turistico": {
+      "titulo": "En zona turística, el idioma y la hora lo son todo",
+      "texto": "Tu cliente pregunta a las once de la noche, en inglés o en alemán, desde el hotel, y quiere respuesta ya. Si no la tiene, reserva en otro sitio. Un agente que atiende en varios idiomas, veinticuatro horas, y que agenda directamente en tu calendario, convierte consultas nocturnas en reservas confirmadas.",
+      "ejemplo": "Un agente que responde en el idioma del mensaje, comprueba disponibilidad real y confirma la reserva sin que nadie se levante de la cama."
+    },
+    "casco": {
+      "titulo": "En el casco, el negocio es de una o dos personas",
+      "texto": "Cuando el dueño está atendiendo el mostrador no puede estar al teléfono ni en el móvil, y así se pierden llamadas y mensajes todos los días. Aquí el agente no es un lujo tecnológico: es el empleado que no puedes contratar.",
+      "ejemplo": "Un agente que atiende mientras hay cola, dice horarios y disponibilidad, y toma nota de encargos para que el dueño los vea al cerrar."
+    },
+    "residencial": {
+      "titulo": "En las medianías, el cliente pide cita antes de ir",
+      "texto": "Clientela que consulta desde casa y no se desplaza sin saber que le van a atender. La fricción está en la petición de cita: llamadas en horario laboral, mensajes que se cruzan, huecos que se quedan vacíos. Un agente que gestione la agenda entera quita ese roce.",
+      "ejemplo": "Un agente que ofrece los huecos reales de la semana, confirma, recuerda el día antes y libera la cita si el cliente cancela."
+    }
+  },
+  "automatizacion-procesos": {
+    "capital": {
+      "titulo": "Muchas transacciones pequeñas, mucha tarea repetida",
+      "texto": "El comercio urbano de la capital hace muchas operaciones de importe bajo, y ahí la carga administrativa se multiplica: cierres de caja, cuadres, facturas simplificadas, pedidos a proveedor. Automatizar el cierre y la facturación recurrente devuelve horas todas las semanas.",
+      "ejemplo": "Cierre de caja que se cuadra solo con el TPV y avisa cuando el descuadre pasa de un umbral."
+    },
+    "industrial": {
+      "titulo": "El circuito pedido-albarán-factura",
+      "texto": "En distribución y talleres, el mismo dato viaja del pedido al albarán y de ahí a la factura, y se copia tres veces. Automatizar ese circuito es el cambio con más retorno inmediato en un polígono, y no requiere tocar la maquinaria ni el almacén.",
+      "ejemplo": "Del pedido confirmado sale el albarán, y del albarán firmado sale la factura, sin que nadie vuelva a teclear referencias."
+    },
+    "eje": {
+      "titulo": "Rotación alta, reposición constante",
+      "texto": "En un eje comercial con mucha rotación, la reposición y el control de stock consumen el tiempo que debería ir a vender. Automatizar avisos de mínimos y pedidos recurrentes a proveedor evita tanto el vacío de estantería como el exceso de inmovilizado.",
+      "ejemplo": "Aviso automático cuando un artículo baja del mínimo, con el pedido al proveedor ya redactado y pendiente solo de aprobar."
+    },
+    "turistico": {
+      "titulo": "Temporadas, cancelaciones y personal cambiante",
+      "texto": "En turismo la plantilla rota y la carga varía mucho de un mes a otro, así que los procesos que dependen de que alguien se acuerde fallan justo en temporada alta. Automatizar confirmaciones, recordatorios y cancelaciones evita el hueco vacío y la doble reserva.",
+      "ejemplo": "Recordatorio con antelación, política de cancelación aplicada sola y liberación automática del hueco si nadie confirma."
+    },
+    "casco": {
+      "titulo": "Sin administrativo, todo lo hace el dueño",
+      "texto": "En el comercio de casco no hay departamento de administración: lo hace el dueño, de noche y cansado. Ahí automatizar la facturación y los recordatorios no es eficiencia, es recuperar tiempo de vida.",
+      "ejemplo": "Facturas mensuales de clientes fijos que se generan y se envían solas el día 1, sin abrir el ordenador."
+    },
+    "residencial": {
+      "titulo": "Agenda, recordatorios y ausencias",
+      "texto": "En clínicas, asesorías y servicios de proximidad el coste real son las ausencias: un hueco que nadie ocupa es dinero perdido que no se recupera. Recordatorios automáticos y lista de espera son lo primero que hay que montar.",
+      "ejemplo": "Recordatorio automático 24 horas antes y aviso a la lista de espera cuando alguien cancela."
+    }
+  },
+  "presencia-en-google": {
+    "capital": {
+      "titulo": "Competencia alta y búsquedas por barrio",
+      "texto": "En Las Palmas la gente no busca «peluquería»: busca «peluquería Alcaravaneras» o «cerca de Mesa y López». Esas búsquedas por barrio tienen poca competencia y mucha intención de compra, y se ganan con la ficha de Google bien puesta más que con la web.",
+      "ejemplo": "Ficha con la categoría correcta, fotos recientes y horarios reales: suele mover llamadas en la misma semana."
+    },
+    "industrial": {
+      "titulo": "Te buscan por lo que fabricas o reparas",
+      "texto": "En un polígono el cliente busca por el problema técnico, no por tu nombre. Aparecer en esas búsquedas concretas —una pieza, un tipo de reparación, un servicio industrial— vale más que cualquier campaña de marca.",
+      "ejemplo": "Ficha y web que dejan claro qué se repara, qué se distribuye y con qué marcas se trabaja."
+    },
+    "eje": {
+      "titulo": "Aquí la ficha de Google decide quién entra",
+      "texto": "Con tanta oferta a pocos metros, el orden en el mapa de Google es literalmente el orden en que la gente entra por la puerta. Las reseñas y la coherencia de los datos son lo que mueve ese orden.",
+      "ejemplo": "Sistema para pedir reseñas sin incomodar y respuesta a todas, también a las malas."
+    },
+    "turistico": {
+      "titulo": "El visitante busca en su idioma antes de salir del hotel",
+      "texto": "Tu cliente no conoce el sitio: pregunta al móvil. Y lo hace en inglés, alemán o nórdico, con búsquedas del tipo «restaurant near Playa del Inglés». Si tu ficha no tiene fotos, horarios y categoría claros, no apareces en esa decisión.",
+      "ejemplo": "Ficha con fotos actuales, platos o servicios listados y reseñas contestadas en el idioma en que se escribieron."
+    },
+    "casco": {
+      "titulo": "Poca competencia digital, oportunidad clara",
+      "texto": "En los cascos del norte casi nadie tiene la ficha en condiciones, así que el esfuerzo necesario para destacar es mucho menor que en el sur. Es el sitio donde la relación entre trabajo y resultado es mejor de toda la isla.",
+      "ejemplo": "Ficha completa desde cero y web sencilla de una página: suficiente para adelantar a casi todo el municipio."
+    },
+    "residencial": {
+      "titulo": "Clientela que compara antes de moverse",
+      "texto": "En las medianías la gente mira, compara y solo entonces coge el coche. Eso significa que la decisión se toma en Google, no en la puerta del local, y que las reseñas pesan más que en cualquier otro entorno.",
+      "ejemplo": "Ficha con servicios y precios orientativos, más reseñas recientes que despejen la duda antes del desplazamiento."
+    }
+  },
+  "integraciones": {
+    "capital": {
+      "titulo": "Varias herramientas y ningún sitio donde ver el conjunto",
+      "texto": "El negocio urbano acumula TPV, pasarela de pago, reservas, redes y una hoja de cálculo heredada. Cada una funciona, pero nadie sabe cómo va el mes hasta que se cierra. Conectarlas da una sola pantalla con la realidad al día.",
+      "ejemplo": "Panel único con ventas, citas y consultas del día, alimentado solo por lo que ya usas."
+    },
+    "industrial": {
+      "titulo": "Almacén, gestión y facturación como tres islas",
+      "texto": "En el polígono lo habitual es que el almacén sepa una cosa, la gestión otra y la facturación una tercera. Ese desajuste se paga en stock fantasma y en facturas que se reclaman tarde. Es el sector donde integrar da el retorno más medible.",
+      "ejemplo": "Movimiento de almacén que actualiza la gestión y dispara la factura sin intervención."
+    },
+    "eje": {
+      "titulo": "Tienda física y venta online sin descuadres",
+      "texto": "Si vendes en tienda y por internet con inventarios separados, tarde o temprano vendes algo que no tienes. Unificar stock entre TPV y tienda online evita la cancelación y la reseña de una estrella que viene detrás.",
+      "ejemplo": "Stock único: lo que se vende en mostrador desaparece de la web al momento."
+    },
+    "turistico": {
+      "titulo": "Portales de reserva, calendario y cobro",
+      "texto": "Trabajar con varios portales y llevar el calendario aparte acaba en sobreventa. Integrar disponibilidad, calendario y cobro es la base para poder crecer sin dedicar a una persona a cuadrar reservas.",
+      "ejemplo": "Disponibilidad sincronizada entre portales y calendario propio, con cobro y confirmación automáticos."
+    },
+    "casco": {
+      "titulo": "Menos herramientas, mejor conectadas",
+      "texto": "En el comercio de casco no sobra presupuesto para plataformas: lo que hay es un TPV, WhatsApp y una hoja de cálculo. La integración aquí consiste en que esas tres cosas se hablen, no en comprar nada nuevo.",
+      "ejemplo": "Ventas del TPV que caen solas en la hoja de cálculo del dueño, sin apuntar nada a mano."
+    },
+    "residencial": {
+      "titulo": "Agenda, historial y facturación en un solo hilo",
+      "texto": "En servicios con cita previa, tener la agenda en un sitio, la ficha del cliente en otro y la factura en un tercero obliga a repetir datos en cada visita. Conectarlo deja el historial completo a un clic.",
+      "ejemplo": "Cita que abre la ficha del cliente y, al cerrarla, genera la factura con los servicios prestados."
+    }
+  },
+  "captacion-de-clientes": {
+    "capital": {
+      "titulo": "Radio corto y presupuesto ajustado",
+      "texto": "En la capital anunciarse a toda la ciudad es tirar el dinero: tu cliente vive o trabaja a diez minutos andando. Las campañas por radio corto, delimitadas al barrio, cuestan una fracción y traen gente que puede entrar de verdad.",
+      "ejemplo": "Campaña limitada a un radio de un kilómetro, midiendo llamadas y mensajes, no impresiones."
+    },
+    "industrial": {
+      "titulo": "Pocos clientes, cada uno vale mucho",
+      "texto": "En el sector industrial el ciclo es largo y el número de clientes potenciales es pequeño, así que las campañas masivas no encajan. Lo que funciona es aparecer en la búsqueda técnica concreta y hacer seguimiento serio de cada consulta.",
+      "ejemplo": "Anuncios sobre búsquedas muy específicas y seguimiento de cada presupuesto enviado."
+    },
+    "eje": {
+      "titulo": "Competencia directa y márgenes apretados",
+      "texto": "En Vecindario tus competidores están en la misma avenida y con precios comparables, así que competir a base de descuento es una carrera perdida. Vale más captar y retener: fidelizar al que ya vino sale mucho más barato que traer uno nuevo.",
+      "ejemplo": "Campaña de recuperación de clientes antiguos, que suele costar la cuarta parte que captar uno nuevo."
+    },
+    "turistico": {
+      "titulo": "Captar a quien ya está aquí",
+      "texto": "En turismo la ventana es corta: el cliente está una semana. Lo que funciona es captarlo cuando ya está en la isla y buscando qué hacer hoy, no meses antes ni con campañas de marca.",
+      "ejemplo": "Campañas segmentadas por ubicación e idioma, activas solo en temporada."
+    },
+    "casco": {
+      "titulo": "El boca a boca ya funciona: hay que amplificarlo",
+      "texto": "En los cascos del norte el boca a boca es el canal real, y la publicidad de pago rinde poco. Conviene invertir en que el boca a boca deje rastro digital —reseñas, recomendaciones, contenido local— antes que en anuncios.",
+      "ejemplo": "Campaña de reseñas y de contenido local, con muy poco gasto en publicidad."
+    },
+    "residencial": {
+      "titulo": "Segmento con capacidad de gasto y exigente",
+      "texto": "En las medianías hay clientela con poder de compra que valora la calidad y desconfía del anuncio agresivo. Aquí la captación va por credibilidad: contenido útil, reseñas sólidas y una propuesta clara.",
+      "ejemplo": "Campañas discretas apoyadas en reseñas y en explicación clara del servicio, sin urgencias artificiales."
+    }
+  },
+  "auditoria-de-procesos": {
+    "capital": {
+      "titulo": "Mucha actividad, poca visibilidad de en qué se va el tiempo",
+      "texto": "En la capital lo normal es ir con la lengua fuera sin saber exactamente en qué se consumen las horas. La auditoría pone números a eso, y casi siempre aparecen dos o tres tareas que se comen más tiempo del que nadie sospechaba.",
+      "ejemplo": "Inventario de tareas de la semana con horas reales y qué pasaría si se automatizan."
+    },
+    "industrial": {
+      "titulo": "Procesos largos con muchos pasos manuales",
+      "texto": "En industria y distribución los procesos tienen muchos eslabones, y el manual se esconde entre ellos. Mapearlos de principio a fin suele destapar duplicidades que nadie había mirado en años.",
+      "ejemplo": "Mapa del recorrido de un pedido, con los puntos donde el dato se vuelve a teclear."
+    },
+    "eje": {
+      "titulo": "Cada hora de tienda cuenta",
+      "texto": "Donde la competencia está en la acera de enfrente, cada hora que el dueño pasa con papeles es una hora que no está vendiendo. La auditoría prioriza precisamente por eso: liberar tiempo de mostrador.",
+      "ejemplo": "Cálculo de horas de administración que se pueden devolver a la venta."
+    },
+    "turistico": {
+      "titulo": "El proceso aguanta en enero y se rompe en agosto",
+      "texto": "En turismo casi todo funciona en temporada baja y se derrumba en alta. La auditoría se hace mirando el pico, no la media, porque es ahí donde se pierde dinero y reputación.",
+      "ejemplo": "Análisis del proceso en temporada alta y qué automatizar antes de que llegue."
+    },
+    "casco": {
+      "titulo": "Empezar por lo básico y barato",
+      "texto": "En negocios pequeños de casco no tiene sentido un plan de transformación: tiene sentido saber qué tres cosas concretas quitan más agobio por menos dinero. La auditoría se ajusta a esa escala.",
+      "ejemplo": "Informe corto con tres intervenciones de bajo coste, ordenadas por lo que más alivian."
+    },
+    "residencial": {
+      "titulo": "Servicios con cita: el hueco vacío es el coste oculto",
+      "texto": "En clínicas y servicios de proximidad, el coste que no se ve son las ausencias y los huecos sin cubrir. La auditoría los cuantifica, y suele ser la cifra que más sorprende al dueño.",
+      "ejemplo": "Cuantificación de ausencias y huecos, con el ahorro estimado de automatizar recordatorios."
+    }
+  }
+}

@@ -1,0 +1,85 @@
+---
+// Isotipo de Impulcan: una línea que sube (impulso) sobre el mar (Canarias).
+// `variante`: "completo" (isotipo + nombre) | "isotipo"
+// `tono`: "claro" (para fondos oscuros) | "oscuro"
+const { variante = 'completo', tono = 'claro', tam = 34 } = Astro.props;
+
+const colorTexto = tono === 'claro' ? '#ffffff' : '#0b1b2b';
+const colorApagado = tono === 'claro' ? 'rgba(255,255,255,0.55)' : '#5f7183';
+---
+
+<span class="logo" style={`--tam:${tam}px`}>
+  <svg
+    width={tam}
+    height={tam}
+    viewBox="0 0 40 40"
+    fill="none"
+    role="img"
+    aria-label="Impulcan"
+  >
+    <defs>
+      <linearGradient id="impulcanGrad" x1="0" y1="40" x2="40" y2="0">
+        <stop offset="0%" stop-color="#12857f" />
+        <stop offset="55%" stop-color="#1aa39a" />
+        <stop offset="100%" stop-color="#e2683f" />
+      </linearGradient>
+    </defs>
+
+    <rect width="40" height="40" rx="11" fill="url(#impulcanGrad)" />
+
+    <!-- La curva de crecimiento -->
+    <path
+      d="M9 27.5c3.6 0 5.2-4 8.2-8.3 2.6-3.7 5.4-6.2 9.6-6.2"
+      stroke="#fff"
+      stroke-width="2.6"
+      stroke-linecap="round"
+      fill="none"
+    />
+    <!-- Punta de flecha -->
+    <path
+      d="M23.2 10.4 27.6 13l-3 4.1"
+      stroke="#fff"
+      stroke-width="2.6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      fill="none"
+    />
+    <!-- El mar -->
+    <path
+      d="M8 32.2c2.3 0 2.3 1.5 4.6 1.5s2.3-1.5 4.6-1.5 2.3 1.5 4.6 1.5 2.3-1.5 4.6-1.5 2.3 1.5 4.6 1.5"
+      stroke="rgba(255,255,255,0.55)"
+      stroke-width="1.9"
+      stroke-linecap="round"
+      fill="none"
+    />
+  </svg>
+
+  {variante === 'completo' && (
+    <span class="texto">
+      <strong style={`color:${colorTexto}`}>Impulcan</strong>
+      <small style={`color:${colorApagado}`}>Marketing y automatizaciones</small>
+    </span>
+  )}
+</span>
+
+<style>
+  .logo { display: inline-flex; align-items: center; gap: 0.6rem; }
+  .logo svg { flex: none; }
+  .texto { display: block; line-height: 1.15; }
+  .texto strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: calc(var(--tam) * 0.52);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+  .texto small {
+    display: block;
+    font-size: calc(var(--tam) * 0.27);
+    letter-spacing: 0.015em;
+    margin-top: 1px;
+  }
+  @media (max-width: 560px) {
+    .texto small { display: none; }
+  }
+</style>

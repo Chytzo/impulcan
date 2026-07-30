@@ -1,0 +1,55 @@
+---
+// Imagen ilustrativa según el sector económico del municipio.
+// Son imágenes generadas con IA, no fotografías de negocios reales: se usan como
+// ilustración de contexto y así queda declarado en la página de créditos.
+import { Image } from 'astro:assets';
+import capital from '../assets/sector-capital.jpg';
+import eje from '../assets/sector-eje.jpg';
+import turistico from '../assets/sector-turistico.jpg';
+import casco from '../assets/sector-casco.jpg';
+import residencial from '../assets/sector-residencial.jpg';
+import industrial from '../assets/sector-industrial.jpg';
+
+const IMAGENES = { capital, eje, turistico, casco, residencial, industrial };
+const ALT = {
+  capital: 'Calle comercial peatonal de una ciudad canaria con toldos y escaparates',
+  eje: 'Avenida comercial ancha del sur de Gran Canaria con locales a pie de calle',
+  turistico: 'Paseo marítimo con terrazas de restaurante al atardecer',
+  casco: 'Calle empedrada de casco histórico canario con una tienda de producto local',
+  residencial: 'Calle residencial tranquila de las medianías con un local de servicios',
+  industrial: 'Nave industrial con maquinaria y puestos de trabajo',
+};
+
+const { sector } = Astro.props;
+const imagen = IMAGENES[sector];
+---
+
+{imagen && (
+  <figure class="foto-sector">
+    <Image
+      src={imagen}
+      alt={ALT[sector]}
+      widths={[520, 900, 1300]}
+      sizes="(max-width: 860px) 100vw, 46vw"
+      loading="lazy"
+    />
+    <figcaption>Imagen ilustrativa generada con IA</figcaption>
+  </figure>
+)}
+
+<style>
+  .foto-sector { margin: 0; }
+  .foto-sector img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-alta);
+  }
+  .foto-sector figcaption {
+    font-size: 0.72rem;
+    color: var(--tinta-suave);
+    margin-top: 0.4rem;
+    text-align: right;
+  }
+</style>

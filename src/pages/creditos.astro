@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import { contacto } from '../config.js';
+---
+
+<Base
+  titulo="Créditos de imágenes — Impulcan"
+  descripcion="Origen y licencia de las imágenes usadas en impulcan.com, incluidas las generadas con inteligencia artificial."
+>
+  <div class="contenedor">
+    <div class="prosa">
+      <h1>Créditos de imágenes</h1>
+
+      <p>
+        Preferimos decirlo claro: parte de las imágenes de este sitio están
+        <strong>generadas con inteligencia artificial</strong>. No son fotografías de
+        clientes, ni de nuestras oficinas, ni de trabajos concretos. Se usan como
+        ilustración de contexto y así aparece indicado bajo cada una.
+      </p>
+
+      <h2>Imágenes generadas con IA</h2>
+      <p>
+        Creadas con Google Stitch (modelo Gemini) a partir de descripciones escritas por
+        nosotros:
+      </p>
+      <ul>
+        <li>Escritorio junto a una ventana con palmeras, en la portada</li>
+        <li>Calle comercial peatonal canaria, en las páginas de la capital</li>
+        <li>Avenida comercial del sur, en las páginas de eje comercial</li>
+        <li>Paseo marítimo con terrazas, en las páginas de zona turística</li>
+        <li>Calle de casco histórico, en las páginas de los cascos del norte</li>
+        <li>Calle residencial de las medianías, en las páginas de medianías</li>
+        <li>Nave industrial, en las páginas de zona industrial</li>
+      </ul>
+      <p>
+        Ninguna representa un lugar real identificable ni a personas reales. Cuando
+        tengamos fotografías propias de trabajos hechos, las sustituiremos.
+      </p>
+
+      <h2>Fotografías con licencia</h2>
+      <p>
+        «Playa de Las Alcaravaneras», de Bengt Nyman,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener">CC BY-SA 4.0</a>,
+        vía
+        <a href="https://commons.wikimedia.org/wiki/File:Playa_de_Las_Alcaravaneras.jpg" rel="noopener">Wikimedia Commons</a>.
+      </p>
+
+      <h2>Qué no hacemos</h2>
+      <p>
+        No usamos imágenes tomadas de buscadores, de Street View ni de webs de otras
+        empresas. Si detectas una imagen mal atribuida, escríbenos a
+        <a href={`mailto:${contacto.email}`}>{contacto.email}</a> y la retiramos.
+      </p>
+    </div>
+  </div>
+</Base>

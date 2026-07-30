@@ -1,0 +1,224 @@
+---
+import Base from '../../../layouts/Base.astro';
+import IconoServicio from '../../../components/IconoServicio.astro';
+import servicios from '../../../data/servicios.json';
+import municipios from '../../../data/municipios.json';
+import { contacto, enlaceWhatsapp } from '../../../config.js';
+
+export function getStaticPaths() {
+  return servicios.map((servicio) => ({
+    params: { servicio: servicio.slug },
+    props: { servicio },
+  }));
+}
+
+const { servicio } = Astro.props;
+const url = `https://impulcan.com/servicios/${servicio.slug}/`;
+const wa = enlaceWhatsapp(`Hola, me interesa el servicio de ${servicio.nombre.toLowerCase()}.`);
+const otros = servicios.filter((s) => s.slug !== servicio.slug);
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: servicio.nombre,
+    alternateName: servicio.titular,
+    description: servicio.resumen,
+    url,
+    serviceType: servicio.nombre,
+    inLanguage: 'es-ES',
+    provider: {
+      '@type': 'ProfessionalService',
+      name: 'Impulcan',
+      url: 'https://impulcan.com/',
+      telephone: `+${contacto.whatsapp}`,
+      email: contacto.email,
+    },
+    areaServed: municipios.map((m) => ({ '@type': 'City', name: m.nombre })),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: `Qué incluye: ${servicio.nombre}`,
+      itemListElement: servicio.que_hacemos.map((q) => ({
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: q },
+      })),
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: servicio.preguntas.map((f) => ({
+      '@type': 'Question',
+      name: f.p,
+      acceptedAnswer: { '@type': 'Answer', text: f.r },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Impulcan', item: 'https://impulcan.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Servicios', item: 'https://impulcan.com/servicios/' },
+      { '@type': 'ListItem', position: 3, name: servicio.nombre },
+    ],
+  },
+];
+---
+
+<Base
+  titulo={`${servicio.nombre} en Gran Canaria — Impulcan`}
+  descripcion={servicio.resumen}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <section class="portada" style="padding:3.25rem 0 2.75rem">
+    <div class="contenedor">
+      <nav class="migas" aria-label="Ruta">
+        <a href="/">Inicio</a> · <a href="/servicios/">Servicios</a> ·
+        <span>{servicio.nombre}</span>
+      </nav>
+      <span class="sello">Gran Canaria</span>
+      <h1>{servicio.titular}</h1>
+      <p class="entradilla">{servicio.resumen}</p>
+      <div class="acciones">
+        <a class="boton" href={wa} rel="noopener">Escríbenos por WhatsApp</a>
+        <a class="boton fantasma" href="#municipios">Ver por municipio</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="franja">
+        <div>
+          <span class="etiqueta">El problema</span>
+          <h2>Por qué esto importa</h2>
+          <p>{servicio.problema}</p>
+        </div>
+        <div class="tarjeta-lista">
+          <div class="icono"><IconoServicio icono={servicio.icono} tam={24} /></div>
+          <h3>Qué hacemos</h3>
+          <ul>
+            {servicio.que_hacemos.map((q) => <li>{q}</li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion tenue">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="etiqueta">Qué te llevas</span>
+        <h2>Entregables</h2>
+      </div>
+      <ul class="rejilla-3 entregables">
+        {servicio.entregables.map((e) => <li class="servicio">{e}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor estrecho">
+      <div class="titulo-seccion">
+        <span class="etiqueta">Dudas habituales</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      {servicio.preguntas.map((f) => (
+        <details class="pregunta">
+          <summary>{f.p}</summary>
+          <p>{f.r}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="seccion tenue" id="municipios">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="etiqueta">Dónde</span>
+        <h2>{servicio.nombre} por municipio</h2>
+        <p>Cada página explica cómo aplica este servicio al tejido comercial de esa zona.</p>
+      </div>
+      <ul class="rejilla-municipios">
+        {municipios.map((m) => (
+          <li>
+            <a href={`/servicios/${servicio.slug}/${m.slug}/`}>
+              <strong>{m.nombre}</strong>
+              <span>{m.poblacion.toLocaleString('es-ES')} hab.</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="etiqueta">También</span>
+        <h2>Otros servicios</h2>
+      </div>
+      <div class="rejilla-3">
+        {otros.map((s) => (
+          <article class="servicio">
+            <div class="icono"><IconoServicio icono={s.icono} /></div>
+            <h3><a href={`/servicios/${s.slug}/`}>{s.nombre}</a></h3>
+            <p>{s.resumen}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .migas { font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 0.9rem; }
+  .migas a { color: rgba(255, 255, 255, 0.9); }
+
+  .tarjeta-lista {
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 1.5rem;
+    box-shadow: var(--sombra);
+  }
+  .tarjeta-lista .icono {
+    width: 44px; height: 44px; border-radius: 11px;
+    display: grid; place-items: center; margin-bottom: 0.9rem;
+    background: var(--turquesa-claro); color: var(--turquesa);
+  }
+  .tarjeta-lista ul { padding-left: 1.1rem; margin: 0; color: var(--tinta-suave); }
+  .tarjeta-lista li { margin: 0.4rem 0; }
+
+  .entregables { list-style: none; padding: 0; }
+  .entregables li { font-size: 0.95rem; }
+
+  .pregunta {
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 0.9rem 1.15rem;
+    margin-bottom: 0.6rem;
+  }
+  .pregunta summary { cursor: pointer; font-weight: 600; }
+  .pregunta p { margin: 0.6rem 0 0; color: var(--tinta-suave); }
+
+  .rejilla-municipios {
+    list-style: none; padding: 0; margin: 0;
+    display: grid; gap: 0.6rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  }
+  .rejilla-municipios a {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio-s);
+    padding: 0.7rem 0.95rem;
+    text-decoration: none;
+    color: var(--tinta);
+  }
+  .rejilla-municipios a:hover { border-color: var(--turquesa); }
+  .rejilla-municipios strong { display: block; font-family: var(--serif); font-size: 1rem; }
+  .rejilla-municipios span { font-size: 0.82rem; color: var(--tinta-suave); }
+</style>

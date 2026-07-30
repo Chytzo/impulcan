@@ -1,0 +1,130 @@
+{
+  "las-palmas-de-gran-canaria": {
+    "agentes-ia": {
+      "titulo": "Una calle comercial no perdona el silencio",
+      "texto": "Entre Triana y Mesa y López tu cliente tiene veinte alternativas a cincuenta metros. Si pregunta por Instagram a las nueve de la noche y le contestas al día siguiente, ya compró en otro sitio. El agente cubre precisamente ese hueco: la franja en que la tienda está cerrada pero la gente sigue decidiendo desde el sofá. Y en horario de apertura filtra, para que quien atiende el mostrador no esté mirando el móvil cada dos minutos.",
+      "ejemplo": "Un agente que responde de noche si queda talla o hueco de cita, lo confirma en la agenda y deja el resumen listo para cuando se abre la persiana."
+    },
+    "automatizacion-procesos": {
+      "titulo": "Muchos tickets pequeños, mucha administración escondida",
+      "texto": "El comercio urbano de la capital vive de operaciones de importe bajo y volumen alto. Eso no da problemas de venta, da problemas de papeleo: cuadres de caja que no salen, facturas simplificadas, pedidos a proveedor que se hacen de memoria. Es carga que nadie contabiliza porque va en ratos sueltos, pero sumada se come una tarde entera a la semana.",
+      "ejemplo": "Cierre de caja que se cuadra solo contra el TPV y solo avisa cuando el descuadre pasa del margen que tú decidas."
+    },
+    "presencia-en-google": {
+      "titulo": "Aquí nadie busca «peluquería»: busca «peluquería Alcaravaneras»",
+      "texto": "La capital es demasiado grande para competir por términos genéricos, y por suerte no hace falta. La gente busca por barrio —Arenales, Guanarteme, Santa Catalina, Alcaravaneras— o directamente «cerca de mí» con el móvil en la mano y ganas de entrar. Esas búsquedas tienen poca competencia y una intención de compra altísima, y se ganan sobre todo con la ficha de Google, no con la web.",
+      "ejemplo": "Ficha con la categoría exacta, fotos del mes, horarios que coinciden con la realidad y mensajes activados: suele mover llamadas en la primera semana."
+    },
+    "integraciones": {
+      "titulo": "Cinco herramientas y ninguna que te diga cómo va el mes",
+      "texto": "Lo habitual en un negocio de la capital: TPV en tienda, pasarela de pago para la web, reservas en otra aplicación, mensajes en tres redes distintas y una hoja de cálculo heredada de un contable anterior. Cada pieza funciona por separado y nadie sabe cómo va el mes hasta que se cierra. Conectarlas no es un lujo, es dejar de gobernar a ciegas.",
+      "ejemplo": "Una sola pantalla con ventas, citas y consultas del día, alimentada por lo que ya tienes, sin cambiar de programa."
+    },
+    "captacion-de-clientes": {
+      "titulo": "Anunciarte a toda la ciudad es tirar el dinero",
+      "texto": "Tu cliente de la capital vive o trabaja a diez minutos andando de tu puerta. Pagar por aparecer en Jinámar o en Tamaraceite cuando tienes la tienda en Triana es gasto puro. Delimitar el radio a tu zona reduce el coste a una fracción y trae gente que puede entrar de verdad, no impresiones bonitas en un informe.",
+      "ejemplo": "Campaña acotada a un kilómetro alrededor del local, midiendo llamadas y mensajes recibidos, no visualizaciones."
+    },
+    "auditoria-de-procesos": {
+      "titulo": "Ir con la lengua fuera sin saber en qué se va el tiempo",
+      "texto": "En la capital lo normal es estar desbordado y no poder señalar con el dedo dónde se está yendo la jornada. La auditoría pone números donde había sensaciones, y casi siempre aparecen dos o tres tareas que consumen mucho más de lo que cualquiera habría apostado. Además es la forma de no comprar la herramienta de moda para acabar con una suscripción más y el mismo trabajo.",
+      "ejemplo": "Inventario de las tareas de una semana real, con las horas que cuesta cada una y qué pasaría al automatizarlas."
+    }
+  },
+  "telde": {
+    "agentes-ia": {
+      "titulo": "En el polígono, el enemigo es el teclado",
+      "texto": "Un taller de El Goro o una distribuidora de Salinetas recibe pedidos por correo, albaranes en papel y facturas de proveedor en PDF. Todo eso se teclea a mano, y ahí es donde se cuelan los errores que luego se pagan en devoluciones y en llamadas incómodas. Un agente que lee esos documentos y coloca los datos en la gestión quita la parte más ingrata del día sin cambiar cómo trabaja nadie en el almacén.",
+      "ejemplo": "Un agente que abre el pedido del cliente, saca referencias y cantidades, lo cruza con el stock y solo avisa si falta algo."
+    },
+    "automatizacion-procesos": {
+      "titulo": "Pedido, albarán, factura: el mismo dato tres veces",
+      "texto": "En distribución y talleres el dato nace en el pedido, se copia al albarán y se vuelve a copiar en la factura. Tres oportunidades de equivocarse y tres ratos de trabajo por una sola venta. Automatizar ese circuito es la intervención con más retorno inmediato en un municipio con el tejido industrial de Telde, y no obliga a tocar ni la maquinaria ni la forma de trabajar del taller.",
+      "ejemplo": "Del pedido confirmado sale el albarán, y del albarán firmado sale la factura, sin volver a escribir una referencia."
+    },
+    "presencia-en-google": {
+      "titulo": "Te buscan por la avería, no por tu nombre",
+      "texto": "El cliente de un taller o de una empresa de suministro no busca «Talleres Fulano»: busca la pieza, la marca o el problema que tiene. Aparecer en esas búsquedas concretas vale más que cualquier campaña de imagen, y además es donde menos competencia hay porque casi nadie las trabaja. Súmale que Telde reparte población entre el casco, los barrios del sur y la costa de Melenara, así que conviene dejar clarísimo dónde estás.",
+      "ejemplo": "Ficha y web que dicen exactamente qué se repara, qué se distribuye y con qué marcas se trabaja."
+    },
+    "integraciones": {
+      "titulo": "Almacén, gestión y facturación como tres islas",
+      "texto": "Lo típico en el polígono: el almacén sabe una cosa, la gestión otra y la facturación una tercera. Ese desajuste se paga en stock fantasma, en material que se pide dos veces y en facturas que se reclaman con tres meses de retraso. Es el sector donde integrar da el ahorro más fácil de demostrar con números.",
+      "ejemplo": "Un movimiento de almacén que actualiza la gestión y dispara la factura sin que intervenga nadie."
+    },
+    "captacion-de-clientes": {
+      "titulo": "Pocos clientes potenciales, cada uno vale mucho",
+      "texto": "En industria y suministro el número de clientes posibles es pequeño y el ciclo de decisión es largo, así que las campañas masivas no encajan: gastas mucho para llegar a gente que nunca te va a comprar. Lo que funciona es aparecer en la búsqueda técnica muy concreta y, sobre todo, hacer seguimiento serio de cada presupuesto que sale por la puerta.",
+      "ejemplo": "Anuncios sobre búsquedas muy específicas y seguimiento automático de cada presupuesto enviado y no contestado."
+    },
+    "auditoria-de-procesos": {
+      "titulo": "Procesos largos donde el trabajo manual se esconde",
+      "texto": "En Telde los procesos tienen muchos eslabones: entrada de material, preparación, entrega, firma, facturación, cobro. Con tantos pasos, el trabajo manual se camufla entre ellos y nadie lo ve como un problema porque siempre se ha hecho así. Mapear el recorrido completo de un pedido suele destapar duplicidades que llevan años ahí.",
+      "ejemplo": "Mapa del recorrido de un pedido de principio a fin, señalando cada punto donde el mismo dato se vuelve a teclear."
+    }
+  },
+  "santa-lucia-de-tirajana": {
+    "agentes-ia": {
+      "titulo": "En la Avenida de Canarias gana quien contesta primero",
+      "texto": "Vecindario concentra en pocas manzanas una oferta que en otros municipios está repartida por todo el término. Con el competidor literalmente en la acera de enfrente, la diferencia entre vender y no vender se decide en minutos: quién responde antes y quién se acuerda de volver a escribir al que preguntó y no compró. Un agente hace las dos cosas sin fallar ni un día.",
+      "ejemplo": "Un agente que responde al instante y que, diez días después, avisa al cliente que pidió precio cuando entra reposición o cambia la oferta."
+    },
+    "automatizacion-procesos": {
+      "titulo": "Rotación alta: el estante vacío es la venta perdida",
+      "texto": "En un eje comercial con esta densidad la mercancía entra y sale rápido, y el control de existencias se come el tiempo que debería ir a atender. El error caro es doble: quedarte sin lo que más vendes, o llenar el almacén de lo que no rota. Automatizar avisos de mínimos y pedidos recurrentes resuelve las dos caras.",
+      "ejemplo": "Aviso automático cuando un artículo baja del mínimo, con el pedido al proveedor ya redactado y pendiente solo de que lo apruebes."
+    },
+    "presencia-en-google": {
+      "titulo": "El orden en el mapa es el orden en que entran por la puerta",
+      "texto": "Cuando hay seis negocios como el tuyo en un radio de trescientos metros, la posición en el mapa de Google deja de ser una métrica abstracta: es literalmente quién recibe la visita. Y lo que mueve ese orden no es la web, son las reseñas y que los datos de la ficha cuadren en todos los sitios donde apareces.",
+      "ejemplo": "Un sistema para pedir reseñas sin incomodar al cliente, y respuesta a todas, también a las de una estrella."
+    },
+    "integraciones": {
+      "titulo": "Vender en mostrador y online con un solo inventario",
+      "texto": "Muchos negocios de Vecindario han abierto venta online sin unificar el stock, y eso acaba siempre igual: vendes por internet algo que se acaba de ir por mostrador. Detrás de esa cancelación viene la reseña de una estrella, que en un eje tan competido cuesta bastante más que el pedido perdido.",
+      "ejemplo": "Stock único: lo que se vende en caja desaparece de la web en el momento."
+    },
+    "captacion-de-clientes": {
+      "titulo": "Competir a descuento aquí es una carrera perdida",
+      "texto": "Con la competencia a la vista y con márgenes parecidos, entrar en guerra de precios en Vecindario solo adelanta el problema. Sale mucho más barato recuperar al cliente que ya te compró una vez que traer uno nuevo a base de rebajas, y encima ese cliente ya sabe dónde estás.",
+      "ejemplo": "Campaña de recuperación de clientes antiguos, que suele costar la cuarta parte que captar uno nuevo."
+    },
+    "auditoria-de-procesos": {
+      "titulo": "Cada hora con papeles es una hora sin vender",
+      "texto": "Donde la competencia está enfrente, el coste de que el dueño esté en la trastienda con la administración no es solo su tiempo: es la venta que entró y no se atendió. La auditoría prioriza justamente por ese criterio, devolver horas al mostrador, no por lo que quede más moderno.",
+      "ejemplo": "Cálculo de cuántas horas de administración se pueden devolver a la atención al cliente cada mes."
+    }
+  },
+  "san-bartolome-de-tirajana": {
+    "agentes-ia": {
+      "titulo": "Tu cliente pregunta a las once de la noche y en alemán",
+      "texto": "En Maspalomas, Playa del Inglés y San Agustín quien pregunta no es el vecino: es alguien que llegó hace dos días, está en el hotel y decide el plan de mañana desde el móvil. Escribe tarde, escribe en inglés, alemán o nórdico, y si no tiene respuesta reserva en otro sitio antes de dormirse. Un agente que atiende en el idioma del mensaje y a cualquier hora convierte esas consultas nocturnas en reservas confirmadas.",
+      "ejemplo": "Un agente que responde en el idioma en que le escriben, comprueba disponibilidad real y confirma la reserva sin que nadie se levante de la cama."
+    },
+    "automatizacion-procesos": {
+      "titulo": "Lo que aguanta en mayo se rompe en temporada alta",
+      "texto": "En el sur la carga de trabajo no es constante y la plantilla rota: el proceso que depende de que alguien se acuerde funciona en temporada baja y falla justo cuando hay más dinero en juego. Automatizar confirmaciones, recordatorios y cancelaciones evita las dos pérdidas clásicas: el hueco que se queda vacío y la doble reserva que te cuesta una reseña.",
+      "ejemplo": "Recordatorio con antelación, política de cancelación aplicada sola y liberación automática de la plaza si nadie confirma."
+    },
+    "presencia-en-google": {
+      "titulo": "Se decide en el móvil antes de salir del hotel",
+      "texto": "El visitante no conoce la zona y no tiene recomendaciones de nadie, así que le pregunta al teléfono: «restaurant near Playa del Inglés», «excursion Maspalomas». Si tu ficha no tiene fotos recientes, horarios reales y la categoría correcta, simplemente no estás en esa decisión. Y las reseñas contestadas en el idioma en que se escribieron pesan aquí mucho más que en el resto de la isla.",
+      "ejemplo": "Ficha con fotos actuales, servicios o platos listados y reseñas respondidas en el idioma del cliente."
+    },
+    "integraciones": {
+      "titulo": "Varios portales de reserva y un calendario aparte",
+      "texto": "Trabajar con dos o tres portales y llevar el calendario propio a mano termina en sobreventa, y en temporada alta la sobreventa no se arregla: se paga. Integrar disponibilidad, calendario y cobro es lo que permite crecer sin tener que dedicar a una persona a cuadrar reservas todas las mañanas.",
+      "ejemplo": "Disponibilidad sincronizada entre portales y calendario propio, con cobro y confirmación automáticos."
+    },
+    "captacion-de-clientes": {
+      "titulo": "La ventana es de una semana",
+      "texto": "Aquí no se capta con meses de antelación ni con campañas de marca: se capta a quien ya está en la isla y está mirando qué hacer hoy o mañana. Eso cambia todo —la segmentación por ubicación, el idioma del anuncio y el calendario de la campaña, que debe encenderse y apagarse con la temporada.",
+      "ejemplo": "Campañas segmentadas por ubicación e idioma, activas solo durante la temporada y con techo de gasto semanal."
+    },
+    "auditoria-de-procesos": {
+      "titulo": "La auditoría se hace mirando agosto, no la media del año",
+      "texto": "Casi todo funciona en temporada baja, así que auditar con datos de un mes tranquilo no sirve de nada: da la falsa sensación de que el proceso aguanta. Lo que hay que analizar es el pico, porque es ahí donde se pierde dinero y donde una mala experiencia se convierte en una reseña que arrastras todo el año.",
+      "ejemplo": "Análisis del proceso en temporada alta y qué conviene tener automatizado antes de que empiece."
+    }
+  }
+}
