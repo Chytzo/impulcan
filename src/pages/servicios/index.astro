@@ -1,6 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
+import { Image } from 'astro:assets';
 import IconoServicio from '../../components/IconoServicio.astro';
+import heroComercio from '../../assets/hero-comercio.jpg';
 import servicios from '../../data/servicios.json';
 import municipios from '../../data/municipios.json';
 import { enlaceWhatsapp } from '../../config.js';
@@ -23,7 +25,9 @@ const migas = {
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(migas)} />
 
-  <section class="portada" style="padding:3.5rem 0 3rem">
+  <section class="portada con-foto" style="padding:3.5rem 0 3rem">
+    <Image class="fondo" src={heroComercio} alt="Interior de un comercio canario al atardecer"
+      widths={[900, 1500]} sizes="100vw" loading="eager" />
     <div class="contenedor">
       <span class="sello">Gran Canaria</span>
       <h1>Qué hacemos</h1>

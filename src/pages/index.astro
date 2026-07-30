@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import { contacto, enlaceWhatsapp } from '../config.js';
 import despacho from '../assets/despacho-gran-canaria.jpg';
+import heroComercio from '../assets/hero-comercio.jpg';
+import cierreCiudad from '../assets/cierre-laspalmas.jpg';
 import IconoServicio from '../components/IconoServicio.astro';
 import serviciosData from '../data/servicios.json';
 import playaAlcaravaneras from '../assets/playa-alcaravaneras.jpg';
@@ -70,7 +72,7 @@ const jsonLd = [
 <Base
   titulo="Impulcan — Marketing y automatizaciones en Las Palmas de Gran Canaria"
   descripcion="Ayudamos a negocios de Gran Canaria a que les encuentren en Google y a automatizar el trabajo repetitivo. Primera revisión gratuita, sin compromiso."
-  imagen={despacho.src}
+  imagen={heroComercio.src}
 >
   <script
     slot="head"
@@ -78,7 +80,16 @@ const jsonLd = [
     set:html={JSON.stringify(jsonLd)}
   />
 
-  <section class="portada">
+  <section class="portada con-foto">
+    <Image
+      class="fondo"
+      src={heroComercio}
+      alt="Interior de un comercio canario al atardecer, con una tablet sobre el mostrador"
+      widths={[900, 1500, 2100]}
+      sizes="100vw"
+      loading="eager"
+      fetchpriority="high"
+    />
     <div class="contenedor">
       <span class="sello">Gran Canaria · Primera revisión gratis</span>
       <h1>Que te encuentren. Y que el trabajo aburrido se haga solo.</h1>
@@ -238,6 +249,14 @@ const jsonLd = [
   <section class="seccion">
     <div class="contenedor">
       <div class="cierre">
+        <Image
+          class="fondo"
+          src={cierreCiudad}
+          alt="Las Palmas de Gran Canaria al anochecer con las luces encendidas"
+          widths={[900, 1500]}
+          sizes="100vw"
+          loading="lazy"
+        />
         <h2>Te decimos qué mejorar, gratis</h2>
         <p>
           Mándanos el nombre de tu negocio. Le echamos un vistazo a cómo se te ve en

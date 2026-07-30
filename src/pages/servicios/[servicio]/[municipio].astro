@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import IconoServicio from '../../../components/IconoServicio.astro';
 import FotoSector from '../../../components/FotoSector.astro';
+import FotoServicio from '../../../components/FotoServicio.astro';
 import servicios from '../../../data/servicios.json';
 import municipios from '../../../data/municipios.json';
 import angulos from '../../../data/angulos.json';
@@ -75,7 +76,8 @@ const jsonLd = [
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <section class="portada" style="padding:3.25rem 0 2.75rem">
+  <section class="portada con-foto" style="padding:3.25rem 0 2.75rem">
+    <FotoServicio servicio={servicio.slug} />
     <div class="contenedor">
       <nav class="migas" aria-label="Ruta">
         <a href="/">Inicio</a> · <a href="/servicios/">Servicios</a> ·

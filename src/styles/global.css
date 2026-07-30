@@ -73,14 +73,47 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Portada ---------- */
 .portada {
-  background:
-    radial-gradient(900px 420px at 12% -12%, rgba(26,163,154,0.28), transparent 62%),
-    radial-gradient(700px 380px at 92% 8%, rgba(226,104,63,0.24), transparent 60%),
-    var(--noche);
+  background: var(--noche);
   color: #fff;
   padding: 4.5rem 0 4rem;
   position: relative;
+  isolation: isolate;
   overflow: hidden;
+}
+
+/* Fotografía de fondo, con velo para que el texto siempre se lea */
+.portada img.fondo,
+.portada .fondo-servicio {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+.portada.con-foto::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(
+    100deg,
+    rgba(6, 18, 32, 0.94) 0%,
+    rgba(6, 18, 32, 0.86) 42%,
+    rgba(6, 18, 32, 0.55) 72%,
+    rgba(6, 18, 32, 0.42) 100%
+  );
+}
+@media (max-width: 760px) {
+  .portada.con-foto::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(6, 18, 32, 0.88) 0%,
+      rgba(6, 18, 32, 0.8) 55%,
+      rgba(6, 18, 32, 0.93) 100%
+    );
+  }
 }
 .portada::after {
   content: "";
@@ -91,6 +124,8 @@ img { max-width: 100%; display: block; }
   background-size: 46px 46px;
   mask-image: radial-gradient(circle at 50% 0%, #000, transparent 78%);
   pointer-events: none;
+  z-index: -1;
+  opacity: 0.5;
 }
 .portada .contenedor { position: relative; z-index: 1; }
 .portada h1 { font-size: clamp(2.2rem, 5.4vw, 3.5rem); max-width: 17ch; margin-bottom: 0.5rem; }
@@ -251,9 +286,32 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Cierre ---------- */
 .cierre {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   background: var(--noche); color: #fff;
-  border-radius: var(--radio); padding: 2.5rem 2rem;
+  border-radius: var(--radio); padding: 3.25rem 2rem;
   text-align: center;
+}
+.cierre img.fondo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cierre::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 18, 32, 0.86) 0%,
+    rgba(6, 18, 32, 0.72) 50%,
+    rgba(6, 18, 32, 0.9) 100%
+  );
 }
 .cierre h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); }
 .cierre p { color: rgba(255,255,255,0.82); max-width: 46ch; margin: 0 auto 1.6rem; }

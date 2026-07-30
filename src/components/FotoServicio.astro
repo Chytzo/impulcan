@@ -1,0 +1,42 @@
+---
+// Imagen de cabecera de cada servicio. Generadas con IA, declaradas en /creditos.
+import { Image } from 'astro:assets';
+import agentes from '../assets/servicio-agentes-ia.jpg';
+import automatizacion from '../assets/servicio-automatizacion-procesos.jpg';
+import google from '../assets/servicio-presencia-en-google.jpg';
+import integraciones from '../assets/servicio-integraciones.jpg';
+import captacion from '../assets/servicio-captacion-de-clientes.jpg';
+import auditoria from '../assets/servicio-auditoria-de-procesos.jpg';
+
+const IMAGENES = {
+  'agentes-ia': agentes,
+  'automatizacion-procesos': automatizacion,
+  'presencia-en-google': google,
+  integraciones,
+  'captacion-de-clientes': captacion,
+  'auditoria-de-procesos': auditoria,
+};
+const ALT = {
+  'agentes-ia': 'Mostrador de un negocio de noche con un móvil encendido sobre la madera',
+  'automatizacion-procesos': 'Escritorio ordenado con la bandeja de papeles vacía',
+  'presencia-en-google': 'Escaparate iluminado destacando entre locales apagados',
+  integraciones: 'Terminal de cobro, libreta y móvil alineados sobre un mostrador',
+  'captacion-de-clientes': 'Puerta de un comercio con gente entrando, a contraluz',
+  'auditoria-de-procesos': 'Mesa con dos cafés y un cuaderno de notas junto a una ventana',
+};
+
+const { servicio } = Astro.props;
+const imagen = IMAGENES[servicio];
+---
+
+{imagen && (
+  <Image
+    class="fondo-servicio"
+    src={imagen}
+    alt={ALT[servicio]}
+    widths={[800, 1400, 2000]}
+    sizes="100vw"
+    loading="eager"
+    fetchpriority="high"
+  />
+)}
