@@ -55,6 +55,20 @@ const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
           <a href="/#zonas">Zonas</a>
           <a class="cta" href={wa} rel="noopener">Hablemos</a>
         </nav>
+        <details class="menu-movil">
+          <summary aria-label="Abrir el menú de navegación">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 6.5h16M4 12h16M4 17.5h16" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+            </svg>
+          </summary>
+          <nav class="menu-panel">
+            <a href="/servicios/">Servicios</a>
+            <a href="/#como">Cómo trabajamos</a>
+            <a href="/#precios">Precios</a>
+            <a href="/#zonas">Zonas</a>
+            <a class="cta" href={wa} rel="noopener">Hablemos por WhatsApp</a>
+          </nav>
+        </details>
       </div>
     </header>
 
@@ -66,7 +80,7 @@ const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
       <div class="contenedor">
         <div class="cols">
           <div>
-            <h4>Impulcan</h4>
+            <p class="pie-columna-titulo">Impulcan</p>
             <p style="margin-top:0">
               Marketing y automatizaciones para negocios de {contacto.zona} y el resto de
               Gran Canaria. Trabajamos con comercios, talleres, clínicas y pymes que quieren
@@ -74,12 +88,12 @@ const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
             </p>
           </div>
           <div>
-            <h4>Contacto</h4>
+            <p class="pie-columna-titulo">Contacto</p>
             <ul>
               <li><a href={wa} rel="noopener">WhatsApp {contacto.whatsappVisible}</a></li>
               <li><a href={`mailto:${contacto.email}`}>{contacto.email}</a></li>
             </ul>
-            <h4 style="margin-top:1.6rem">Enlaces</h4>
+            <p class="pie-columna-titulo" style="margin-top:1.6rem">Enlaces</p>
             <ul>
               <li><a href="/servicios/">Servicios</a></li>
               <li><a href="https://zonaalcaravaneras.com" rel="noopener">Zona Alcaravaneras</a></li>
@@ -96,6 +110,22 @@ const urlImagen = imagen ? new URL(imagen, Astro.site).toString() : undefined;
         </p>
       </div>
     </footer>
+
+    <script>
+      // Cerrar el menú móvil al pulsar fuera, con Escape o al navegar.
+      const menu = document.querySelector('.menu-movil');
+      if (menu) {
+        document.addEventListener('click', (e) => {
+          if (menu.open && !menu.contains(e.target)) menu.open = false;
+        });
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') menu.open = false;
+        });
+        menu.querySelectorAll('a').forEach((a) => {
+          a.addEventListener('click', () => { menu.open = false; });
+        });
+      }
+    </script>
 
     <script>
       // Aparición progresiva de las secciones al entrar en pantalla

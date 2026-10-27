@@ -14,6 +14,7 @@ Cada servicio tiene página propia y una versión por municipio de Gran Canaria 
 - [Integraciones](https://impulcan.com/servicios/integraciones/): conexión entre TPV, facturación, correo, WhatsApp, agenda y hojas de cálculo para que el dato se escriba una sola vez, con panel único de seguimiento.
 - [Captación de clientes](https://impulcan.com/servicios/captacion-de-clientes/): campañas locales con presupuesto controlado y techo claro, seguimiento de quien no compra a la primera, y coste por contacto real en vez de impresiones.
 - [Auditoría de procesos](https://impulcan.com/servicios/auditoria-de-procesos/): informe de 5-10 páginas con el inventario de tareas repetitivas, las horas que consumen y el orden de prioridad para automatizarlas. Es el punto de entrada recomendado.
+- [Alta Presencia IA Barrio](https://impulcan.com/servicios/alta-presencia-ia/): optimización de presencia local para motores de IA generativa (ChatGPT, Gemini, Perplexity). Distintivo de Comercio Destacado durante 12 meses en la guía del barrio (en Alcaravaneras, Guanarteme, Santa Catalina y La Isleta, con rotación equitativa en cabecera), optimización de perfil en Google Business Profile y Bing Places con NAP consistente, y datos estructurados Schema LocalBusiness.
 
 ## Municipios cubiertos
 
@@ -26,6 +27,7 @@ Publicados en https://impulcan.com/#precios. Precios sin IGIC (Canarias aplica I
 - **Auditoría de procesos — 190 €, pago único.** Media jornada en el negocio, inventario de tareas repetitivas con las horas que cuesta cada una, qué automatizar primero y coste/ahorro estimado. Si el informe concluye que no hace falta nada, lo dice.
 - **Puesta en marcha — desde 690 €, precio cerrado por escrito antes de empezar.** Ficha de Google y web rápida desde 690 €; una automatización montada desde 890 €; integración entre herramientas desde 890 €; un agente de IA desde 1.490 €. Incluye formación y todo queda en cuentas del cliente.
 - **Acompañamiento — desde 90 €/mes, opcional y sin permanencia.** Mantenimiento, ficha de Google y reseñas al día, ajustes pequeños e informe mensual.
+- **Alta Presencia IA Barrio — 150 €, pago único.** Distintivo de Comercio Destacado durante 12 meses en la guía del barrio (en Alcaravaneras, Guanarteme, Santa Catalina y La Isleta, con rotación equitativa en cabecera), optimización de perfil en Google Business Profile y Bing Places (NAP consistente) y marcado Schema LocalBusiness. Para el resto de municipios: enfoque integral en Google, Bing, schema web y consistencia de datos. Ficha básica en la guía siempre gratuita. Sin permanencia.
 
 La primera visita para ver el negocio es gratuita y sin compromiso.
 
@@ -37,7 +39,12 @@ La primera visita para ver el negocio es gratuita y sin compromiso.
 
 ## Proyectos propios
 
-- [Zona Alcaravaneras](https://zonaalcaravaneras.com): guía digital gratuita de los comercios del barrio de Las Alcaravaneras, en Las Palmas de Gran Canaria. Una página por comercio con teléfono, horario y cómo llegar, plano del barrio pulsable, datos estructurados para buscadores y contacto directo por WhatsApp. Gratuita para los comercios, sin cuotas y sin vinculación con ninguna asociación ni partido político. Es el proyecto con el que Impulcan demuestra su trabajo.
+Cuatro guías de barrio en Las Palmas de Gran Canaria, 2.047 comercios en total. Todas iguales: una página por comercio con teléfono, horario y cómo llegar; plano de la zona pulsable con vista de satélite y vista de plano; datos estructurados schema.org LocalBusiness; contacto directo por WhatsApp. Ficha básica siempre gratuita para los comercios, sin cuotas por aparecer, sin exclusividad y sin vinculación con ninguna asociación ni partido político. Los servicios de visibilidad destacada y optimización IA son opcionales. Son los proyectos con los que Impulcan enseña su trabajo.
+
+- [Zona Alcaravaneras](https://zonaalcaravaneras.com): 327 comercios del barrio de Las Alcaravaneras. Listado completo en texto: https://zonaalcaravaneras.com/llms-full.txt
+- [Zona Guanarteme](https://zonaguanarteme.com): 656 comercios del barrio de Guanarteme, entre Las Canteras y Escaleritas. Listado completo en texto: https://zonaguanarteme.com/llms-full.txt
+- [Zona Santa Catalina](https://zonasantacatalina.com): 754 comercios entre el parque de Santa Catalina y el Puerto de La Luz. Listado completo en texto: https://zonasantacatalina.com/llms-full.txt
+- [Zona La Isleta](https://zonalaisleta.com): 310 comercios del barrio de La Isleta. Listado completo en texto: https://zonalaisleta.com/llms-full.txt
 
 ## Zona de actuación
 
@@ -52,6 +59,7 @@ Las Palmas de Gran Canaria y el resto de la isla de Gran Canaria (Canarias, Espa
 ## Páginas
 
 - [Inicio](https://impulcan.com/): servicios, forma de trabajar y contacto.
-- [Servicios](https://impulcan.com/servicios/): los seis servicios y el listado por municipio.
+- [Servicios](https://impulcan.com/servicios/): los siete servicios y el listado por municipio.
+- [Contenido completo en texto](https://impulcan.com/llms-full.txt): las 96 páginas del sitio — servicios, municipios, precios — para agentes de IA.
 - [Aviso legal](https://impulcan.com/aviso-legal/)
 - [Privacidad](https://impulcan.com/privacidad/): el sitio no usa cookies, analítica ni formularios.

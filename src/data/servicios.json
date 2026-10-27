@@ -196,5 +196,52 @@
         "r": "No. El informe es tuyo y puedes ejecutarlo con quien quieras, o tú mismo."
       }
     ]
+  },
+  {
+    "slug": "alta-presencia-ia",
+    "nombre": "Alta Presencia IA Barrio",
+    "titular": "Que tu negocio aparezca cuando alguien le pregunta a ChatGPT o a Gemini por tu barrio",
+    "resumen": "Cada vez más gente decide a qué comercio ir preguntándole a la IA, no buscando en una web. Arreglamos tu ficha para que las respuestas hablen de ti.",
+    "icono": "diana",
+    "problema": "La gente ya no solo busca en Google: pregunta a ChatGPT, a Gemini o a Perplexity «¿dónde compro X en mi barrio?». Si tu negocio no tiene la información estructurada y verificada que esas herramientas leen, la respuesta habla de tu competencia. No es magia: es tener tu ficha, tu dirección, tu horario y tus datos bien puestos y en el formato que las IA entienden.",
+    "que_hacemos": [
+      "Distintivo de Comercio Destacado durante 12 meses en la guía del barrio (en Alcaravaneras, Guanarteme, Santa Catalina y La Isleta, con rotación equitativa en cabecera)",
+      "Descripción optimizada para que las IA te citen cuando preguntan por tu servicio en tu zona",
+      "Schema LocalBusiness correcto en tu web o ficha, para que las herramientas de IA te lean bien",
+      "Ajuste de tu perfil en Google Business Profile y Bing Places con datos consistentes (NAP)",
+      "Revisión final para que ChatGPT, Gemini y Perplexity te encuentren y te citen con información correcta"
+    ],
+    "entregables": [
+      "Ficha destacada durante 12 meses en la guía de tu barrio (en barrios con guía activa de Las Palmas)",
+      "Perfil optimizado y coherente en Google Business Profile y Bing Places (para todos los municipios)",
+      "Marcado de datos estructurados (Schema LocalBusiness) y descripción para motores de IA",
+      "Documento breve de qué hemos tocado y por qué"
+    ],
+    "preguntas": [
+      {
+        "p": "¿Qué es eso de aparecer en la IA?",
+        "r": "Que cuando alguien pregunte a ChatGPT o a Gemini por un servicio en tu barrio o municipio, la respuesta mencione tu negocio con datos correctos, en vez de hablar de la competencia. Lo logramos dejando tu información estructurada y verificada en el formato que esas herramientas leen."
+      },
+      {
+        "p": "¿Esto es SEO de Google?",
+        "r": "No exactamente. El SEO clásico posiciona en los resultados de búsqueda de Google. Aquí trabajamos para que las IAs generativas (ChatGPT, Gemini, Perplexity) te recomienden. Comparte cimientos, pero es otra disciplina: datos estructurados, entidades y consistencia."
+      },
+      {
+        "p": "¿Qué barrios y municipios cubrís?",
+        "r": "Trabajamos con negocios de toda Gran Canaria. En los cuatro barrios con guía propia (Alcaravaneras, Guanarteme, Santa Catalina y La Isleta, en Las Palmas) el pack incluye además 12 meses como Comercio Destacado en la guía. En el resto de municipios nos centramos al 100% en la optimización de Google Business Profile, Bing Places, schema web y consistencia NAP."
+      },
+      {
+        "p": "¿Cómo funciona la posición de Comercio Destacado en las guías?",
+        "r": "El distintivo de Comercio Destacado dura 12 meses desde la activación. Si en una misma categoría coinciden varios comercios destacados, la posición de cabecera rota periódicamente de forma equitativa y documentada. La ficha básica del comercio sigue siendo siempre gratuita."
+      },
+      {
+        "p": "¿Es un pago único o mensual?",
+        "r": "Pago único de 150 €. Todo lo optimizado queda en tus cuentas y en tu propiedad. No hay permanencia ni cuotas obligatorias."
+      },
+      {
+        "p": "¿Cuánto se tarda en notar?",
+        "r": "La ficha destacada en la guía se activa al día siguiente. La citación en IA es progresiva: cuanto más consistente y verificada está tu información en Google y Bing, antes apareces. No prometemos posiciones mágicas, preparamos la infraestructura para que la IA te encuentre y te cite."
+      }
+    ]
   }
 ]

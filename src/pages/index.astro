@@ -3,12 +3,16 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import IconoServicio from '../components/IconoServicio.astro';
 import ChatDemo from '../components/ChatDemo.astro';
+import Testimonios from '../components/Testimonios.astro';
 import serviciosData from '../data/servicios.json';
 import municipios from '../data/municipios.json';
 import precios from '../data/precios.json';
 import calleTriana from '../assets/calle-triana.jpg';
 import heroComercio from '../assets/hero-comercio.jpg';
 import playaAlcaravaneras from '../assets/playa-alcaravaneras.jpg';
+import zonaGuanarteme from '../assets/zona-guanarteme.jpg';
+import zonaSantaCatalina from '../assets/zona-santacatalina.jpg';
+import zonaLaIsleta from '../assets/zona-laisleta.jpg';
 import { contacto, enlaceWhatsapp } from '../config.js';
 
 const waHero = enlaceWhatsapp(
@@ -17,12 +21,67 @@ const waHero = enlaceWhatsapp(
 const waCierre = enlaceWhatsapp('Hola, quiero la revisión gratuita de mi negocio.');
 const servicios = serviciosData;
 
+// Las cuatro guías de barrio. Son obra propia y hacen de escaparate:
+// cualquiera puede ver el trabajo terminado antes de llamarnos.
+const guias = [
+  {
+    nombre: 'Zona Guanarteme',
+    dominio: 'zonaguanarteme.com',
+    comercios: 656,
+    foto: zonaGuanarteme,
+    alt: 'Playa de Las Canteras, junto al barrio de Guanarteme',
+    texto: 'El barrio entre Las Canteras y Escaleritas, con el comercio de calle más denso de la ciudad.',
+  },
+  {
+    nombre: 'Zona Santa Catalina',
+    dominio: 'zonasantacatalina.com',
+    comercios: 754,
+    foto: zonaSantaCatalina,
+    alt: 'Parque de Santa Catalina, en Las Palmas de Gran Canaria',
+    texto: 'Del parque al Puerto de La Luz: hostelería, tiendas y servicios en la zona de más paso.',
+  },
+  {
+    nombre: 'Zona La Isleta',
+    dominio: 'zonalaisleta.com',
+    comercios: 310,
+    foto: zonaLaIsleta,
+    alt: 'La Isleta vista desde el aire, con el puerto al fondo',
+    texto: 'El barrio marinero al norte del puerto, con su comercio de toda la vida.',
+  },
+];
+
+const totalComercios = 327 + guias.reduce((suma, g) => suma + g.comercios, 0);
+
+const faqs = [
+  {
+    pregunta: '¿Qué es una agencia GEO y cómo optimiza para IA en Canarias?',
+    respuesta:
+      'Una agencia GEO (Generative Engine Optimization) optimiza la presencia digital de un negocio para que sea citado y recomendado por motores de IA como ChatGPT, Gemini y Perplexity, además de los buscadores tradicionales. En Impulcan estructuramos datos semánticos, geolocalización precisa y contenido citable para pymes y comercios de Las Palmas y Gran Canaria.',
+  },
+  {
+    pregunta: '¿Por qué es importante que un negocio local aparezca en ChatGPT y motores de IA?',
+    respuesta:
+      'Porque cada vez más clientes buscan recomendaciones de servicios locales directamente en asistentes de IA en vez de buscadores tradicionales. Aparecer con información verificada, datos estructurados y presencia de barrio garantiza que la IA cite tu negocio frente a la competencia.',
+  },
+  {
+    pregunta: '¿Cuánto cuesta un agente de IA o una automatización en Gran Canaria?',
+    respuesta:
+      'Nuestros precios son públicos y cerrados: auditoría de procesos por 190 € (pago único), puesta en marcha de web o automatizaciones desde 690 € (agentes de IA atendiendo o procesando desde 1.490 €) y acompañamiento mensual opcional de 90 €/mes sin permanencia.',
+  },
+  {
+    pregunta: '¿Cómo ayuda la automatización a las pymes y comercios de la isla?',
+    respuesta:
+      'Ahorra entre 5 y 15 horas al mes en tareas repetitivas: agentes que atienden por WhatsApp y agendan citas, presupuestos y facturas automáticas, y sincronización directa entre TPV, agenda y hojas de cálculo sin cambiar tus programas actuales.',
+  },
+];
+
 // Sin sociedad constituida todavía: ProfessionalService con nombre comercial,
 // no Organization con CIF.
 const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
+    '@id': 'https://impulcan.com/#organization',
     name: 'Impulcan',
     description:
       'Marketing y automatizaciones para comercios y pymes de Las Palmas de Gran Canaria ' +
@@ -31,6 +90,12 @@ const jsonLd = [
     telephone: '+34633505153',
     email: contacto.email,
     inLanguage: 'es-ES',
+    priceRange: '190-1490',
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 28.1235,
+      longitude: -15.4363,
+    },
     areaServed: [
       { '@type': 'AdministrativeArea', name: 'Gran Canaria' },
       { '@type': 'City', name: 'Las Palmas de Gran Canaria' },
@@ -50,11 +115,20 @@ const jsonLd = [
         itemOffered: { '@type': 'Service', name: s.nombre, description: s.resumen },
       })),
     },
-    subjectOf: {
-      '@type': 'WebSite',
-      name: 'Zona Alcaravaneras',
-      url: 'https://zonaalcaravaneras.com/',
-    },
+    owns: [
+      {
+        '@type': 'WebSite',
+        '@id': 'https://zonaalcaravaneras.com/#website',
+        name: 'Zona Alcaravaneras',
+        url: 'https://zonaalcaravaneras.com/',
+      },
+      ...guias.map((g) => ({
+        '@type': 'WebSite',
+        '@id': `https://${g.dominio}/#website`,
+        name: g.nombre,
+        url: `https://${g.dominio}/`,
+      })),
+    ],
     makesOffer: precios.planes.map((p) => ({
       '@type': 'Offer',
       name: p.nombre,
@@ -67,9 +141,26 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': 'https://impulcan.com/#website',
     name: 'Impulcan',
     url: 'https://impulcan.com/',
     inLanguage: 'es-ES',
+    publisher: {
+      '@id': 'https://impulcan.com/#organization',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': 'https://impulcan.com/#faq',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.pregunta,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.respuesta,
+      },
+    })),
   },
 ];
 ---
@@ -92,8 +183,7 @@ const jsonLd = [
             <span class="brillo">se haga solo</span>.
           </h1>
           <p class="entradilla">
-            Ponemos a punto la presencia digital de tu negocio y automatizamos las tareas
-            que te comen la semana. Sin palabrería, sin permanencias y hablando claro.
+            Impulcan es una agencia de marketing digital de Las Palmas de Gran Canaria especializada en agentes de IA y automatización de procesos para pymes y comercios locales. Ponemos a punto la presencia digital de tu negocio y automatizamos las tareas que te comen la semana. Sin palabrería, sin permanencias y hablando claro.
           </p>
           <div class="acciones">
             <a class="boton" href={waHero} rel="noopener">
@@ -116,7 +206,7 @@ const jsonLd = [
     <div class="contenedor">
       <div class="titulo-seccion revelar">
         <span class="etiqueta">Qué hacemos</span>
-        <h2>Seis servicios, un mismo criterio</h2>
+        <h2>Siete servicios, un mismo criterio</h2>
         <p>
           No vendemos paquetes cerrados. Miramos tu negocio, te decimos qué es lo que más
           te va a mover, y empezamos por ahí.
@@ -164,9 +254,14 @@ const jsonLd = [
             pulsable y datos estructurados para que Google entienda cada negocio.
           </p>
           <p>
-            Gratuita para los comercios, sin cobrar por aparecer y sin estar afiliada a
-            ninguna asociación ni partido. La hicimos porque el barrio no tenía nada
-            parecido — y porque es la mejor forma de enseñar lo que sabemos hacer.
+            Ficha básica siempre gratuita para los comercios, sin cuotas por aparecer y sin
+            estar afiliada a ninguna asociación ni partido. La hicimos porque el barrio no
+            tenía nada parecido — y porque es la mejor forma de enseñar lo que sabemos hacer.
+          </p>
+          <p>
+            Creadora de la mayor red de digitalización comercial de barrio de Las Palmas:
+            Zona Alcaravaneras, Guanarteme, Santa Catalina y La Isleta, con más de 2.000 comercios censados
+            ({totalComercios.toLocaleString('es-ES')} comercios en total).
           </p>
           <div class="acciones" style="margin-top:1.3rem">
             <a class="boton fantasma" href="https://zonaalcaravaneras.com" rel="noopener">
@@ -194,6 +289,44 @@ const jsonLd = [
             </ul>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="guias">
+    <div class="contenedor">
+      <div class="titulo-seccion revelar">
+        <span class="etiqueta">La red de guías</span>
+        <h2>Y tres barrios más</h2>
+        <p>
+          Creadora de la mayor red de digitalización comercial de barrio de Las Palmas:
+          Zona Alcaravaneras, Guanarteme, Santa Catalina y La Isleta, con más de 2.000 comercios censados.
+          Mismo plano, mismas fichas, misma promesa: ficha básica siempre gratuita para el
+          comercio y sin afiliación con nadie. Los servicios de visibilidad destacada y
+          optimización son opcionales. Entra y mira el trabajo antes de escribirnos.
+        </p>
+      </div>
+
+      <div class="guias">
+        {guias.map((g) => (
+          <a class="guia revelar" href={`https://${g.dominio}`} rel="noopener">
+            <Image
+              class="guia-fondo"
+              src={g.foto}
+              alt={g.alt}
+              widths={[420, 760]}
+              sizes="(max-width: 900px) 100vw, 32vw"
+              loading="lazy"
+            />
+            <span class="guia-cifra">{g.comercios.toLocaleString('es-ES')} comercios</span>
+            <div class="guia-pie">
+              <strong>{g.nombre}</strong>
+              <span class="guia-dominio">{g.dominio}</span>
+              <p>{g.texto}</p>
+              <span class="guia-mas">Ver la guía &rarr;</span>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
   </section>
@@ -267,6 +400,8 @@ const jsonLd = [
     </div>
   </section>
 
+  <Testimonios />
+
   <section class="seccion">
     <div class="contenedor">
       <div class="caso cristal revelar">
@@ -292,6 +427,24 @@ const jsonLd = [
           <p>Por eso lo primero es ir a verte. Media hora contigo vale más que veinte correos.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="faq">
+    <div class="contenedor estrecho">
+      <div class="titulo-seccion revelar">
+        <span class="etiqueta">Dudas habituales</span>
+        <h2>Preguntas frecuentes</h2>
+        <p>
+          Respuestas sobre optimización GEO, agentes de IA y automatización para comercios y pymes de Gran Canaria.
+        </p>
+      </div>
+      {faqs.map((f) => (
+        <details class="pregunta revelar">
+          <summary>{f.pregunta}</summary>
+          <p>{f.respuesta}</p>
+        </details>
+      ))}
     </div>
   </section>
 

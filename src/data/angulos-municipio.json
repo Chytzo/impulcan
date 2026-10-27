@@ -29,6 +29,11 @@
       "titulo": "Ir con la lengua fuera sin saber en qué se va el tiempo",
       "texto": "En la capital lo normal es estar desbordado y no poder señalar con el dedo dónde se está yendo la jornada. La auditoría pone números donde había sensaciones, y casi siempre aparecen dos o tres tareas que consumen mucho más de lo que cualquiera habría apostado. Además es la forma de no comprar la herramienta de moda para acabar con una suscripción más y el mismo trabajo.",
       "ejemplo": "Inventario de las tareas de una semana real, con las horas que cuesta cada una y qué pasaría al automatizarlas."
+    },
+    "alta-presencia-ia": {
+      "titulo": "Tu barrio decide preguntándole a la IA",
+      "texto": "En Las Palmas de Gran Canaria cada vez más gente le pregunta a ChatGPT o a Gemini dónde comprar o dónde comer, en vez de buscar en una web. Si tu negocio está en Alcaravaneras, Guanarteme, Santa Catalina o La Isleta, incluimos tu ficha destacada en nuestra guía del barrio, además de optimizar tu perfil en Google Business Profile, Bing Places y datos estructurados Schema para que la IA te cite con información exacta y verificada.",
+      "ejemplo": "Un cliente pregunta a Gemini '¿dónde arreglan zapatos en Alcaravaneras?' y tu negocio sale con dirección, horario y teléfono correctos."
     }
   },
   "telde": {
@@ -61,6 +66,11 @@
       "titulo": "Procesos largos donde el trabajo manual se esconde",
       "texto": "En Telde los procesos tienen muchos eslabones: entrada de material, preparación, entrega, firma, facturación, cobro. Con tantos pasos, el trabajo manual se camufla entre ellos y nadie lo ve como un problema porque siempre se ha hecho así. Mapear el recorrido completo de un pedido suele destapar duplicidades que llevan años ahí.",
       "ejemplo": "Mapa del recorrido de un pedido de principio a fin, señalando cada punto donde el mismo dato se vuelve a teclear."
+    },
+    "alta-presencia-ia": {
+      "titulo": "Que la IA te nombre antes que a la competencia",
+      "texto": "Cada vez más vecinos de Telde deciden a qué comercio ir preguntándole a la IA. Dejamos tu información estructurada y verificada para que, cuando alguien pregunte por tu servicio en Telde, la respuesta cuente con tu negocio. Optimizamos tu perfil en Google Business Profile y Bing Places, y alineamos tus datos (NAP consistente) y schema web para que ChatGPT y Gemini te recomienden con datos exactos.",
+      "ejemplo": "Alguien pregunta '¿dónde hay un buen taller en Telde?' y tu negocio aparece con datos correctos en la respuesta de la IA."
     }
   },
   "santa-lucia-de-tirajana": {
@@ -93,6 +103,11 @@
       "titulo": "Cada hora con papeles es una hora sin vender",
       "texto": "Donde la competencia está enfrente, el coste de que el dueño esté en la trastienda con la administración no es solo su tiempo: es la venta que entró y no se atendió. La auditoría prioriza justamente por ese criterio, devolver horas al mostrador, no por lo que quede más moderno.",
       "ejemplo": "Cálculo de cuántas horas de administración se pueden devolver a la atención al cliente cada mes."
+    },
+    "alta-presencia-ia": {
+      "titulo": "Aparecer en las respuestas de IA de tu zona",
+      "texto": "En Santa Lucía de Tirajana la decisión de compra empieza cada vez más en un chat de IA. Preparamos tu negocio con optimización en Google Business Profile, Bing Places, datos estructurados (Schema) y consistencia de datos (NAP) para que, cuando le pregunten a ChatGPT o Gemini por tu servicio en Vecindario o la zona sureste, tu negocio sea una de las respuestas recomendadas.",
+      "ejemplo": "Una clienta pregunta '¿dónde hago copias de llaves cerca de Vecindario?' y tu negocio sale con dirección y horario bien puestos."
     }
   },
   "san-bartolome-de-tirajana": {
@@ -125,6 +140,11 @@
       "titulo": "La auditoría se hace mirando agosto, no la media del año",
       "texto": "Casi todo funciona en temporada baja, así que auditar con datos de un mes tranquilo no sirve de nada: da la falsa sensación de que el proceso aguanta. Lo que hay que analizar es el pico, porque es ahí donde se pierde dinero y donde una mala experiencia se convierte en una reseña que arrastras todo el año.",
       "ejemplo": "Análisis del proceso en temporada alta y qué conviene tener automatizado antes de que empiece."
+    },
+    "alta-presencia-ia": {
+      "titulo": "Que la IA recomiende tu negocio en el Sur",
+      "texto": "Los visitantes y vecinos de San Bartolomé de Tirajana consultan cada vez más a la IA antes de decidir. Optimizamos tu perfil en Google Business Profile y Bing Places, y añadimos datos estructurados Schema y NAP consistente para que, cuando pregunten por tu servicio en la zona, la IA te responda con información exacta de tu negocio.",
+      "ejemplo": "Alguien pregunta '¿dónde cenar pescado fresco en Playa del Inglés?' y tu restaurante aparece citado con datos exactos."
     }
   }
 }

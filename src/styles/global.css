@@ -32,7 +32,7 @@
   --fondo-alto: #1a0b3d;
   --tinta: #ffffff;
   --tinta-suave: rgba(255, 255, 255, 0.66);
-  --tinta-tenue: rgba(255, 255, 255, 0.42);
+  --tinta-tenue: rgba(255, 255, 255, 0.58);
   --borde: rgba(255, 255, 255, 0.09);
 
   --radio: 16px;
@@ -73,6 +73,12 @@ h1, h2, h3, h4 {
 
 a { color: var(--cian); text-underline-offset: 3px; }
 img { max-width: 100%; display: block; }
+
+/* Navegación por teclado siempre visible sobre el fondo oscuro */
+:focus-visible {
+  outline: 2px solid var(--cian);
+  outline-offset: 3px;
+}
 
 .contenedor { max-width: var(--ancho); margin: 0 auto; padding: 0 1.5rem; }
 .estrecho { max-width: 760px; }
@@ -317,6 +323,52 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 0 20px rgba(245, 16, 107, 0.35);
 }
 
+/* En móvil el chat pesa demasiado en la portada: sin altura mínima
+   y sin la barra decorativa de escritura. */
+@media (max-width: 720px) {
+  .chat { min-height: 0; }
+  .chat-pie { display: none; }
+}
+
+/* ---------------- Menú móvil ---------------- */
+.menu-movil { display: none; position: relative; }
+@media (max-width: 720px) {
+  .menu-movil { display: block; }
+}
+.menu-movil summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid; place-items: center;
+  width: 42px; height: 42px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--borde);
+}
+.menu-movil summary::-webkit-details-marker { display: none; }
+.menu-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 12px);
+  min-width: 250px;
+  display: grid;
+  background: rgba(13, 10, 32, 0.97);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 0.7rem;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+  z-index: 60;
+}
+.menu-panel a {
+  color: var(--tinta-suave);
+  text-decoration: none;
+  font-size: 0.98rem;
+  padding: 0.68rem 0.85rem;
+  border-radius: var(--radio-s);
+}
+.menu-panel a:hover { background: rgba(255, 255, 255, 0.06); color: #fff; }
+.menu-panel a.cta { margin-top: 0.4rem; text-align: center; }
+
 /* ---------------- Secciones ---------------- */
 .seccion { padding: 4.5rem 0; position: relative; }
 .titulo-seccion { max-width: 660px; margin-bottom: 2.6rem; }
@@ -419,6 +471,45 @@ img { max-width: 100%; display: block; }
 .caso .marco span { color: var(--tinta-suave); font-size: 0.92rem; }
 .caso .marco ul { margin: 1rem 0 0; padding-left: 1.1rem; font-size: 0.9rem; color: var(--tinta-suave); }
 
+/* Red de guías de barrio */
+.guias { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+@media (max-width: 900px) { .guias { grid-template-columns: 1fr; } }
+
+.guia {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  min-height: 340px; padding: 1.5rem;
+  border: 1px solid var(--borde); border-radius: var(--radio);
+  color: var(--tinta); text-decoration: none;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.guia-fondo {
+  position: absolute; inset: 0; z-index: -2;
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.guia::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(to bottom, rgba(6, 4, 20, 0.15) 0%, rgba(6, 4, 20, 0.55) 45%, rgba(6, 4, 20, 0.95) 100%);
+}
+.guia:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 16, 107, 0.45);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+.guia:hover .guia-fondo { transform: scale(1.06); }
+
+.guia-cifra {
+  position: absolute; top: 1rem; left: 1rem;
+  background: var(--degradado-calido); color: #fff;
+  font-size: 0.76rem; font-weight: 600;
+  padding: 0.3rem 0.8rem; border-radius: 999px;
+}
+.guia-pie strong { font-family: var(--display); font-size: 1.4rem; display: block; }
+.guia-dominio { display: block; font-size: 0.85rem; color: var(--cian); margin-top: 0.15rem; }
+.guia-pie p { margin: 0.6rem 0 0; font-size: 0.92rem; color: var(--tinta-suave); }
+.guia-mas { display: inline-block; margin-top: 0.9rem; font-size: 0.9rem; font-weight: 600; color: #fff; }
+
 /* Cierre */
 .cierre {
   position: relative; isolation: isolate; overflow: hidden;
@@ -459,9 +550,11 @@ img { max-width: 100%; display: block; }
 .pie a { color: rgba(255, 255, 255, 0.86); }
 .pie .cols { display: grid; grid-template-columns: 1.5fr 1fr; gap: 2.5rem; }
 @media (max-width: 720px) { .pie .cols { grid-template-columns: 1fr; } }
-.pie h4 {
+.pie h4,
+.pie-columna-titulo {
   font-family: var(--texto); font-size: 0.72rem; text-transform: uppercase;
   letter-spacing: 0.14em; color: var(--tinta-tenue); margin: 0 0 0.7rem;
+  font-weight: 700;
 }
 .pie ul { list-style: none; padding: 0; margin: 0; }
 .pie li { margin-bottom: 0.4rem; }

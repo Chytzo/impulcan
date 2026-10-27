@@ -1,0 +1,136 @@
+---
+// Sección de testimonios: cabecera (pretítulo, título, subtítulo) y
+// rejilla de tarjetas con texto, nombre, negocio y barrio.
+// Los testimonios por defecto son de ejemplo: comercios de Las Palmas
+// de Gran Canaria. Se pueden sustituir pasando `testimonios` por props.
+const {
+  pretitulo = 'Comercios reales',
+  titulo = 'Lo que cuentan los comercios',
+  subtitulo = 'Negocios de barrio de Las Palmas de Gran Canaria que ya se apoyan en Impulcan para atender mejor a sus clientes.',
+  testimonios = [
+    {
+      texto: 'Antes perdía reservas porque no podía contestar el WhatsApp mientras atendía la barra. Ahora el agente responde, apunta y confirma solo; yo solo reviso la lista por la mañana.',
+      nombre: 'Carla Medina',
+      negocio: 'Cafetería La Alacena',
+      barrio: 'Triana',
+    },
+    {
+      texto: 'Con los recordatorios automáticos se me han acabado casi los avisos fallidos. La gente confirma o mueve la cita desde el móvil y la agenda se ordena sola.',
+      nombre: 'Aday Suárez',
+      negocio: 'Barbería El Faro',
+      barrio: 'Guanarteme',
+    },
+    {
+      texto: 'No tenía web ni aparecía en las búsquedas del barrio. Desde que montamos la página y la ficha, me llaman clientes que no me conocían de nada.',
+      nombre: 'Rosa Cabrera',
+      negocio: 'Ferretería Cabral',
+      barrio: 'Schamann',
+    },
+  ],
+} = Astro.props;
+
+// Iniciales para el avatar, p. ej. "Carla Medina" -> "CM"
+const iniciales = (nombre) =>
+  nombre
+    .split(' ')
+    .map((p) => p[0])
+    .slice(0, 2)
+    .join('')
+    .toUpperCase();
+---
+
+<section class="seccion testimonios">
+  <div class="contenedor">
+    <div class="titulo-seccion revelar">
+      <span class="etiqueta">{pretitulo}</span>
+      <h2>{titulo}</h2>
+      <p>{subtitulo}</p>
+    </div>
+
+    <div class="rejilla-3">
+      {testimonios.map((t, i) => (
+        <figure
+          class="cristal testimonio revelar"
+          style={`transition-delay: ${0.12 * i}s`}
+        >
+          <div class="testimonio-icono">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M10.2 5.6C7 7 5 9.8 5 13.1c0 2.9 1.7 4.9 4 4.9 2 0 3.5-1.5 3.5-3.5 0-1.9-1.4-3.3-3.2-3.3h-.6c.4-1.7 1.5-3.1 3.1-4l-1.6-1.6Zm8.6 0c-3.2 1.4-5.2 4.2-5.2 7.5 0 2.9 1.7 4.9 4 4.9 2 0 3.5-1.5 3.5-3.5 0-1.9-1.4-3.3-3.2-3.3h-.6c.4-1.7 1.5-3.1 3.1-4l-1.6-1.6Z"/>
+            </svg>
+          </div>
+
+          <blockquote class="testimonio-texto">
+            <p>«{t.texto}»</p>
+          </blockquote>
+
+          <figcaption class="testimonio-autor">
+            <span class="testimonio-avatar" aria-hidden="true">{iniciales(t.nombre)}</span>
+            <span class="testimonio-quien">
+              <strong>{t.nombre}</strong>
+              <span>
+                {t.negocio} ·
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21.5S5.5 16 5.5 11a6.5 6.5 0 0 1 13 0c0 5-6.5 10.5-6.5 10.5Z"
+                    stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+                  <circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.9"/>
+                </svg>
+                {t.barrio}
+              </span>
+            </span>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Tarjeta de testimonio: figura sin margen nativo y pie alineado abajo */
+  .testimonio {
+    margin: 0;
+    padding: 1.9rem 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  /* Icono de comillas; alterna color como las tarjetas de servicio */
+  .testimonio-icono {
+    width: 46px; height: 46px; border-radius: 13px;
+    display: grid; place-items: center;
+    background: rgba(245, 16, 107, 0.12); color: var(--magenta);
+    border: 1px solid rgba(245, 16, 107, 0.22);
+  }
+  .testimonio:nth-child(3n+2) .testimonio-icono {
+    background: rgba(6, 217, 239, 0.12); color: var(--cian); border-color: rgba(6, 217, 239, 0.22);
+  }
+  .testimonio:nth-child(3n) .testimonio-icono {
+    background: rgba(162, 28, 232, 0.14); color: #c07bf0; border-color: rgba(162, 28, 232, 0.26);
+  }
+
+  .testimonio-texto { margin: 0; }
+  .testimonio-texto p {
+    margin: 0;
+    color: var(--tinta-suave);
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .testimonio-autor {
+    display: flex; align-items: center; gap: 0.8rem;
+    margin-top: auto;
+  }
+  .testimonio-avatar {
+    width: 40px; height: 40px; border-radius: 50%; flex: none;
+    background: var(--degradado-frio);
+    display: grid; place-items: center;
+    font-family: var(--display); font-weight: 700; font-size: 0.82rem;
+  }
+  .testimonio-quien { display: grid; gap: 0.1rem; }
+  .testimonio-quien strong { font-size: 0.95rem; }
+  .testimonio-quien > span {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    font-size: 0.84rem; color: var(--tinta-tenue);
+  }
+  .testimonio-quien svg { flex: none; }
+</style>

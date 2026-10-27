@@ -2,3 +2,31 @@ node_modules/
 dist/
 .astro/
 .DS_Store
+
+# El scraper de Google Maps no sale de esta máquina: este repositorio es público
+herramientas/enriquecer-fichas.py
+herramientas/LEEME-enriquecimiento.md
+
+# Datos e inteligencia: nunca salen de esta máquina (repo público)
+datos/
+intel/
+*.db
+*.sqlite
+*.sqlite3
+# Secretos y entorno
+.env
+.env.*
+# Artefactos locales
+__pycache__/
+*.pyc
+graphify-out/cache/
+
+# Notas internas, material de campaña y artefactos de agente (no públicos)
+AGENTS.md
+CAMBIOS-*.md
+graphify-out/
+demos/a-mano-full-time/
+herramientas/campana-contacto-comercios.md
+herramientas/lista-campana.py
+herramientas/aplicar-correcciones.py
+tests/test_lista_campana.py

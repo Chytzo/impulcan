@@ -1,0 +1,451 @@
+# Impulcan — contenido completo
+
+> Marketing y automatizaciones para negocios de Las Palmas de Gran Canaria y el resto de Gran Canaria (Canarias, España). Este archivo contiene el contenido completo del sitio, incluidos los 7 servicios, los 12 municipios cubiertos, los precios y las 96 páginas. Para una versión resumida, ver llms.txt.
+
+Impulcan trabaja con comercios de barrio, talleres, clínicas, hostelería y pymes de Gran Canaria. El enfoque es presencial y local: visitamos el negocio antes de proponer nada. No usamos permanencias ni paquetes cerrados, y lo que montamos queda en manos del cliente. Primera revisión del negocio gratuita y sin compromiso.
+
+## Servicios
+
+### Agentes de IA — Agentes de IA que hacen el trabajo, no que dan conversación
+
+Resumen: Un chatbot responde preguntas. Un agente hace tareas: lee, decide, escribe en tus sistemas y avisa cuando algo se sale de lo previsto.
+
+Problema que resuelve: La mayoría de lo que se vende como «IA para empresas» es un chat que contesta dudas frecuentes. Está bien, pero no te quita trabajo de encima. El trabajo que te come las horas es otro: pasar datos de un sitio a otro, revisar documentos, contestar lo mismo veinte veces y perseguir a quien no responde.
+
+Qué hacemos:
+- Agentes que leen documentos —facturas, albaranes, presupuestos, pedidos por correo— y meten los datos donde tengan que ir, sin teclear
+- Agentes que atienden por WhatsApp: responden, cualifican, agendan en tu calendario y te pasan solo lo que necesita a una persona
+- Agentes de seguimiento: detectan al cliente que preguntó y no volvió, y le escriben cuando toca
+- Agentes de vigilancia: revisan stock, plazos, impagos o reseñas nuevas y te avisan antes de que sea un problema
+- Todo con reglas claras de cuándo tiene que parar y preguntarte a ti
+
+Entregables:
+- El agente montado y funcionando sobre tus herramientas actuales
+- Documento con qué hace, qué no hace y dónde para
+- Registro de todo lo que ejecuta, para que puedas revisarlo
+- Formación para que tu equipo lo maneje sin depender de nosotros
+
+Preguntas frecuentes:
+- ¿Se va a inventar cosas? → Un agente bien montado no improvisa: trabaja sobre tus datos, con límites definidos, y cuando no está seguro se detiene y te pregunta. Eso se decide en el diseño, y es la parte que más tiempo nos lleva.
+- ¿Tengo que cambiar de programas? → No. El agente se conecta a lo que ya usas. Si tu gestión está en una hoja de cálculo, trabajamos con esa hoja de cálculo.
+- ¿Y los datos de mis clientes? → Se define desde el principio qué datos toca el agente y dónde se quedan. Te lo dejamos por escrito, porque el responsable ante la AEPD eres tú.
+- Página del servicio: https://impulcan.com/servicios/agentes-ia/
+
+Versiones por municipio: Las Palmas de Gran Canaria (https://impulcan.com/servicios/agentes-ia/las-palmas-de-gran-canaria/), Telde (https://impulcan.com/servicios/agentes-ia/telde/), Santa Lucía de Tirajana (https://impulcan.com/servicios/agentes-ia/santa-lucia-de-tirajana/), San Bartolomé de Tirajana (https://impulcan.com/servicios/agentes-ia/san-bartolome-de-tirajana/), Arucas (https://impulcan.com/servicios/agentes-ia/arucas/), Agüimes (https://impulcan.com/servicios/agentes-ia/aguimes/), Ingenio (https://impulcan.com/servicios/agentes-ia/ingenio/), Gáldar (https://impulcan.com/servicios/agentes-ia/galdar/), Mogán (https://impulcan.com/servicios/agentes-ia/mogan/), Santa Brígida (https://impulcan.com/servicios/agentes-ia/santa-brigida/), Santa María de Guía (https://impulcan.com/servicios/agentes-ia/santa-maria-de-guia/), Teror (https://impulcan.com/servicios/agentes-ia/teror/).
+
+### Automatización de procesos — Que el trabajo repetitivo se haga solo
+
+Resumen: Citas, recordatorios, presupuestos, facturas y respuestas de siempre. Todo lo que haces a mano cada semana y no te paga nadie.
+
+Problema que resuelve: En un negocio pequeño hay entre cinco y quince horas al mes que se van en tareas que no aportan nada: copiar datos, mandar el mismo correo, recordar citas por teléfono, montar la factura a mano. No se notan porque están repartidas, pero son un sueldo parcial tirado a la basura.
+
+Qué hacemos:
+- Citas y reservas con confirmación y recordatorio automáticos, sin llamadas de ida y vuelta
+- Presupuestos y facturas que se generan desde los datos que ya tienes y se envían solos
+- Respuestas automáticas a las preguntas de siempre, por correo y por WhatsApp
+- Avisos internos cuando pasa algo que requiere que alguien actúe
+- Informes periódicos que llegan hechos en vez de tener que montarlos
+
+Entregables:
+- Los procesos automatizados y en marcha
+- Cuánto tiempo se ahorra al mes, medido antes y después
+- Manual corto de qué hacer si algo falla
+- Todo montado en cuentas tuyas: si mañana te vas, se queda contigo
+
+Preguntas frecuentes:
+- ¿Cuánto se tarda en montar algo así? → Una automatización concreta suele estar funcionando en una o dos semanas. Empezamos siempre por la que más horas libera, no por la más llamativa.
+- ¿Y si mi equipo no es de informática? → Mejor. Se diseña para que no haya que aprender nada nuevo: la automatización trabaja detrás, la gente sigue con su rutina.
+- ¿Qué pasa si el proceso cambia? → Se ajusta. Por eso lo dejamos documentado y en tus cuentas, para que el cambio no dependa de que estemos disponibles.
+- Página del servicio: https://impulcan.com/servicios/automatizacion-procesos/
+
+Versiones por municipio: Las Palmas de Gran Canaria (https://impulcan.com/servicios/automatizacion-procesos/las-palmas-de-gran-canaria/), Telde (https://impulcan.com/servicios/automatizacion-procesos/telde/), Santa Lucía de Tirajana (https://impulcan.com/servicios/automatizacion-procesos/santa-lucia-de-tirajana/), San Bartolomé de Tirajana (https://impulcan.com/servicios/automatizacion-procesos/san-bartolome-de-tirajana/), Arucas (https://impulcan.com/servicios/automatizacion-procesos/arucas/), Agüimes (https://impulcan.com/servicios/automatizacion-procesos/aguimes/), Ingenio (https://impulcan.com/servicios/automatizacion-procesos/ingenio/), Gáldar (https://impulcan.com/servicios/automatizacion-procesos/galdar/), Mogán (https://impulcan.com/servicios/automatizacion-procesos/mogan/), Santa Brígida (https://impulcan.com/servicios/automatizacion-procesos/santa-brigida/), Santa María de Guía (https://impulcan.com/servicios/automatizacion-procesos/santa-maria-de-guia/), Teror (https://impulcan.com/servicios/automatizacion-procesos/teror/).
+
+### Presencia en Google — Que te encuentren cuando buscan lo que vendes
+
+Resumen: Ficha de Google al día, web rápida y posicionamiento local. Si alguien busca tu servicio y aparece tu competencia, ese cliente ya no es tuyo.
+
+Problema que resuelve: La mayoría de los negocios locales tienen la ficha de Google a medias: horarios viejos, categoría equivocada, sin fotos, reseñas sin contestar. Y una web que tarda en cargar en el móvil, que es donde está el 80% de la gente que te busca desde la calle.
+
+Qué hacemos:
+- Ficha de Google Business Profile completa: categoría correcta, horarios reales, fotos, servicios y mensajes activados
+- Reseñas: cómo pedirlas sin incomodar y cómo responderlas, incluidas las malas
+- Web rápida y pensada para el móvil, con el teléfono siempre a un toque
+- Datos estructurados para que los buscadores entiendan qué eres y dónde estás
+- Posicionamiento local: aparecer en las búsquedas de tu zona, no competir por términos imposibles
+
+Entregables:
+- Ficha de Google revisada y optimizada
+- Web publicada, medida y rápida de verdad
+- Informe mensual de qué buscó la gente y cuántos llamaron
+- Los accesos a todo, en cuentas a tu nombre
+
+Preguntas frecuentes:
+- ¿Cuánto tarda en notarse? → La ficha de Google puede mover llamadas en la misma semana. El posicionamiento web es más lento: tres o cuatro meses para ver movimiento serio.
+- ¿Merece la pena si ya tengo clientes fijos? → Depende. Si vives del cliente de siempre y no quieres crecer, no. Si te preocupa el relevo generacional de tu clientela, sí.
+- ¿Hace falta pagar anuncios? → No para esto. Los anuncios son otra cosa y se deciden aparte, con presupuesto y medición.
+- Página del servicio: https://impulcan.com/servicios/presencia-en-google/
+
+Versiones por municipio: Las Palmas de Gran Canaria (https://impulcan.com/servicios/presencia-en-google/las-palmas-de-gran-canaria/), Telde (https://impulcan.com/servicios/presencia-en-google/telde/), Santa Lucía de Tirajana (https://impulcan.com/servicios/presencia-en-google/santa-lucia-de-tirajana/), San Bartolomé de Tirajana (https://impulcan.com/servicios/presencia-en-google/san-bartolome-de-tirajana/), Arucas (https://impulcan.com/servicios/presencia-en-google/arucas/), Agüimes (https://impulcan.com/servicios/presencia-en-google/aguimes/), Ingenio (https://impulcan.com/servicios/presencia-en-google/ingenio/), Gáldar (https://impulcan.com/servicios/presencia-en-google/galdar/), Mogán (https://impulcan.com/servicios/presencia-en-google/mogan/), Santa Brígida (https://impulcan.com/servicios/presencia-en-google/santa-brigida/), Santa María de Guía (https://impulcan.com/servicios/presencia-en-google/santa-maria-de-guia/), Teror (https://impulcan.com/servicios/presencia-en-google/teror/).
+
+### Integraciones — Que tus herramientas hablen entre ellas
+
+Resumen: No hace falta cambiar de programas. Hace falta que el TPV, la hoja de cálculo, el correo, WhatsApp y la agenda dejen de ser cinco islas.
+
+Problema que resuelve: El mismo dato acaba escrito tres veces: en el TPV, en la hoja de cálculo y en la agenda. Cada copia a mano es una oportunidad de error, y cuando quieres saber cómo va el negocio tienes que juntar piezas de cinco sitios distintos.
+
+Qué hacemos:
+- Conectar TPV, facturación, correo, WhatsApp, agenda y hojas de cálculo para que el dato se escriba una sola vez
+- Un único sitio donde ver cómo va el negocio, en vez de cinco pantallas
+- Avisos automáticos cuando ocurre algo que importa
+- Copias de seguridad de lo que no puedes permitirte perder
+- Limpieza de duplicados y datos incoherentes que ya arrastras
+
+Entregables:
+- Las integraciones funcionando y documentadas
+- Esquema de qué dato va de dónde a dónde
+- Panel único de seguimiento
+- Plan de qué hacer si un servicio externo se cae
+
+Preguntas frecuentes:
+- Mi programa de gestión es viejo, ¿se puede conectar? → Casi siempre sí, aunque sea exportando ficheros de forma automática. Lo primero que hacemos es comprobarlo antes de prometer nada.
+- ¿Esto no me ata a vosotros? → Al contrario: se monta en cuentas tuyas y se documenta para que otro pueda cogerlo. No trabajamos con permanencias.
+- Página del servicio: https://impulcan.com/servicios/integraciones/
+
+Versiones por municipio: Las Palmas de Gran Canaria (https://impulcan.com/servicios/integraciones/las-palmas-de-gran-canaria/), Telde (https://impulcan.com/servicios/integraciones/telde/), Santa Lucía de Tirajana (https://impulcan.com/servicios/integraciones/santa-lucia-de-tirajana/), San Bartolomé de Tirajana (https://impulcan.com/servicios/integraciones/san-bartolome-de-tirajana/), Arucas (https://impulcan.com/servicios/integraciones/arucas/), Agüimes (https://impulcan.com/servicios/integraciones/aguimes/), Ingenio (https://impulcan.com/servicios/integraciones/ingenio/), Gáldar (https://impulcan.com/servicios/integraciones/galdar/), Mogán (https://impulcan.com/servicios/integraciones/mogan/), Santa Brígida (https://impulcan.com/servicios/integraciones/santa-brigida/), Santa María de Guía (https://impulcan.com/servicios/integraciones/santa-maria-de-guia/), Teror (https://impulcan.com/servicios/integraciones/teror/).
+
+### Captación de clientes — Campañas medidas, no dinero tirado en anuncios que nadie mira
+
+Resumen: Publicidad local con presupuesto controlado, seguimiento de quien pregunta y no compra, e informes en lenguaje normal.
+
+Problema que resuelve: Mucho negocio local ha probado a poner anuncios, ha gastado unos cientos de euros y no sabe si sirvió de algo. Sin medición no hay campaña: hay gasto.
+
+Qué hacemos:
+- Campañas locales en Google y redes con presupuesto pequeño y techo claro
+- Seguimiento de quien pregunta y no compra a la primera, que es donde está la mayoría del dinero
+- Medición real: cuántas llamadas, cuántos mensajes, cuánto costó cada uno
+- Corte rápido de lo que no funciona en vez de dejarlo corriendo
+- Informes en lenguaje normal, sin métricas de vanidad
+
+Entregables:
+- Campañas montadas y medidas
+- Coste por contacto real, no impresiones
+- Informe mensual de una página que se entiende
+- Las cuentas publicitarias a tu nombre
+
+Preguntas frecuentes:
+- ¿Con cuánto presupuesto se empieza? → Con poco. Preferimos empezar bajo, medir, y subir solo lo que demuestre que devuelve. Gastar mucho al principio es la forma más rápida de quemar el dinero.
+- ¿Garantizáis resultados? → No. Nadie serio lo hace. Lo que garantizamos es que sabrás exactamente qué entró y qué costó, y que cortaremos lo que no funcione.
+- Página del servicio: https://impulcan.com/servicios/captacion-de-clientes/
+
+Versiones por municipio: Las Palmas de Gran Canaria (https://impulcan.com/servicios/captacion-de-clientes/las-palmas-de-gran-canaria/), Telde (https://impulcan.com/servicios/captacion-de-clientes/telde/), Santa Lucía de Tirajana (https://impulcan.com/servicios/captacion-de-clientes/santa-lucia-de-tirajana/), San Bartolomé de Tirajana (https://impulcan.com/servicios/captacion-de-clientes/san-bartolome-de-tirajana/), Arucas (https://impulcan.com/servicios/captacion-de-clientes/arucas/), Agüimes (https://impulcan.com/servicios/captacion-de-clientes/aguimes/), Ingenio (https://impulcan.com/servicios/captacion-de-clientes/ingenio/), Gáldar (https://impulcan.com/servicios/captacion-de-clientes/galdar/), Mogán (https://impulcan.com/servicios/captacion-de-clientes/mogan/), Santa Brígida (https://impulcan.com/servicios/captacion-de-clientes/santa-brigida/), Santa María de Guía (https://impulcan.com/servicios/captacion-de-clientes/santa-maria-de-guia/), Teror (https://impulcan.com/servicios/captacion-de-clientes/teror/).
+
+### Auditoría de procesos — Cuántas horas al mes se te van en tareas que podría hacer una máquina
+
+Resumen: Un informe corto y concreto: qué tareas repetitivas tienes, cuántas horas cuestan y cuáles se pueden automatizar. Es por donde conviene empezar.
+
+Problema que resuelve: Antes de automatizar hay que saber qué automatizar. Casi todo el mundo se lanza a la herramienta de moda y acaba con una suscripción más y el mismo trabajo. La auditoría evita eso.
+
+Qué hacemos:
+- Media jornada contigo y con tu equipo viendo cómo trabajáis de verdad, no cómo debería ser
+- Inventario de tareas repetitivas, con las horas que consume cada una
+- Clasificación por lo que más devuelve: qué automatizar primero, qué después y qué no tocar
+- Coste estimado de cada intervención y qué ahorra
+- Qué se puede hacer sin nosotros, dicho claramente
+
+Entregables:
+- Informe de entre cinco y diez páginas, en castellano llano
+- Tabla de tareas con horas al mes y potencial de automatización
+- Orden de prioridades con coste y ahorro estimado
+- Reunión para explicarlo y decidir
+
+Preguntas frecuentes:
+- ¿Y si el informe dice que no me hace falta nada? → Entonces lo dice, y te ahorramos el gasto. Nos sirve igual: el informe honesto es el que hace que nos recomienden.
+- ¿Es obligatorio contratar la implantación después? → No. El informe es tuyo y puedes ejecutarlo con quien quieras, o tú mismo.
+- Página del servicio: https://impulcan.com/servicios/auditoria-de-procesos/
+
+Versiones por municipio: Las Palmas de Gran Canaria (https://impulcan.com/servicios/auditoria-de-procesos/las-palmas-de-gran-canaria/), Telde (https://impulcan.com/servicios/auditoria-de-procesos/telde/), Santa Lucía de Tirajana (https://impulcan.com/servicios/auditoria-de-procesos/santa-lucia-de-tirajana/), San Bartolomé de Tirajana (https://impulcan.com/servicios/auditoria-de-procesos/san-bartolome-de-tirajana/), Arucas (https://impulcan.com/servicios/auditoria-de-procesos/arucas/), Agüimes (https://impulcan.com/servicios/auditoria-de-procesos/aguimes/), Ingenio (https://impulcan.com/servicios/auditoria-de-procesos/ingenio/), Gáldar (https://impulcan.com/servicios/auditoria-de-procesos/galdar/), Mogán (https://impulcan.com/servicios/auditoria-de-procesos/mogan/), Santa Brígida (https://impulcan.com/servicios/auditoria-de-procesos/santa-brigida/), Santa María de Guía (https://impulcan.com/servicios/auditoria-de-procesos/santa-maria-de-guia/), Teror (https://impulcan.com/servicios/auditoria-de-procesos/teror/).
+
+### Alta Presencia IA Barrio — Que tu negocio aparezca cuando alguien le pregunta a ChatGPT o a Gemini por tu barrio
+
+Resumen: Cada vez más gente decide a qué comercio ir preguntándole a la IA, no buscando en una web. Arreglamos tu ficha para que las respuestas hablen de ti.
+
+Problema que resuelve: La gente ya no solo busca en Google: pregunta a ChatGPT, a Gemini o a Perplexity «¿dónde compro X en mi barrio?». Si tu negocio no tiene la información estructurada y verificada que esas herramientas leen, la respuesta habla de tu competencia. No es magia: es tener tu ficha, tu dirección, tu horario y tus datos bien puestos y en el formato que las IA entienden.
+
+Qué hacemos:
+- Distintivo de Comercio Destacado durante 12 meses en la guía del barrio (en Alcaravaneras, Guanarteme, Santa Catalina y La Isleta, con rotación equitativa en cabecera)
+- Descripción optimizada para que las IA te citen cuando preguntan por tu servicio en tu zona
+- Schema LocalBusiness correcto en tu web o ficha, para que las herramientas de IA te lean bien
+- Ajuste de tu perfil en Google Business Profile y Bing Places con datos consistentes (NAP)
+- Revisión final para que ChatGPT, Gemini y Perplexity te encuentren y te citen con información correcta
+
+Entregables:
+- Ficha destacada durante 12 meses en la guía de tu barrio (en barrios con guía activa de Las Palmas)
+- Perfil optimizado y coherente en Google Business Profile y Bing Places (para todos los municipios)
+- Marcado de datos estructurados (Schema LocalBusiness) y descripción para motores de IA
+- Documento breve de qué hemos tocado y por qué
+
+Preguntas frecuentes:
+- ¿Qué es eso de aparecer en la IA? → Que cuando alguien pregunte a ChatGPT o a Gemini por un servicio en tu barrio o municipio, la respuesta mencione tu negocio con datos correctos, en vez de hablar de la competencia. Lo logramos dejando tu información estructurada y verificada en el formato que esas herramientas leen.
+- ¿Esto es SEO de Google? → No exactamente. El SEO clásico posiciona en los resultados de búsqueda de Google. Aquí trabajamos para que las IAs generativas (ChatGPT, Gemini, Perplexity) te recomienden. Comparte cimientos, pero es otra disciplina: datos estructurados, entidades y consistencia.
+- ¿Qué barrios y municipios cubrís? → Trabajamos con negocios de toda Gran Canaria. En los cuatro barrios con guía propia (Alcaravaneras, Guanarteme, Santa Catalina y La Isleta, en Las Palmas) el pack incluye además 12 meses como Comercio Destacado en la guía. En el resto de municipios nos centramos al 100% en la optimización de Google Business Profile, Bing Places, schema web y consistencia NAP.
+- ¿Cómo funciona la posición de Comercio Destacado en las guías? → El distintivo de Comercio Destacado dura 12 meses desde la activación. Si en una misma categoría coinciden varios comercios destacados, la posición de cabecera rota periódicamente de forma equitativa y documentada. La ficha básica del comercio sigue siendo siempre gratuita.
+- ¿Es un pago único o mensual? → Pago único de 150 €. Todo lo optimizado queda en tus cuentas y en tu propiedad. No hay permanencia ni cuotas obligatorias.
+- ¿Cuánto se tarda en notar? → La ficha destacada en la guía se activa al día siguiente. La citación en IA es progresiva: cuanto más consistente y verificada está tu información en Google y Bing, antes apareces. No prometemos posiciones mágicas, preparamos la infraestructura para que la IA te encuentre y te cite.
+- Página del servicio: https://impulcan.com/servicios/alta-presencia-ia/
+
+Versiones por municipio: Las Palmas de Gran Canaria (https://impulcan.com/servicios/alta-presencia-ia/las-palmas-de-gran-canaria/), Telde (https://impulcan.com/servicios/alta-presencia-ia/telde/), Santa Lucía de Tirajana (https://impulcan.com/servicios/alta-presencia-ia/santa-lucia-de-tirajana/), San Bartolomé de Tirajana (https://impulcan.com/servicios/alta-presencia-ia/san-bartolome-de-tirajana/), Arucas (https://impulcan.com/servicios/alta-presencia-ia/arucas/), Agüimes (https://impulcan.com/servicios/alta-presencia-ia/aguimes/), Ingenio (https://impulcan.com/servicios/alta-presencia-ia/ingenio/), Gáldar (https://impulcan.com/servicios/alta-presencia-ia/galdar/), Mogán (https://impulcan.com/servicios/alta-presencia-ia/mogan/), Santa Brígida (https://impulcan.com/servicios/alta-presencia-ia/santa-brigida/), Santa María de Guía (https://impulcan.com/servicios/alta-presencia-ia/santa-maria-de-guia/), Teror (https://impulcan.com/servicios/alta-presencia-ia/teror/).
+
+## Municipios cubiertos
+
+### Las Palmas de Gran Canaria (381,868 hab., 100.5 km², 2025)
+
+Perfil: capital de la isla y mayor concentración comercial de Canarias.
+Contexto: Con 381.868 habitantes, la capital concentra el comercio urbano de la isla en varias zonas comerciales abiertas: Triana, Mesa y López, Santa Catalina, Puerto-Canteras, Arenales y Alcaravaneras. A eso se suman el tráfico de cruceros del Puerto de La Luz y la clientela de oficinas del entorno de Mesa y López.
+Tejido comercial: Comercio de calle, hostelería, servicios profesionales, clínicas y peluquerías. Mucho negocio familiar con décadas de clientela y presencia digital a medias.
+Cercanía: Es donde estamos. Nos pasamos por el local el mismo día si hace falta.
+Servicios ofrecidos en Las Palmas de Gran Canaria: Agentes de IA (https://impulcan.com/servicios/agentes-ia/las-palmas-de-gran-canaria/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/las-palmas-de-gran-canaria/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/las-palmas-de-gran-canaria/), Integraciones (https://impulcan.com/servicios/integraciones/las-palmas-de-gran-canaria/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/las-palmas-de-gran-canaria/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/las-palmas-de-gran-canaria/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/las-palmas-de-gran-canaria/).
+
+### Telde (104,168 hab., 102.4 km², 2025)
+
+Perfil: segunda ciudad de la isla, con comercio de barrio e industria ligera.
+Contexto: 104.168 habitantes repartidos entre el casco histórico de San Juan y San Francisco, los barrios del sur del municipio y la zona costera de Melenara y Salinetas. Comercio muy de barrio, con polígonos industriales como El Goro y Salinetas.
+Tejido comercial: Talleres, distribución, alimentación, hostelería de costa y comercio de casco. Perfil donde la automatización de albaranes y pedidos suele dar el retorno más rápido.
+Cercanía: A veinte minutos de Las Palmas. Visita presencial sin coste añadido.
+Servicios ofrecidos en Telde: Agentes de IA (https://impulcan.com/servicios/agentes-ia/telde/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/telde/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/telde/), Integraciones (https://impulcan.com/servicios/integraciones/telde/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/telde/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/telde/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/telde/).
+
+### Santa Lucía de Tirajana (78,584 hab., 61.6 km², 2025)
+
+Perfil: eje comercial del sur de la isla, con Vecindario como centro.
+Contexto: 78.584 habitantes y uno de los ejes comerciales más densos de Gran Canaria: la Avenida de Canarias, en Vecindario, funciona como calle comercial de referencia para todo el sureste.
+Tejido comercial: Moda, electrónica, alimentación y servicios, con mucha competencia directa en pocas manzanas. Aquí destacar en las búsquedas locales pesa más que en cualquier otro municipio.
+Cercanía: Zona sur, a media hora por la GC-1.
+Servicios ofrecidos en Santa Lucía de Tirajana: Agentes de IA (https://impulcan.com/servicios/agentes-ia/santa-lucia-de-tirajana/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/santa-lucia-de-tirajana/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/santa-lucia-de-tirajana/), Integraciones (https://impulcan.com/servicios/integraciones/santa-lucia-de-tirajana/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/santa-lucia-de-tirajana/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/santa-lucia-de-tirajana/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/santa-lucia-de-tirajana/).
+
+### San Bartolomé de Tirajana (54,291 hab., 333.0 km², 2025)
+
+Perfil: motor turístico de la isla, con Maspalomas y Playa del Inglés.
+Contexto: 54.291 habitantes censados en 333 km², pero una población flotante mucho mayor por el turismo de Maspalomas, Playa del Inglés y San Agustín. El cliente no es el vecino: es alguien que está de paso una semana y busca en su idioma.
+Tejido comercial: Hostelería, restauración, alquiler, ocio y comercio orientado al visitante. La atención automatizada en varios idiomas y la gestión de reservas y reseñas es donde más se nota el cambio.
+Cercanía: Sur de la isla, a 45 minutos de la capital.
+Servicios ofrecidos en San Bartolomé de Tirajana: Agentes de IA (https://impulcan.com/servicios/agentes-ia/san-bartolome-de-tirajana/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/san-bartolome-de-tirajana/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/san-bartolome-de-tirajana/), Integraciones (https://impulcan.com/servicios/integraciones/san-bartolome-de-tirajana/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/san-bartolome-de-tirajana/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/san-bartolome-de-tirajana/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/san-bartolome-de-tirajana/).
+
+### Arucas (39,232 hab., 33.0 km², 2025)
+
+Perfil: casco histórico y comercio tradicional en el norte.
+Contexto: 39.232 habitantes. Casco urbano de piedra azul con comercio de calle concentrado alrededor de la iglesia de San Juan Bautista, más un entorno agrícola de plátano y la industria del ron.
+Tejido comercial: Comercio de casco, agroalimentario y talleres. Negocios con producto propio que venden bien en persona y no aparecen en internet.
+Cercanía: Norte, a quince minutos de Las Palmas.
+Servicios ofrecidos en Arucas: Agentes de IA (https://impulcan.com/servicios/agentes-ia/arucas/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/arucas/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/arucas/), Integraciones (https://impulcan.com/servicios/integraciones/arucas/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/arucas/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/arucas/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/arucas/).
+
+### Agüimes (33,800 hab., 78.9 km², 2025)
+
+Perfil: polígono industrial de Arinaga y comercio de casco.
+Contexto: 33.800 habitantes. Alberga el Polígono Industrial de Arinaga, uno de los mayores de Canarias, junto a un casco histórico cuidado y la zona costera de Arinaga y Playa de Vargas.
+Tejido comercial: Industria, logística, distribución y talleres, más comercio y restauración de casco. En el polígono, las integraciones entre gestión, almacén y facturación son lo que más tiempo libera.
+Cercanía: Sureste, a media hora de la capital.
+Servicios ofrecidos en Agüimes: Agentes de IA (https://impulcan.com/servicios/agentes-ia/aguimes/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/aguimes/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/aguimes/), Integraciones (https://impulcan.com/servicios/integraciones/aguimes/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/aguimes/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/aguimes/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/aguimes/).
+
+### Ingenio (32,905 hab., 38.1 km², 2025)
+
+Perfil: artesanía, industria y cercanía al aeropuerto.
+Contexto: 32.905 habitantes. Municipio con tradición artesana —los calados de Ingenio— y actividad industrial y de servicios favorecida por la proximidad al aeropuerto de Gran Canaria.
+Tejido comercial: Artesanía, pequeña industria, servicios y comercio de proximidad. Buen encaje para venta online de producto propio y automatización de pedidos.
+Cercanía: Sureste, junto al aeropuerto.
+Servicios ofrecidos en Ingenio: Agentes de IA (https://impulcan.com/servicios/agentes-ia/ingenio/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/ingenio/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/ingenio/), Integraciones (https://impulcan.com/servicios/integraciones/ingenio/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/ingenio/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/ingenio/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/ingenio/).
+
+### Gáldar (25,108 hab., 61.6 km², 2025)
+
+Perfil: capital histórica del norte, con comercio de casco.
+Contexto: 25.108 habitantes. Antigua corte guanarteme y hoy referencia comercial del noroeste, con la Cueva Pintada atrayendo visitantes al casco.
+Tejido comercial: Comercio de calle, agroalimentario y hostelería. Mercado local fiel y poca competencia digital: destacar en búsquedas cuesta menos aquí que en el sur.
+Cercanía: Noroeste, a media hora de Las Palmas.
+Servicios ofrecidos en Gáldar: Agentes de IA (https://impulcan.com/servicios/agentes-ia/galdar/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/galdar/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/galdar/), Integraciones (https://impulcan.com/servicios/integraciones/galdar/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/galdar/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/galdar/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/galdar/).
+
+### Mogán (21,172 hab., 172.4 km², 2025)
+
+Perfil: turismo de costa en Puerto Rico, Amadores y Puerto de Mogán.
+Contexto: 21.172 habitantes censados y una actividad dominada por el turismo de Puerto Rico, Amadores y Puerto de Mogán. Como en el resto del suroeste, el cliente llega de fuera y decide desde el móvil.
+Tejido comercial: Restauración, náutica, excursiones, alquiler y comercio turístico. La reserva automatizada y la gestión de reseñas en varios idiomas marcan la diferencia.
+Cercanía: Suroeste, a una hora de la capital.
+Servicios ofrecidos en Mogán: Agentes de IA (https://impulcan.com/servicios/agentes-ia/mogan/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/mogan/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/mogan/), Integraciones (https://impulcan.com/servicios/integraciones/mogan/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/mogan/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/mogan/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/mogan/).
+
+### Santa Brígida (18,766 hab., 23.8 km², 2025)
+
+Perfil: medianías residenciales con comercio de proximidad.
+Contexto: 18.766 habitantes en apenas 23,8 km². Municipio residencial de las medianías, con mercado agrícola y clientela de poder de compra medio-alto que vive allí y trabaja en la capital.
+Tejido comercial: Restauración, servicios, clínicas y comercio de proximidad. Clientela que busca por internet antes de moverse, así que la ficha de Google pesa mucho.
+Cercanía: Medianías, a veinte minutos de Las Palmas.
+Servicios ofrecidos en Santa Brígida: Agentes de IA (https://impulcan.com/servicios/agentes-ia/santa-brigida/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/santa-brigida/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/santa-brigida/), Integraciones (https://impulcan.com/servicios/integraciones/santa-brigida/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/santa-brigida/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/santa-brigida/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/santa-brigida/).
+
+### Santa María de Guía (14,311 hab., 42.6 km², 2025)
+
+Perfil: agroalimentario del norte, con el queso de flor como seña.
+Contexto: 14.311 habitantes. Municipio del norte con fuerte identidad agroalimentaria: el queso de flor de Guía tiene denominación de origen protegida.
+Tejido comercial: Queserías, agricultura, comercio de casco y restauración. Producto con marca propia y poca presencia online: hay margen claro para vender fuera del municipio.
+Cercanía: Norte, a media hora de la capital.
+Servicios ofrecidos en Santa María de Guía: Agentes de IA (https://impulcan.com/servicios/agentes-ia/santa-maria-de-guia/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/santa-maria-de-guia/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/santa-maria-de-guia/), Integraciones (https://impulcan.com/servicios/integraciones/santa-maria-de-guia/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/santa-maria-de-guia/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/santa-maria-de-guia/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/santa-maria-de-guia/).
+
+### Teror (13,211 hab., 25.7 km², 2025)
+
+Perfil: casco histórico con afluencia de visitantes los fines de semana.
+Contexto: 13.211 habitantes. La Basílica del Pino y el mercadillo de los domingos concentran una afluencia de visitantes muy superior a su tamaño, con picos fuertes en la romería del Pino.
+Tejido comercial: Comercio de casco, gastronomía local, artesanía y restauración. Negocio muy estacional por semanas, donde automatizar la atención en los picos evita perder ventas.
+Cercanía: Norte, a veinticinco minutos de Las Palmas.
+Servicios ofrecidos en Teror: Agentes de IA (https://impulcan.com/servicios/agentes-ia/teror/), Automatización de procesos (https://impulcan.com/servicios/automatizacion-procesos/teror/), Presencia en Google (https://impulcan.com/servicios/presencia-en-google/teror/), Integraciones (https://impulcan.com/servicios/integraciones/teror/), Captación de clientes (https://impulcan.com/servicios/captacion-de-clientes/teror/), Auditoría de procesos (https://impulcan.com/servicios/auditoria-de-procesos/teror/), Alta Presencia IA Barrio (https://impulcan.com/servicios/alta-presencia-ia/teror/).
+
+## Precios
+
+Nota: Precios en euros, sin IGIC. Canarias aplica IGIC, no IVA.
+
+- **Auditoría — 190 €, pago único.** Para saber qué automatizar antes de gastar en automatizar.
+  - Media jornada en tu negocio viendo cómo trabajáis de verdad
+  - Inventario de tareas repetitivas con las horas que cuesta cada una
+  - Qué automatizar primero, qué después y qué no tocar
+  - Coste estimado y ahorro de cada intervención
+  - Reunión para explicártelo y decidir
+  Si el informe concluye que no te hace falta nada, lo dice. Y te ahorras el resto.
+
+- **Puesta en marcha — 690 €, desde · precio cerrado.** El proyecto montado, funcionando y explicado.
+  - Ficha de Google a punto y web rápida: desde 690 €
+  - Una automatización montada y funcionando: desde 890 €
+  - Integración entre tus herramientas actuales: desde 890 €
+  - Un agente de IA atendiendo o procesando: desde 1.490 €
+  - Formación para que lo maneje tu equipo
+  - Todo en cuentas tuyas: si mañana te vas, se queda contigo
+  El precio se cierra por escrito antes de empezar. Lo que sube el presupuesto: más locales, migrar datos o más integraciones.
+
+- **Acompañamiento — 90 €, al mes.** Opcional. Para quien quiera que sigamos encima.
+  - Mantenimiento de lo que montamos
+  - Ficha de Google y reseñas al día
+  - Ajustes y cambios pequeños incluidos
+  - Informe mensual de una página, en lenguaje normal
+  - Atención prioritaria por WhatsApp
+  No hace falta contratarlo. Muchos clientes se quedan solo con la puesta en marcha y les va bien.
+
+- **Alta Presencia IA Barrio — 150 €, pago único.** Que tu negocio aparezca cuando alguien le pregunte a ChatGPT o a Gemini por tu barrio.
+  - Comercio Destacado durante 12 meses en la guía del barrio (en Alcaravaneras, Guanarteme, Santa Catalina y La Isleta, con rotación equitativa en cabecera si hay varios del mismo sector)
+  - Descripción y datos estructurados (Schema LocalBusiness) optimizados para que las IA te citen
+  - Ajuste completo de tu perfil en Google Business Profile y Bing Places (NAP consistente)
+  - Para el resto de municipios: enfoque integral en Google, Bing, schema web y consistencia de datos
+  - Revisión y corrección para que ChatGPT, Gemini y Perplexity encuentren tu negocio
+  Pago único de 150 €. Distintivo destacado durante 12 meses; la ficha básica en la guía sigue siendo siempre gratuita. Todo queda en cuentas tuyas y sin permanencia.
+
+
+La primera visita para ver el negocio es gratuita y sin compromiso.
+
+## Proyectos propios: guías de barrio
+
+Cuatro guías de comercio local en Las Palmas de Gran Canaria, 2.047 comercios en total, con ficha básica gratuita para los comercios y sin vinculación con ninguna asociación ni partido político. Cada una tiene su propio llms-full.txt:
+- Zona Alcaravaneras (327): https://zonaalcaravaneras.com/llms-full.txt
+- Zona Guanarteme (656): https://zonaguanarteme.com/llms-full.txt
+- Zona Santa Catalina (754): https://zonasantacatalina.com/llms-full.txt
+- Zona La Isleta (310): https://zonalaisleta.com/llms-full.txt
+
+## Zona de actuación
+
+Las Palmas de Gran Canaria y el resto de la isla de Gran Canaria (Canarias, España). Trabajo presencial en la isla.
+
+## Páginas del sitio
+
+- Inicio: https://impulcan.com/
+- Servicios (índice): https://impulcan.com/servicios/
+- Servicio: Agentes de IA: https://impulcan.com/servicios/agentes-ia/
+- Agentes de IA en Las Palmas de Gran Canaria: https://impulcan.com/servicios/agentes-ia/las-palmas-de-gran-canaria/
+- Agentes de IA en Telde: https://impulcan.com/servicios/agentes-ia/telde/
+- Agentes de IA en Santa Lucía de Tirajana: https://impulcan.com/servicios/agentes-ia/santa-lucia-de-tirajana/
+- Agentes de IA en San Bartolomé de Tirajana: https://impulcan.com/servicios/agentes-ia/san-bartolome-de-tirajana/
+- Agentes de IA en Arucas: https://impulcan.com/servicios/agentes-ia/arucas/
+- Agentes de IA en Agüimes: https://impulcan.com/servicios/agentes-ia/aguimes/
+- Agentes de IA en Ingenio: https://impulcan.com/servicios/agentes-ia/ingenio/
+- Agentes de IA en Gáldar: https://impulcan.com/servicios/agentes-ia/galdar/
+- Agentes de IA en Mogán: https://impulcan.com/servicios/agentes-ia/mogan/
+- Agentes de IA en Santa Brígida: https://impulcan.com/servicios/agentes-ia/santa-brigida/
+- Agentes de IA en Santa María de Guía: https://impulcan.com/servicios/agentes-ia/santa-maria-de-guia/
+- Agentes de IA en Teror: https://impulcan.com/servicios/agentes-ia/teror/
+- Servicio: Automatización de procesos: https://impulcan.com/servicios/automatizacion-procesos/
+- Automatización de procesos en Las Palmas de Gran Canaria: https://impulcan.com/servicios/automatizacion-procesos/las-palmas-de-gran-canaria/
+- Automatización de procesos en Telde: https://impulcan.com/servicios/automatizacion-procesos/telde/
+- Automatización de procesos en Santa Lucía de Tirajana: https://impulcan.com/servicios/automatizacion-procesos/santa-lucia-de-tirajana/
+- Automatización de procesos en San Bartolomé de Tirajana: https://impulcan.com/servicios/automatizacion-procesos/san-bartolome-de-tirajana/
+- Automatización de procesos en Arucas: https://impulcan.com/servicios/automatizacion-procesos/arucas/
+- Automatización de procesos en Agüimes: https://impulcan.com/servicios/automatizacion-procesos/aguimes/
+- Automatización de procesos en Ingenio: https://impulcan.com/servicios/automatizacion-procesos/ingenio/
+- Automatización de procesos en Gáldar: https://impulcan.com/servicios/automatizacion-procesos/galdar/
+- Automatización de procesos en Mogán: https://impulcan.com/servicios/automatizacion-procesos/mogan/
+- Automatización de procesos en Santa Brígida: https://impulcan.com/servicios/automatizacion-procesos/santa-brigida/
+- Automatización de procesos en Santa María de Guía: https://impulcan.com/servicios/automatizacion-procesos/santa-maria-de-guia/
+- Automatización de procesos en Teror: https://impulcan.com/servicios/automatizacion-procesos/teror/
+- Servicio: Presencia en Google: https://impulcan.com/servicios/presencia-en-google/
+- Presencia en Google en Las Palmas de Gran Canaria: https://impulcan.com/servicios/presencia-en-google/las-palmas-de-gran-canaria/
+- Presencia en Google en Telde: https://impulcan.com/servicios/presencia-en-google/telde/
+- Presencia en Google en Santa Lucía de Tirajana: https://impulcan.com/servicios/presencia-en-google/santa-lucia-de-tirajana/
+- Presencia en Google en San Bartolomé de Tirajana: https://impulcan.com/servicios/presencia-en-google/san-bartolome-de-tirajana/
+- Presencia en Google en Arucas: https://impulcan.com/servicios/presencia-en-google/arucas/
+- Presencia en Google en Agüimes: https://impulcan.com/servicios/presencia-en-google/aguimes/
+- Presencia en Google en Ingenio: https://impulcan.com/servicios/presencia-en-google/ingenio/
+- Presencia en Google en Gáldar: https://impulcan.com/servicios/presencia-en-google/galdar/
+- Presencia en Google en Mogán: https://impulcan.com/servicios/presencia-en-google/mogan/
+- Presencia en Google en Santa Brígida: https://impulcan.com/servicios/presencia-en-google/santa-brigida/
+- Presencia en Google en Santa María de Guía: https://impulcan.com/servicios/presencia-en-google/santa-maria-de-guia/
+- Presencia en Google en Teror: https://impulcan.com/servicios/presencia-en-google/teror/
+- Servicio: Integraciones: https://impulcan.com/servicios/integraciones/
+- Integraciones en Las Palmas de Gran Canaria: https://impulcan.com/servicios/integraciones/las-palmas-de-gran-canaria/
+- Integraciones en Telde: https://impulcan.com/servicios/integraciones/telde/
+- Integraciones en Santa Lucía de Tirajana: https://impulcan.com/servicios/integraciones/santa-lucia-de-tirajana/
+- Integraciones en San Bartolomé de Tirajana: https://impulcan.com/servicios/integraciones/san-bartolome-de-tirajana/
+- Integraciones en Arucas: https://impulcan.com/servicios/integraciones/arucas/
+- Integraciones en Agüimes: https://impulcan.com/servicios/integraciones/aguimes/
+- Integraciones en Ingenio: https://impulcan.com/servicios/integraciones/ingenio/
+- Integraciones en Gáldar: https://impulcan.com/servicios/integraciones/galdar/
+- Integraciones en Mogán: https://impulcan.com/servicios/integraciones/mogan/
+- Integraciones en Santa Brígida: https://impulcan.com/servicios/integraciones/santa-brigida/
+- Integraciones en Santa María de Guía: https://impulcan.com/servicios/integraciones/santa-maria-de-guia/
+- Integraciones en Teror: https://impulcan.com/servicios/integraciones/teror/
+- Servicio: Captación de clientes: https://impulcan.com/servicios/captacion-de-clientes/
+- Captación de clientes en Las Palmas de Gran Canaria: https://impulcan.com/servicios/captacion-de-clientes/las-palmas-de-gran-canaria/
+- Captación de clientes en Telde: https://impulcan.com/servicios/captacion-de-clientes/telde/
+- Captación de clientes en Santa Lucía de Tirajana: https://impulcan.com/servicios/captacion-de-clientes/santa-lucia-de-tirajana/
+- Captación de clientes en San Bartolomé de Tirajana: https://impulcan.com/servicios/captacion-de-clientes/san-bartolome-de-tirajana/
+- Captación de clientes en Arucas: https://impulcan.com/servicios/captacion-de-clientes/arucas/
+- Captación de clientes en Agüimes: https://impulcan.com/servicios/captacion-de-clientes/aguimes/
+- Captación de clientes en Ingenio: https://impulcan.com/servicios/captacion-de-clientes/ingenio/
+- Captación de clientes en Gáldar: https://impulcan.com/servicios/captacion-de-clientes/galdar/
+- Captación de clientes en Mogán: https://impulcan.com/servicios/captacion-de-clientes/mogan/
+- Captación de clientes en Santa Brígida: https://impulcan.com/servicios/captacion-de-clientes/santa-brigida/
+- Captación de clientes en Santa María de Guía: https://impulcan.com/servicios/captacion-de-clientes/santa-maria-de-guia/
+- Captación de clientes en Teror: https://impulcan.com/servicios/captacion-de-clientes/teror/
+- Servicio: Auditoría de procesos: https://impulcan.com/servicios/auditoria-de-procesos/
+- Auditoría de procesos en Las Palmas de Gran Canaria: https://impulcan.com/servicios/auditoria-de-procesos/las-palmas-de-gran-canaria/
+- Auditoría de procesos en Telde: https://impulcan.com/servicios/auditoria-de-procesos/telde/
+- Auditoría de procesos en Santa Lucía de Tirajana: https://impulcan.com/servicios/auditoria-de-procesos/santa-lucia-de-tirajana/
+- Auditoría de procesos en San Bartolomé de Tirajana: https://impulcan.com/servicios/auditoria-de-procesos/san-bartolome-de-tirajana/
+- Auditoría de procesos en Arucas: https://impulcan.com/servicios/auditoria-de-procesos/arucas/
+- Auditoría de procesos en Agüimes: https://impulcan.com/servicios/auditoria-de-procesos/aguimes/
+- Auditoría de procesos en Ingenio: https://impulcan.com/servicios/auditoria-de-procesos/ingenio/
+- Auditoría de procesos en Gáldar: https://impulcan.com/servicios/auditoria-de-procesos/galdar/
+- Auditoría de procesos en Mogán: https://impulcan.com/servicios/auditoria-de-procesos/mogan/
+- Auditoría de procesos en Santa Brígida: https://impulcan.com/servicios/auditoria-de-procesos/santa-brigida/
+- Auditoría de procesos en Santa María de Guía: https://impulcan.com/servicios/auditoria-de-procesos/santa-maria-de-guia/
+- Auditoría de procesos en Teror: https://impulcan.com/servicios/auditoria-de-procesos/teror/
+- Servicio: Alta Presencia IA Barrio: https://impulcan.com/servicios/alta-presencia-ia/
+- Alta Presencia IA Barrio en Las Palmas de Gran Canaria: https://impulcan.com/servicios/alta-presencia-ia/las-palmas-de-gran-canaria/
+- Alta Presencia IA Barrio en Telde: https://impulcan.com/servicios/alta-presencia-ia/telde/
+- Alta Presencia IA Barrio en Santa Lucía de Tirajana: https://impulcan.com/servicios/alta-presencia-ia/santa-lucia-de-tirajana/
+- Alta Presencia IA Barrio en San Bartolomé de Tirajana: https://impulcan.com/servicios/alta-presencia-ia/san-bartolome-de-tirajana/
+- Alta Presencia IA Barrio en Arucas: https://impulcan.com/servicios/alta-presencia-ia/arucas/
+- Alta Presencia IA Barrio en Agüimes: https://impulcan.com/servicios/alta-presencia-ia/aguimes/
+- Alta Presencia IA Barrio en Ingenio: https://impulcan.com/servicios/alta-presencia-ia/ingenio/
+- Alta Presencia IA Barrio en Gáldar: https://impulcan.com/servicios/alta-presencia-ia/galdar/
+- Alta Presencia IA Barrio en Mogán: https://impulcan.com/servicios/alta-presencia-ia/mogan/
+- Alta Presencia IA Barrio en Santa Brígida: https://impulcan.com/servicios/alta-presencia-ia/santa-brigida/
+- Alta Presencia IA Barrio en Santa María de Guía: https://impulcan.com/servicios/alta-presencia-ia/santa-maria-de-guia/
+- Alta Presencia IA Barrio en Teror: https://impulcan.com/servicios/alta-presencia-ia/teror/
+- Aviso legal: https://impulcan.com/aviso-legal/
+- Privacidad: https://impulcan.com/privacidad/
+- Créditos: https://impulcan.com/creditos/
+
+## Contacto
+
+- WhatsApp: +34 633 50 51 53
+- Correo: hola@impulcan.com
+- Web: https://impulcan.com

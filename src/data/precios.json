@@ -52,6 +52,23 @@
       ],
       "coletilla": "No hace falta contratarlo. Muchos clientes se quedan solo con la puesta en marcha y les va bien.",
       "destacado": false
+    },
+    {
+      "slug": "alta-presencia-ia",
+      "nombre": "Alta Presencia IA Barrio",
+      "gancho": "Que tu negocio aparezca cuando alguien le pregunte a ChatGPT o a Gemini por tu barrio.",
+      "precio": "150",
+      "unidad": "pago único",
+      "referencia": "Perfil optimizado para motores de IA + distintivo en guía de barrio",
+      "incluye": [
+        "Comercio Destacado durante 12 meses en la guía del barrio (en Alcaravaneras, Guanarteme, Santa Catalina y La Isleta, con rotación equitativa en cabecera si hay varios del mismo sector)",
+        "Descripción y datos estructurados (Schema LocalBusiness) optimizados para que las IA te citen",
+        "Ajuste completo de tu perfil en Google Business Profile y Bing Places (NAP consistente)",
+        "Para el resto de municipios: enfoque integral en Google, Bing, schema web y consistencia de datos",
+        "Revisión y corrección para que ChatGPT, Gemini y Perplexity encuentren tu negocio"
+      ],
+      "coletilla": "Pago único de 150 €. Distintivo destacado durante 12 meses; la ficha básica en la guía sigue siendo siempre gratuita. Todo queda en cuentas tuyas y sin permanencia.",
+      "destacado": false
     }
   ]
 }

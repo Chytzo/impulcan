@@ -190,5 +190,37 @@
       "texto": "En clínicas y servicios de proximidad, el coste que no se ve son las ausencias y los huecos sin cubrir. La auditoría los cuantifica, y suele ser la cifra que más sorprende al dueño.",
       "ejemplo": "Cuantificación de ausencias y huecos, con el ahorro estimado de automatizar recordatorios."
     }
+  },
+  "alta-presencia-ia": {
+    "capital": {
+      "titulo": "En la capital se decide en un chat",
+      "texto": "En Las Palmas, Las Canteras, Triana o Mesa y López, cada vez más gente pregunta a la IA antes de decidir con quién comprar. Un comercio en una calle con veinte alternativas necesita que la respuesta de ChatGPT o Gemini hable de él. Para negocios en barrios con guía activa (Alcaravaneras, Guanarteme, Santa Catalina, La Isleta) incluimos ficha destacada en la guía, además de optimizar tu perfil en Google Business Profile, Bing Places y datos estructurados Schema para que la IA te cite con información exacta.",
+      "ejemplo": "Un cliente pregunta '¿dónde cenar en Las Canteras?' y tu restaurante sale con dirección, horario y teléfono exactos."
+    },
+    "industrial": {
+      "titulo": "La decisión B2B también pasa por la IA",
+      "texto": "Los negocios de polígono reciben cada vez más consultas técnicas y de suministros que empiezan en la IA. Preparamos tu presencia en Google Business Profile, Bing Places y datos estructurados web con NAP consistente para que la respuesta a '¿dónde encontrar X en esta zona?' te nombre con datos correctos.",
+      "ejemplo": "Un responsable pregunta a la IA por un proveedor local y tu empresa aparece con tus datos bien puestos."
+    },
+    "eje": {
+      "titulo": "Aparecer en el eje comercial preguntando a la IA",
+      "texto": "En los ejes comerciales la gente cruza varias opciones y decide en un chat. Dejamos tu negocio con la información que las IA leen: optimización en Google Business Profile, Bing Places, marcado Schema y consistencia de datos, para que la recomendación cuente contigo.",
+      "ejemplo": "Alguien pregunta '¿dónde arreglar un móvil en el eje comercial?' y tu tienda sale citada con datos correctos."
+    },
+    "turistico": {
+      "titulo": "Los visitantes preguntan a la IA antes de salir",
+      "texto": "En zona turística el visitante decide a qué restaurante o tienda ir preguntando a ChatGPT o Gemini desde el hotel. La optimización de tu perfil en Google Business y Bing Places, junto con datos estructurados y consistencia en la red, es lo que hace que la IA te recomiende en lugar de a tu competencia.",
+      "ejemplo": "Un turista pregunta '¿dónde alquilar una bici cerca del paseo?' y tu negocio aparece con horario y dirección correctos."
+    },
+    "casco": {
+      "titulo": "El casco también se busca por IA",
+      "texto": "Cada vez más gente busca en el casco histórico con la IA: '¿dónde tomar un café de especialidad?' o '¿dónde comprar producto local?'. Tu perfil optimizado en Google y Bing con datos estructurados Schema y NAP consistente hace que la respuesta te incluya con datos precisos.",
+      "ejemplo": "Una persona pregunta por un servicio en el casco y tu negocio sale con sus datos bien puestos."
+    },
+    "residencial": {
+      "titulo": "El barrio residencial pregunta y elige en el móvil",
+      "texto": "Los vecinos de zonas residenciales preguntan a la IA dónde comprar o qué servicios tienen cerca de casa. Con tu perfil optimizado en Google Business y Bing Places, y tus datos estructurados (Schema) con NAP consistente, la respuesta de ChatGPT o Gemini cuenta con tu negocio.",
+      "ejemplo": "Un vecino pregunta '¿dónde hay una lavandería cerca?' y tu negocio aparece con dirección y horario."
+    }
   }
 }
